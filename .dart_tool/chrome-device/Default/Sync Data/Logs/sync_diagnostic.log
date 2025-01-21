@@ -1,0 +1,1334 @@
+2025-01-21 11:26:22.234: [INFO][Sync] Reset engine, reason: 8
+2025-01-21 11:26:22.234: [INFO][Sync] Stopped: Bookmarks
+2025-01-21 11:26:22.234: [INFO][Sync] Stopped: Preferences
+2025-01-21 11:26:22.234: [INFO][Sync] Stopped: Passwords
+2025-01-21 11:26:22.234: [INFO][Sync] Stopped: Autofill Profiles
+2025-01-21 11:26:22.234: [INFO][Sync] Stopped: Autofill
+2025-01-21 11:26:22.234: [INFO][Sync] Stopped: Typed URLs
+2025-01-21 11:26:22.234: [INFO][Sync] Stopped: Extensions
+2025-01-21 11:26:22.234: [INFO][Sync] Stopped: Sessions
+2025-01-21 11:26:22.234: [INFO][Sync] Stopped: Extension settings
+2025-01-21 11:26:22.234: [INFO][Sync] Stopped: History Delete Directives
+2025-01-21 11:26:22.234: [INFO][Sync] Stopped: Device Info
+2025-01-21 11:26:22.234: [INFO][Sync] Stopped: User Consents
+2025-01-21 11:26:22.234: [INFO][Sync] Stopped: Send Tab To Self
+2025-01-21 11:26:22.234: [INFO][Sync] Stopped: Web Apps
+2025-01-21 11:26:22.234: [INFO][Sync] Stopped: History
+2025-01-21 11:26:22.234: [INFO][Sync] Stopped: Collection
+2025-01-21 11:26:22.234: [INFO][Sync] Stopped: Edge E Drop
+2025-01-21 11:26:22.234: [INFO][Sync] Stopped: Edge Hub App Usage
+2025-01-21 11:26:22.234: [INFO][Sync] Stopped: Edge Tab Group
+2025-01-21 11:26:22.234: [INFO][Sync] Stopped: Edge Wallet
+2025-01-21 11:26:22.234: [INFO][Sync] SyncState after authenticated was: NotSignedIn
+2025-01-21 11:26:22.401: [INFO][Sync] Reset engine, reason: 8
+2025-01-21 11:26:22.401: [INFO][Sync] Stopped: Bookmarks
+2025-01-21 11:26:22.401: [INFO][Sync] Stopped: Preferences
+2025-01-21 11:26:22.401: [INFO][Sync] Stopped: Passwords
+2025-01-21 11:26:22.401: [INFO][Sync] Stopped: Autofill Profiles
+2025-01-21 11:26:22.401: [INFO][Sync] Stopped: Autofill
+2025-01-21 11:26:22.401: [INFO][Sync] Stopped: Typed URLs
+2025-01-21 11:26:22.401: [INFO][Sync] Stopped: Extensions
+2025-01-21 11:26:22.401: [INFO][Sync] Stopped: Sessions
+2025-01-21 11:26:22.401: [INFO][Sync] Stopped: Extension settings
+2025-01-21 11:26:22.401: [INFO][Sync] Stopped: History Delete Directives
+2025-01-21 11:26:22.401: [INFO][Sync] Stopped: Device Info
+2025-01-21 11:26:22.401: [INFO][Sync] Stopped: User Consents
+2025-01-21 11:26:22.401: [INFO][Sync] Stopped: Send Tab To Self
+2025-01-21 11:26:22.401: [INFO][Sync] Stopped: Web Apps
+2025-01-21 11:26:22.401: [INFO][Sync] Stopped: History
+2025-01-21 11:26:22.401: [INFO][Sync] Stopped: Collection
+2025-01-21 11:26:22.401: [INFO][Sync] Stopped: Edge E Drop
+2025-01-21 11:26:22.401: [INFO][Sync] Stopped: Edge Hub App Usage
+2025-01-21 11:26:22.401: [INFO][Sync] Stopped: Edge Tab Group
+2025-01-21 11:26:22.401: [INFO][Sync] Stopped: Edge Wallet
+2025-01-21 11:26:22.592: [INFO][Sync] Try to start sync engine
+2025-01-21 11:26:22.593: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Encryption Keys
+2025-01-21 11:26:22.593: [INFO][SyncEngineBackend::LoadAndConnectNigoriController] Load and connect Nigori controller
+2025-01-21 11:26:22.593: [INFO][SyncEngineBackend::DoInitialize] Control Types added: Encryption Keys
+2025-01-21 11:26:22.593: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download: Encryption Keys with reason: 3
+2025-01-21 11:26:22.594: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Configure job was blocked
+2025-01-21 11:26:22.703: [INFO][SyncAuthManager::SetLastAuthError] Current auth error: None
+2025-01-21 11:26:22.703: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: None for account type: MSA
+2025-01-21 11:26:22.703: [INFO][Sync] Credentials changed for: EdgeSyncScopeNew
+2025-01-21 11:26:23.617: [INFO][SyncAuthManager::SetLastAuthError] Current auth error: None
+2025-01-21 11:26:23.617: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: None for account type: MSA
+2025-01-21 11:26:23.617: [INFO][Sync] Credentials changed for: EdgeSyncKeyDataScope
+2025-01-21 11:26:23.617: [INFO][SyncEngineBackend::DoUpdateKeyDataCredentials] Update key data credentials
+2025-01-21 11:26:23.617: [INFO][SyncEngineBackend::DoUpdateCredentials] Update credentials
+2025-01-21 11:26:23.617: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Blocked types:  and types to download: Encryption Keys
+2025-01-21 11:26:23.975: [INFO][Sync] Started DataTypeManager configuration, reason: 4
+2025-01-21 11:26:23.975: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Typed URLs, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 3, current state: 0
+2025-01-21 11:26:23.975: [INFO][Sync] Configure, desired: Bookmarks, Preferences, Typed URLs, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys; Allow fail: Passwords, Autofill Profiles, Autofill
+2025-01-21 11:26:23.975: [INFO][Sync] Loading: Bookmarks
+2025-01-21 11:26:23.975: [INFO][Sync] Loading: Preferences
+2025-01-21 11:26:23.975: [INFO][Sync] Loading: Typed URLs
+2025-01-21 11:26:23.975: [INFO][Sync] Loading: Extensions
+2025-01-21 11:26:23.975: [INFO][Sync] Loading: Sessions
+2025-01-21 11:26:23.975: [INFO][Sync] Loading: Extension settings
+2025-01-21 11:26:23.975: [INFO][Sync] Loading: History Delete Directives
+2025-01-21 11:26:23.975: [INFO][Sync] Loading: Device Info
+2025-01-21 11:26:23.975: [INFO][Sync] Loading: User Consents
+2025-01-21 11:26:23.975: [INFO][Sync] Loading: Send Tab To Self
+2025-01-21 11:26:23.975: [INFO][Sync] Loading: Web Apps
+2025-01-21 11:26:23.975: [INFO][Sync] Loading: History
+2025-01-21 11:26:23.975: [INFO][Sync] Loading: Collection
+2025-01-21 11:26:23.975: [INFO][Sync] Loading: Edge E Drop
+2025-01-21 11:26:23.975: [INFO][Sync] Loading: Edge Hub App Usage
+2025-01-21 11:26:23.976: [INFO][Sync] Loading: Edge Tab Group
+2025-01-21 11:26:23.976: [INFO][Sync] Loading: Edge Wallet
+2025-01-21 11:26:23.977: [INFO][Sync] All data types are ready for configure.
+2025-01-21 11:26:24.527: [INFO][Sync] Started DataTypeManager configuration, reason: 5
+2025-01-21 11:26:24.527: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Typed URLs, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 5, current state: 1
+2025-01-21 11:26:24.528: [INFO][SyncEngineBackend::DoStartConfiguration] Start configuration
+2025-01-21 11:26:24.528: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Bookmarks
+2025-01-21 11:26:24.528: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Preferences
+2025-01-21 11:26:24.528: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Typed URLs
+2025-01-21 11:26:24.528: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Extensions
+2025-01-21 11:26:24.528: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Sessions
+2025-01-21 11:26:24.528: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Extension settings
+2025-01-21 11:26:24.528: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for History Delete Directives
+2025-01-21 11:26:24.528: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Device Info
+2025-01-21 11:26:24.528: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Send Tab To Self
+2025-01-21 11:26:24.528: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Web Apps
+2025-01-21 11:26:24.528: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for History
+2025-01-21 11:26:24.528: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Collection
+2025-01-21 11:26:24.528: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Edge E Drop
+2025-01-21 11:26:24.528: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Edge Hub App Usage
+2025-01-21 11:26:24.528: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Edge Tab Group
+2025-01-21 11:26:24.528: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Edge Wallet
+2025-01-21 11:26:24.528: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 3
+2025-01-21 11:26:24.528: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 11:26:24.528: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 4
+2025-01-21 11:26:24.528: [WARN][Sync]     Reconfigure requested while configuration ongoing.
+2025-01-21 11:26:24.528: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Typed URLs, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 5, current state: 2
+2025-01-21 11:26:24.528: [INFO][Sync] Configure, desired: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Typed URLs, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys; Allow fail: 
+2025-01-21 11:26:24.528: [INFO][Sync] Loading: Passwords
+2025-01-21 11:26:24.528: [INFO][Sync] Loading: Autofill Profiles
+2025-01-21 11:26:24.528: [INFO][Sync] Loading: Autofill
+2025-01-21 11:26:24.530: [INFO][Sync] All data types are ready for configure.
+2025-01-21 11:26:24.530: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Passwords
+2025-01-21 11:26:24.530: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Autofill Profiles
+2025-01-21 11:26:24.530: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Autofill
+2025-01-21 11:26:24.530: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 11:26:24.530: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 11:26:24.530: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 4
+2025-01-21 11:26:24.530: [INFO][Sync] Prepare to configure types: Preferences, Passwords, Device Info, Send Tab To Self, Edge E Drop, Encryption Keys
+2025-01-21 11:26:24.530: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download: Preferences, Passwords, Device Info, Send Tab To Self, Edge E Drop, Encryption Keys with reason: 5
+2025-01-21 11:26:24.530: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Blocked types:  and types to download: Preferences, Passwords, Device Info, Send Tab To Self, Edge E Drop, Encryption Keys
+2025-01-21 11:26:24.963: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: Preferences, Passwords, Device Info, Send Tab To Self, Edge E Drop, Encryption Keys
+2025-01-21 11:26:24.965: [INFO][Sync] ConfigurationDone, failed: , succeeded: Preferences, Passwords, Device Info, Send Tab To Self, Edge E Drop, Encryption Keys, remaining count: 3
+2025-01-21 11:26:24.965: [INFO][Sync] Prepare to configure types: Bookmarks, Encryption Keys
+2025-01-21 11:26:24.965: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download: Bookmarks, Encryption Keys with reason: 5
+2025-01-21 11:26:24.965: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Blocked types:  and types to download: Bookmarks, Encryption Keys
+2025-01-21 11:26:25.169: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: Bookmarks, Encryption Keys
+2025-01-21 11:26:25.170: [INFO][Sync] ConfigurationDone, failed: , succeeded: Bookmarks, Encryption Keys, remaining count: 2
+2025-01-21 11:26:25.170: [INFO][Sync] Prepare to configure types: Autofill Profiles, Autofill, Typed URLs, Extensions, Sessions, Extension settings, History Delete Directives, Web Apps, Collection, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys
+2025-01-21 11:26:25.170: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download: Autofill Profiles, Autofill, Typed URLs, Extensions, Sessions, Extension settings, History Delete Directives, Web Apps, Collection, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys with reason: 5
+2025-01-21 11:26:25.170: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Blocked types:  and types to download: Autofill Profiles, Autofill, Typed URLs, Extensions, Sessions, Extension settings, History Delete Directives, Web Apps, Collection, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys
+2025-01-21 11:26:29.676: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: Autofill Profiles, Autofill, Typed URLs, Extensions, Sessions, Extension settings, History Delete Directives, Web Apps, Collection, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys
+2025-01-21 11:26:29.680: [INFO][Sync] ConfigurationDone, failed: , succeeded: Autofill Profiles, Autofill, Typed URLs, Extensions, Sessions, Extension settings, History Delete Directives, Web Apps, Collection, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, remaining count: 1
+2025-01-21 11:26:29.680: [INFO][Sync] Prepare to configure types: History, Encryption Keys
+2025-01-21 11:26:29.680: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download: History, Encryption Keys with reason: 5
+2025-01-21 11:26:29.680: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Blocked types:  and types to download: History, Encryption Keys
+2025-01-21 11:26:30.029: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: History, Encryption Keys
+2025-01-21 11:26:30.040: [INFO][Sync] ConfigurationDone, failed: , succeeded: History, Encryption Keys, remaining count: 0
+2025-01-21 11:26:30.053: [INFO][Sync]     Configuration completed, state: 7
+2025-01-21 11:26:30.053: [INFO][Sync] Configured DataTypeManager: Ok
+2025-01-21 11:26:30.066: [INFO][SyncEngineBackend::DoStartSyncing] Start syncing
+2025-01-21 11:35:28.117: [INFO][Sync] SyncState after authenticated was: FeatureCanStart
+2025-01-21 11:35:28.777: [INFO][Sync] Try to start sync engine
+2025-01-21 11:35:28.778: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Encryption Keys
+2025-01-21 11:35:28.778: [INFO][SyncEngineBackend::LoadAndConnectNigoriController] Load and connect Nigori controller
+2025-01-21 11:35:28.778: [INFO][SyncEngineBackend::DoInitialize] Control Types added: Encryption Keys
+2025-01-21 11:35:28.778: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download: Encryption Keys with reason: 3
+2025-01-21 11:35:28.778: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Configure job was blocked
+2025-01-21 11:35:28.807: [INFO][SyncAuthManager::SetLastAuthError] Current auth error: None
+2025-01-21 11:35:28.807: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: None for account type: MSA
+2025-01-21 11:35:28.807: [INFO][Sync] Credentials changed for: EdgeSyncScopeNew
+2025-01-21 11:35:29.226: [INFO][SyncAuthManager::SetLastAuthError] Current auth error: None
+2025-01-21 11:35:29.226: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: None for account type: MSA
+2025-01-21 11:35:29.227: [INFO][Sync] Credentials changed for: EdgeSyncKeyDataScope
+2025-01-21 11:35:29.227: [INFO][SyncEngineBackend::DoUpdateKeyDataCredentials] Update key data credentials
+2025-01-21 11:35:29.227: [INFO][SyncEngineBackend::DoUpdateCredentials] Update credentials
+2025-01-21 11:35:29.227: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Blocked types:  and types to download: Encryption Keys
+2025-01-21 11:35:29.448: [INFO][Sync] Started DataTypeManager configuration, reason: 4
+2025-01-21 11:35:29.449: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 4, current state: 0
+2025-01-21 11:35:29.461: [INFO][Sync] Configure, desired: Bookmarks, Preferences, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys; Allow fail: Passwords, Autofill Profiles, Autofill
+2025-01-21 11:35:29.461: [INFO][Sync] Loading: Bookmarks
+2025-01-21 11:35:29.461: [INFO][Sync] Loading: Preferences
+2025-01-21 11:35:29.461: [INFO][Sync] Loading: Extensions
+2025-01-21 11:35:29.461: [INFO][Sync] Loading: Sessions
+2025-01-21 11:35:29.461: [INFO][Sync] Loading: Extension settings
+2025-01-21 11:35:29.461: [INFO][Sync] Loading: History Delete Directives
+2025-01-21 11:35:29.461: [INFO][Sync] Loading: Device Info
+2025-01-21 11:35:29.461: [INFO][Sync] Loading: User Consents
+2025-01-21 11:35:29.461: [INFO][Sync] Loading: Send Tab To Self
+2025-01-21 11:35:29.461: [INFO][Sync] Loading: Web Apps
+2025-01-21 11:35:29.461: [INFO][Sync] Loading: History
+2025-01-21 11:35:29.461: [INFO][Sync] Loading: Collection
+2025-01-21 11:35:29.461: [INFO][Sync] Loading: Edge E Drop
+2025-01-21 11:35:29.461: [INFO][Sync] Loading: Edge Hub App Usage
+2025-01-21 11:35:29.461: [INFO][Sync] Loading: Edge Tab Group
+2025-01-21 11:35:29.461: [INFO][Sync] Loading: Edge Wallet
+2025-01-21 11:35:29.479: [INFO][Sync] All data types are ready for configure.
+2025-01-21 11:35:30.080: [INFO][SyncEngineBackend::DoStartConfiguration] Start configuration
+2025-01-21 11:35:30.080: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 4
+2025-01-21 11:35:30.080: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 11:35:30.090: [INFO][Sync] Started DataTypeManager configuration, reason: 5
+2025-01-21 11:35:30.090: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 5, current state: 1
+2025-01-21 11:35:30.104: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 4
+2025-01-21 11:35:30.104: [WARN][Sync]     Reconfigure requested while configuration ongoing.
+2025-01-21 11:35:30.104: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 5, current state: 2
+2025-01-21 11:35:30.104: [INFO][Sync] Configure, desired: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys; Allow fail: 
+2025-01-21 11:35:30.104: [INFO][Sync] Loading: Passwords
+2025-01-21 11:35:30.104: [INFO][Sync] Loading: Autofill Profiles
+2025-01-21 11:35:30.104: [INFO][Sync] Loading: Autofill
+2025-01-21 11:35:30.104: [INFO][Sync] All data types are ready for configure.
+2025-01-21 11:35:30.104: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Passwords
+2025-01-21 11:35:30.104: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 11:35:30.104: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 11:35:30.107: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 4
+2025-01-21 11:35:30.107: [INFO][Sync] Prepare to configure types: Passwords, Encryption Keys
+2025-01-21 11:35:30.107: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download: Passwords, Encryption Keys with reason: 5
+2025-01-21 11:35:30.107: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Blocked types:  and types to download: Passwords, Encryption Keys
+2025-01-21 11:35:30.358: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: Passwords, Encryption Keys
+2025-01-21 11:35:30.370: [INFO][Sync] ConfigurationDone, failed: , succeeded: Passwords, Encryption Keys, remaining count: 3
+2025-01-21 11:35:30.370: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 11:35:30.370: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 11:35:30.370: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 2
+2025-01-21 11:35:30.370: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 11:35:30.370: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 11:35:30.372: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 1
+2025-01-21 11:35:30.383: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 11:35:30.383: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 11:35:30.383: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 0
+2025-01-21 11:35:30.394: [INFO][Sync]     Configuration completed, state: 7
+2025-01-21 11:35:30.394: [INFO][Sync] Configured DataTypeManager: Ok
+2025-01-21 11:35:30.404: [INFO][SyncEngineBackend::DoStartSyncing] Start syncing
+2025-01-21 11:38:10.149: [INFO][Sync] SyncState after authenticated was: FeatureCanStart
+2025-01-21 11:38:10.752: [INFO][Sync] Try to start sync engine
+2025-01-21 11:38:10.753: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Encryption Keys
+2025-01-21 11:38:10.753: [INFO][SyncEngineBackend::LoadAndConnectNigoriController] Load and connect Nigori controller
+2025-01-21 11:38:10.753: [INFO][SyncEngineBackend::DoInitialize] Control Types added: Encryption Keys
+2025-01-21 11:38:10.753: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download: Encryption Keys with reason: 3
+2025-01-21 11:38:10.753: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Configure job was blocked
+2025-01-21 11:38:10.777: [INFO][SyncAuthManager::SetLastAuthError] Current auth error: None
+2025-01-21 11:38:10.777: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: None for account type: MSA
+2025-01-21 11:38:10.777: [INFO][Sync] Credentials changed for: EdgeSyncScopeNew
+2025-01-21 11:38:11.231: [INFO][SyncAuthManager::SetLastAuthError] Current auth error: None
+2025-01-21 11:38:11.231: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: None for account type: MSA
+2025-01-21 11:38:11.231: [INFO][Sync] Credentials changed for: EdgeSyncKeyDataScope
+2025-01-21 11:38:11.231: [INFO][SyncEngineBackend::DoUpdateKeyDataCredentials] Update key data credentials
+2025-01-21 11:38:11.231: [INFO][SyncEngineBackend::DoUpdateCredentials] Update credentials
+2025-01-21 11:38:11.231: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Blocked types:  and types to download: Encryption Keys
+2025-01-21 11:38:11.692: [INFO][Sync] Started DataTypeManager configuration, reason: 4
+2025-01-21 11:38:11.692: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 4, current state: 0
+2025-01-21 11:38:11.700: [INFO][Sync] Configure, desired: Bookmarks, Preferences, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys; Allow fail: Passwords, Autofill Profiles, Autofill
+2025-01-21 11:38:11.700: [INFO][Sync] Loading: Bookmarks
+2025-01-21 11:38:11.700: [INFO][Sync] Loading: Preferences
+2025-01-21 11:38:11.700: [INFO][Sync] Loading: Extensions
+2025-01-21 11:38:11.700: [INFO][Sync] Loading: Sessions
+2025-01-21 11:38:11.700: [INFO][Sync] Loading: Extension settings
+2025-01-21 11:38:11.701: [INFO][Sync] Loading: History Delete Directives
+2025-01-21 11:38:11.701: [INFO][Sync] Loading: Device Info
+2025-01-21 11:38:11.701: [INFO][Sync] Loading: User Consents
+2025-01-21 11:38:11.701: [INFO][Sync] Loading: Send Tab To Self
+2025-01-21 11:38:11.701: [INFO][Sync] Loading: Web Apps
+2025-01-21 11:38:11.701: [INFO][Sync] Loading: History
+2025-01-21 11:38:11.701: [INFO][Sync] Loading: Collection
+2025-01-21 11:38:11.701: [INFO][Sync] Loading: Edge E Drop
+2025-01-21 11:38:11.701: [INFO][Sync] Loading: Edge Hub App Usage
+2025-01-21 11:38:11.701: [INFO][Sync] Loading: Edge Tab Group
+2025-01-21 11:38:11.701: [INFO][Sync] Loading: Edge Wallet
+2025-01-21 11:38:11.714: [INFO][Sync] All data types are ready for configure.
+2025-01-21 11:38:11.991: [INFO][SyncEngineBackend::DoStartConfiguration] Start configuration
+2025-01-21 11:38:11.991: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 4
+2025-01-21 11:38:11.991: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 11:38:12.001: [INFO][Sync] Started DataTypeManager configuration, reason: 5
+2025-01-21 11:38:12.001: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 5, current state: 1
+2025-01-21 11:38:12.013: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 4
+2025-01-21 11:38:12.013: [WARN][Sync]     Reconfigure requested while configuration ongoing.
+2025-01-21 11:38:12.013: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 5, current state: 2
+2025-01-21 11:38:12.014: [INFO][Sync] Configure, desired: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys; Allow fail: 
+2025-01-21 11:38:12.014: [INFO][Sync] Loading: Passwords
+2025-01-21 11:38:12.014: [INFO][Sync] Loading: Autofill Profiles
+2025-01-21 11:38:12.014: [INFO][Sync] Loading: Autofill
+2025-01-21 11:38:12.014: [INFO][Sync] All data types are ready for configure.
+2025-01-21 11:38:12.014: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Passwords
+2025-01-21 11:38:12.014: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 11:38:12.014: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 11:38:12.016: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 4
+2025-01-21 11:38:12.016: [INFO][Sync] Prepare to configure types: Passwords, Encryption Keys
+2025-01-21 11:38:12.016: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download: Passwords, Encryption Keys with reason: 5
+2025-01-21 11:38:12.016: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Blocked types:  and types to download: Passwords, Encryption Keys
+2025-01-21 11:38:12.255: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: Passwords, Encryption Keys
+2025-01-21 11:38:12.266: [INFO][Sync] ConfigurationDone, failed: , succeeded: Passwords, Encryption Keys, remaining count: 3
+2025-01-21 11:38:12.266: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 11:38:12.266: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 11:38:12.266: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 2
+2025-01-21 11:38:12.266: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 11:38:12.266: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 11:38:12.268: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 1
+2025-01-21 11:38:12.280: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 11:38:12.280: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 11:38:12.280: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 0
+2025-01-21 11:38:12.291: [INFO][Sync]     Configuration completed, state: 7
+2025-01-21 11:38:12.291: [INFO][Sync] Configured DataTypeManager: Ok
+2025-01-21 11:38:12.303: [INFO][SyncEngineBackend::DoStartSyncing] Start syncing
+2025-01-21 11:42:53.999: [INFO][Sync] SyncState after authenticated was: FeatureCanStart
+2025-01-21 11:42:54.546: [INFO][Sync] Try to start sync engine
+2025-01-21 11:42:54.547: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Encryption Keys
+2025-01-21 11:42:54.547: [INFO][SyncEngineBackend::LoadAndConnectNigoriController] Load and connect Nigori controller
+2025-01-21 11:42:54.547: [INFO][SyncEngineBackend::DoInitialize] Control Types added: Encryption Keys
+2025-01-21 11:42:54.547: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download: Encryption Keys with reason: 3
+2025-01-21 11:42:54.547: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Configure job was blocked
+2025-01-21 11:42:54.572: [INFO][SyncAuthManager::SetLastAuthError] Current auth error: None
+2025-01-21 11:42:54.572: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: None for account type: MSA
+2025-01-21 11:42:54.572: [INFO][Sync] Credentials changed for: EdgeSyncScopeNew
+2025-01-21 11:42:55.374: [INFO][SyncAuthManager::SetLastAuthError] Current auth error: None
+2025-01-21 11:42:55.374: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: None for account type: MSA
+2025-01-21 11:42:55.374: [INFO][Sync] Credentials changed for: EdgeSyncKeyDataScope
+2025-01-21 11:42:55.374: [INFO][SyncEngineBackend::DoUpdateKeyDataCredentials] Update key data credentials
+2025-01-21 11:42:55.374: [INFO][SyncEngineBackend::DoUpdateCredentials] Update credentials
+2025-01-21 11:42:55.374: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Blocked types:  and types to download: Encryption Keys
+2025-01-21 11:42:55.604: [INFO][Sync] Started DataTypeManager configuration, reason: 4
+2025-01-21 11:42:55.604: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 4, current state: 0
+2025-01-21 11:42:55.616: [INFO][Sync] Configure, desired: Bookmarks, Preferences, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys; Allow fail: Passwords, Autofill Profiles, Autofill
+2025-01-21 11:42:55.616: [INFO][Sync] Loading: Bookmarks
+2025-01-21 11:42:55.616: [INFO][Sync] Loading: Preferences
+2025-01-21 11:42:55.616: [INFO][Sync] Loading: Extensions
+2025-01-21 11:42:55.616: [INFO][Sync] Loading: Sessions
+2025-01-21 11:42:55.616: [INFO][Sync] Loading: Extension settings
+2025-01-21 11:42:55.616: [INFO][Sync] Loading: History Delete Directives
+2025-01-21 11:42:55.616: [INFO][Sync] Loading: Device Info
+2025-01-21 11:42:55.616: [INFO][Sync] Loading: User Consents
+2025-01-21 11:42:55.616: [INFO][Sync] Loading: Send Tab To Self
+2025-01-21 11:42:55.616: [INFO][Sync] Loading: Web Apps
+2025-01-21 11:42:55.616: [INFO][Sync] Loading: History
+2025-01-21 11:42:55.616: [INFO][Sync] Loading: Collection
+2025-01-21 11:42:55.616: [INFO][Sync] Loading: Edge E Drop
+2025-01-21 11:42:55.616: [INFO][Sync] Loading: Edge Hub App Usage
+2025-01-21 11:42:55.616: [INFO][Sync] Loading: Edge Tab Group
+2025-01-21 11:42:55.616: [INFO][Sync] Loading: Edge Wallet
+2025-01-21 11:42:55.631: [INFO][Sync] All data types are ready for configure.
+2025-01-21 11:42:56.148: [INFO][SyncEngineBackend::DoStartConfiguration] Start configuration
+2025-01-21 11:42:56.148: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 4
+2025-01-21 11:42:56.148: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 11:42:56.158: [INFO][Sync] Started DataTypeManager configuration, reason: 5
+2025-01-21 11:42:56.158: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 5, current state: 1
+2025-01-21 11:42:56.169: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 4
+2025-01-21 11:42:56.169: [WARN][Sync]     Reconfigure requested while configuration ongoing.
+2025-01-21 11:42:56.169: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 5, current state: 2
+2025-01-21 11:42:56.169: [INFO][Sync] Configure, desired: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys; Allow fail: 
+2025-01-21 11:42:56.169: [INFO][Sync] Loading: Passwords
+2025-01-21 11:42:56.169: [INFO][Sync] Loading: Autofill Profiles
+2025-01-21 11:42:56.169: [INFO][Sync] Loading: Autofill
+2025-01-21 11:42:56.169: [INFO][Sync] All data types are ready for configure.
+2025-01-21 11:42:56.169: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Passwords
+2025-01-21 11:42:56.169: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 11:42:56.169: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 11:42:56.171: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 4
+2025-01-21 11:42:56.171: [INFO][Sync] Prepare to configure types: Passwords, Encryption Keys
+2025-01-21 11:42:56.172: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download: Passwords, Encryption Keys with reason: 5
+2025-01-21 11:42:56.172: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Blocked types:  and types to download: Passwords, Encryption Keys
+2025-01-21 11:42:56.444: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: Passwords, Encryption Keys
+2025-01-21 11:42:56.456: [INFO][Sync] ConfigurationDone, failed: , succeeded: Passwords, Encryption Keys, remaining count: 3
+2025-01-21 11:42:56.456: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 11:42:56.456: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 11:42:56.456: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 2
+2025-01-21 11:42:56.456: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 11:42:56.456: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 11:42:56.458: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 1
+2025-01-21 11:42:56.470: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 11:42:56.470: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 11:42:56.471: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 0
+2025-01-21 11:42:56.485: [INFO][Sync]     Configuration completed, state: 7
+2025-01-21 11:42:56.485: [INFO][Sync] Configured DataTypeManager: Ok
+2025-01-21 11:42:56.496: [INFO][SyncEngineBackend::DoStartSyncing] Start syncing
+2025-01-21 11:52:52.141: [INFO][Sync] SyncState after authenticated was: FeatureCanStart
+2025-01-21 11:52:52.769: [INFO][Sync] Try to start sync engine
+2025-01-21 11:52:52.770: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Encryption Keys
+2025-01-21 11:52:52.770: [INFO][SyncEngineBackend::LoadAndConnectNigoriController] Load and connect Nigori controller
+2025-01-21 11:52:52.770: [INFO][SyncEngineBackend::DoInitialize] Control Types added: Encryption Keys
+2025-01-21 11:52:52.770: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download: Encryption Keys with reason: 3
+2025-01-21 11:52:52.770: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Configure job was blocked
+2025-01-21 11:52:52.805: [INFO][SyncAuthManager::SetLastAuthError] Current auth error: None
+2025-01-21 11:52:52.805: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: None for account type: MSA
+2025-01-21 11:52:52.805: [INFO][Sync] Credentials changed for: EdgeSyncScopeNew
+2025-01-21 11:52:53.068: [INFO][SyncAuthManager::SetLastAuthError] Current auth error: None
+2025-01-21 11:52:53.068: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: None for account type: MSA
+2025-01-21 11:52:53.068: [INFO][Sync] Credentials changed for: EdgeSyncKeyDataScope
+2025-01-21 11:52:53.068: [INFO][SyncEngineBackend::DoUpdateKeyDataCredentials] Update key data credentials
+2025-01-21 11:52:53.068: [INFO][SyncEngineBackend::DoUpdateCredentials] Update credentials
+2025-01-21 11:52:53.068: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Blocked types:  and types to download: Encryption Keys
+2025-01-21 11:52:53.608: [INFO][Sync] Started DataTypeManager configuration, reason: 4
+2025-01-21 11:52:53.608: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 4, current state: 0
+2025-01-21 11:52:53.617: [INFO][Sync] Configure, desired: Bookmarks, Preferences, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys; Allow fail: Passwords, Autofill Profiles, Autofill
+2025-01-21 11:52:53.617: [INFO][Sync] Loading: Bookmarks
+2025-01-21 11:52:53.617: [INFO][Sync] Loading: Preferences
+2025-01-21 11:52:53.617: [INFO][Sync] Loading: Extensions
+2025-01-21 11:52:53.617: [INFO][Sync] Loading: Sessions
+2025-01-21 11:52:53.617: [INFO][Sync] Loading: Extension settings
+2025-01-21 11:52:53.617: [INFO][Sync] Loading: History Delete Directives
+2025-01-21 11:52:53.617: [INFO][Sync] Loading: Device Info
+2025-01-21 11:52:53.617: [INFO][Sync] Loading: User Consents
+2025-01-21 11:52:53.617: [INFO][Sync] Loading: Send Tab To Self
+2025-01-21 11:52:53.617: [INFO][Sync] Loading: Web Apps
+2025-01-21 11:52:53.617: [INFO][Sync] Loading: History
+2025-01-21 11:52:53.617: [INFO][Sync] Loading: Collection
+2025-01-21 11:52:53.617: [INFO][Sync] Loading: Edge E Drop
+2025-01-21 11:52:53.617: [INFO][Sync] Loading: Edge Hub App Usage
+2025-01-21 11:52:53.617: [INFO][Sync] Loading: Edge Tab Group
+2025-01-21 11:52:53.617: [INFO][Sync] Loading: Edge Wallet
+2025-01-21 11:52:53.631: [INFO][Sync] All data types are ready for configure.
+2025-01-21 11:52:53.959: [INFO][SyncEngineBackend::DoStartConfiguration] Start configuration
+2025-01-21 11:52:53.959: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 4
+2025-01-21 11:52:53.959: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 11:52:53.974: [INFO][Sync] Started DataTypeManager configuration, reason: 5
+2025-01-21 11:52:53.974: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 5, current state: 1
+2025-01-21 11:52:53.983: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 4
+2025-01-21 11:52:53.983: [WARN][Sync]     Reconfigure requested while configuration ongoing.
+2025-01-21 11:52:53.983: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 5, current state: 2
+2025-01-21 11:52:53.983: [INFO][Sync] Configure, desired: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys; Allow fail: 
+2025-01-21 11:52:53.983: [INFO][Sync] Loading: Passwords
+2025-01-21 11:52:53.983: [INFO][Sync] Loading: Autofill Profiles
+2025-01-21 11:52:53.983: [INFO][Sync] Loading: Autofill
+2025-01-21 11:52:53.983: [INFO][Sync] All data types are ready for configure.
+2025-01-21 11:52:53.983: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Passwords
+2025-01-21 11:52:53.983: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 11:52:53.983: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 11:52:53.986: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 4
+2025-01-21 11:52:53.986: [INFO][Sync] Prepare to configure types: Passwords, Encryption Keys
+2025-01-21 11:52:53.986: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download: Passwords, Encryption Keys with reason: 5
+2025-01-21 11:52:53.986: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Blocked types:  and types to download: Passwords, Encryption Keys
+2025-01-21 11:52:54.241: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: Passwords, Encryption Keys
+2025-01-21 11:52:54.267: [INFO][Sync] ConfigurationDone, failed: , succeeded: Passwords, Encryption Keys, remaining count: 3
+2025-01-21 11:52:54.268: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 11:52:54.268: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 11:52:54.268: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 2
+2025-01-21 11:52:54.268: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 11:52:54.268: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 11:52:54.269: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 1
+2025-01-21 11:52:54.291: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 11:52:54.291: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 11:52:54.292: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 0
+2025-01-21 11:52:54.315: [INFO][Sync]     Configuration completed, state: 7
+2025-01-21 11:52:54.315: [INFO][Sync] Configured DataTypeManager: Ok
+2025-01-21 11:52:54.342: [INFO][SyncEngineBackend::DoStartSyncing] Start syncing
+2025-01-21 11:54:51.196: [INFO][Sync] Reset engine, reason: 0
+2025-01-21 11:54:51.196: [INFO][Sync] Reset engine with reason: 0
+2025-01-21 11:55:24.772: [INFO][Sync] SyncState after authenticated was: FeatureCanStart
+2025-01-21 11:55:25.462: [INFO][Sync] Try to start sync engine
+2025-01-21 11:55:25.462: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Encryption Keys
+2025-01-21 11:55:25.463: [INFO][SyncEngineBackend::LoadAndConnectNigoriController] Load and connect Nigori controller
+2025-01-21 11:55:25.463: [INFO][SyncEngineBackend::DoInitialize] Control Types added: Encryption Keys
+2025-01-21 11:55:25.463: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download: Encryption Keys with reason: 3
+2025-01-21 11:55:25.463: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Configure job was blocked
+2025-01-21 11:55:25.483: [INFO][SyncAuthManager::SetLastAuthError] Current auth error: None
+2025-01-21 11:55:25.483: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: None for account type: MSA
+2025-01-21 11:55:25.484: [INFO][Sync] Credentials changed for: EdgeSyncScopeNew
+2025-01-21 11:55:25.674: [INFO][SyncAuthManager::SetLastAuthError] Current auth error: None
+2025-01-21 11:55:25.674: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: None for account type: MSA
+2025-01-21 11:55:25.674: [INFO][Sync] Credentials changed for: EdgeSyncKeyDataScope
+2025-01-21 11:55:25.674: [INFO][SyncEngineBackend::DoUpdateKeyDataCredentials] Update key data credentials
+2025-01-21 11:55:25.674: [INFO][SyncEngineBackend::DoUpdateCredentials] Update credentials
+2025-01-21 11:55:25.674: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Blocked types:  and types to download: Encryption Keys
+2025-01-21 11:55:25.911: [INFO][Sync] Started DataTypeManager configuration, reason: 4
+2025-01-21 11:55:25.911: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 4, current state: 0
+2025-01-21 11:55:25.921: [INFO][Sync] Configure, desired: Bookmarks, Preferences, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys; Allow fail: Passwords, Autofill Profiles, Autofill
+2025-01-21 11:55:25.921: [INFO][Sync] Loading: Bookmarks
+2025-01-21 11:55:25.921: [INFO][Sync] Loading: Preferences
+2025-01-21 11:55:25.921: [INFO][Sync] Loading: Extensions
+2025-01-21 11:55:25.922: [INFO][Sync] Loading: Sessions
+2025-01-21 11:55:25.922: [INFO][Sync] Loading: Extension settings
+2025-01-21 11:55:25.922: [INFO][Sync] Loading: History Delete Directives
+2025-01-21 11:55:25.922: [INFO][Sync] Loading: Device Info
+2025-01-21 11:55:25.922: [INFO][Sync] Loading: User Consents
+2025-01-21 11:55:25.922: [INFO][Sync] Loading: Send Tab To Self
+2025-01-21 11:55:25.922: [INFO][Sync] Loading: Web Apps
+2025-01-21 11:55:25.922: [INFO][Sync] Loading: History
+2025-01-21 11:55:25.922: [INFO][Sync] Loading: Collection
+2025-01-21 11:55:25.922: [INFO][Sync] Loading: Edge E Drop
+2025-01-21 11:55:25.922: [INFO][Sync] Loading: Edge Hub App Usage
+2025-01-21 11:55:25.922: [INFO][Sync] Loading: Edge Tab Group
+2025-01-21 11:55:25.922: [INFO][Sync] Loading: Edge Wallet
+2025-01-21 11:55:25.936: [INFO][Sync] All data types are ready for configure.
+2025-01-21 11:55:26.454: [INFO][SyncEngineBackend::DoStartConfiguration] Start configuration
+2025-01-21 11:55:26.455: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 4
+2025-01-21 11:55:26.455: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 11:55:26.470: [INFO][Sync] Started DataTypeManager configuration, reason: 5
+2025-01-21 11:55:26.470: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 5, current state: 1
+2025-01-21 11:55:26.484: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 4
+2025-01-21 11:55:26.484: [WARN][Sync]     Reconfigure requested while configuration ongoing.
+2025-01-21 11:55:26.484: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 5, current state: 2
+2025-01-21 11:55:26.484: [INFO][Sync] Configure, desired: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys; Allow fail: 
+2025-01-21 11:55:26.484: [INFO][Sync] Loading: Passwords
+2025-01-21 11:55:26.484: [INFO][Sync] Loading: Autofill Profiles
+2025-01-21 11:55:26.484: [INFO][Sync] Loading: Autofill
+2025-01-21 11:55:26.484: [INFO][Sync] All data types are ready for configure.
+2025-01-21 11:55:26.484: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Passwords
+2025-01-21 11:55:26.484: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 11:55:26.484: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 11:55:26.485: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 4
+2025-01-21 11:55:26.485: [INFO][Sync] Prepare to configure types: Passwords, Encryption Keys
+2025-01-21 11:55:26.485: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download: Passwords, Encryption Keys with reason: 5
+2025-01-21 11:55:26.485: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Blocked types:  and types to download: Passwords, Encryption Keys
+2025-01-21 11:55:26.747: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: Passwords, Encryption Keys
+2025-01-21 11:55:26.761: [INFO][Sync] ConfigurationDone, failed: , succeeded: Passwords, Encryption Keys, remaining count: 3
+2025-01-21 11:55:26.761: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 11:55:26.761: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 11:55:26.761: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 2
+2025-01-21 11:55:26.761: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 11:55:26.761: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 11:55:26.763: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 1
+2025-01-21 11:55:26.777: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 11:55:26.777: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 11:55:26.777: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 0
+2025-01-21 11:55:26.788: [INFO][Sync]     Configuration completed, state: 7
+2025-01-21 11:55:26.788: [INFO][Sync] Configured DataTypeManager: Ok
+2025-01-21 11:55:26.797: [INFO][SyncEngineBackend::DoStartSyncing] Start syncing
+2025-01-21 11:58:49.586: [INFO][Sync] SyncState after authenticated was: FeatureCanStart
+2025-01-21 11:58:50.118: [INFO][Sync] Try to start sync engine
+2025-01-21 11:58:50.118: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Encryption Keys
+2025-01-21 11:58:50.118: [INFO][SyncEngineBackend::LoadAndConnectNigoriController] Load and connect Nigori controller
+2025-01-21 11:58:50.118: [INFO][SyncEngineBackend::DoInitialize] Control Types added: Encryption Keys
+2025-01-21 11:58:50.118: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download: Encryption Keys with reason: 3
+2025-01-21 11:58:50.118: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Configure job was blocked
+2025-01-21 11:58:50.139: [INFO][SyncAuthManager::SetLastAuthError] Current auth error: None
+2025-01-21 11:58:50.139: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: None for account type: MSA
+2025-01-21 11:58:50.139: [INFO][Sync] Credentials changed for: EdgeSyncScopeNew
+2025-01-21 11:58:50.509: [INFO][SyncAuthManager::SetLastAuthError] Current auth error: None
+2025-01-21 11:58:50.509: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: None for account type: MSA
+2025-01-21 11:58:50.509: [INFO][Sync] Credentials changed for: EdgeSyncKeyDataScope
+2025-01-21 11:58:50.509: [INFO][SyncEngineBackend::DoUpdateKeyDataCredentials] Update key data credentials
+2025-01-21 11:58:50.509: [INFO][SyncEngineBackend::DoUpdateCredentials] Update credentials
+2025-01-21 11:58:50.509: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Blocked types:  and types to download: Encryption Keys
+2025-01-21 11:58:50.741: [INFO][Sync] Started DataTypeManager configuration, reason: 4
+2025-01-21 11:58:50.741: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 4, current state: 0
+2025-01-21 11:58:50.753: [INFO][Sync] Configure, desired: Bookmarks, Preferences, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys; Allow fail: Passwords, Autofill Profiles, Autofill
+2025-01-21 11:58:50.753: [INFO][Sync] Loading: Bookmarks
+2025-01-21 11:58:50.753: [INFO][Sync] Loading: Preferences
+2025-01-21 11:58:50.753: [INFO][Sync] Loading: Extensions
+2025-01-21 11:58:50.753: [INFO][Sync] Loading: Sessions
+2025-01-21 11:58:50.753: [INFO][Sync] Loading: Extension settings
+2025-01-21 11:58:50.753: [INFO][Sync] Loading: History Delete Directives
+2025-01-21 11:58:50.753: [INFO][Sync] Loading: Device Info
+2025-01-21 11:58:50.754: [INFO][Sync] Loading: User Consents
+2025-01-21 11:58:50.754: [INFO][Sync] Loading: Send Tab To Self
+2025-01-21 11:58:50.754: [INFO][Sync] Loading: Web Apps
+2025-01-21 11:58:50.754: [INFO][Sync] Loading: History
+2025-01-21 11:58:50.754: [INFO][Sync] Loading: Collection
+2025-01-21 11:58:50.754: [INFO][Sync] Loading: Edge E Drop
+2025-01-21 11:58:50.754: [INFO][Sync] Loading: Edge Hub App Usage
+2025-01-21 11:58:50.754: [INFO][Sync] Loading: Edge Tab Group
+2025-01-21 11:58:50.754: [INFO][Sync] Loading: Edge Wallet
+2025-01-21 11:58:50.769: [INFO][Sync] All data types are ready for configure.
+2025-01-21 11:58:51.039: [INFO][SyncEngineBackend::DoStartConfiguration] Start configuration
+2025-01-21 11:58:51.039: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 4
+2025-01-21 11:58:51.039: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 11:58:51.048: [INFO][Sync] Started DataTypeManager configuration, reason: 5
+2025-01-21 11:58:51.048: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 5, current state: 1
+2025-01-21 11:58:51.061: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 4
+2025-01-21 11:58:51.061: [WARN][Sync]     Reconfigure requested while configuration ongoing.
+2025-01-21 11:58:51.061: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 5, current state: 2
+2025-01-21 11:58:51.061: [INFO][Sync] Configure, desired: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys; Allow fail: 
+2025-01-21 11:58:51.061: [INFO][Sync] Loading: Passwords
+2025-01-21 11:58:51.061: [INFO][Sync] Loading: Autofill Profiles
+2025-01-21 11:58:51.061: [INFO][Sync] Loading: Autofill
+2025-01-21 11:58:51.061: [INFO][Sync] All data types are ready for configure.
+2025-01-21 11:58:51.061: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Passwords
+2025-01-21 11:58:51.061: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 11:58:51.061: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 11:58:51.063: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 4
+2025-01-21 11:58:51.063: [INFO][Sync] Prepare to configure types: Passwords, Encryption Keys
+2025-01-21 11:58:51.063: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download: Passwords, Encryption Keys with reason: 5
+2025-01-21 11:58:51.063: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Blocked types:  and types to download: Passwords, Encryption Keys
+2025-01-21 11:58:51.476: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: Passwords, Encryption Keys
+2025-01-21 11:58:51.489: [INFO][Sync] ConfigurationDone, failed: , succeeded: Passwords, Encryption Keys, remaining count: 3
+2025-01-21 11:58:51.489: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 11:58:51.489: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 11:58:51.489: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 2
+2025-01-21 11:58:51.489: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 11:58:51.489: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 11:58:51.489: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 1
+2025-01-21 11:58:51.502: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 11:58:51.502: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 11:58:51.505: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 0
+2025-01-21 11:58:51.517: [INFO][Sync]     Configuration completed, state: 7
+2025-01-21 11:58:51.518: [INFO][Sync] Configured DataTypeManager: Ok
+2025-01-21 11:58:51.529: [INFO][SyncEngineBackend::DoStartSyncing] Start syncing
+2025-01-21 13:40:58.534: [INFO][Sync] SyncState after authenticated was: FeatureCanStart
+2025-01-21 13:40:59.229: [INFO][Sync] Try to start sync engine
+2025-01-21 13:40:59.229: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Encryption Keys
+2025-01-21 13:40:59.229: [INFO][SyncEngineBackend::LoadAndConnectNigoriController] Load and connect Nigori controller
+2025-01-21 13:40:59.229: [INFO][SyncEngineBackend::DoInitialize] Control Types added: Encryption Keys
+2025-01-21 13:40:59.229: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download: Encryption Keys with reason: 3
+2025-01-21 13:40:59.229: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Configure job was blocked
+2025-01-21 13:40:59.250: [INFO][SyncAuthManager::SetLastAuthError] Current auth error: None
+2025-01-21 13:40:59.250: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: None for account type: MSA
+2025-01-21 13:40:59.250: [INFO][Sync] Credentials changed for: EdgeSyncScopeNew
+2025-01-21 13:40:59.774: [INFO][SyncAuthManager::SetLastAuthError] Current auth error: None
+2025-01-21 13:40:59.774: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: None for account type: MSA
+2025-01-21 13:40:59.774: [INFO][Sync] Credentials changed for: EdgeSyncKeyDataScope
+2025-01-21 13:40:59.774: [INFO][SyncEngineBackend::DoUpdateKeyDataCredentials] Update key data credentials
+2025-01-21 13:40:59.774: [INFO][SyncEngineBackend::DoUpdateCredentials] Update credentials
+2025-01-21 13:40:59.774: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Blocked types:  and types to download: Encryption Keys
+2025-01-21 13:41:00.218: [INFO][Sync] Started DataTypeManager configuration, reason: 4
+2025-01-21 13:41:00.218: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 4, current state: 0
+2025-01-21 13:41:00.230: [INFO][Sync] Configure, desired: Bookmarks, Preferences, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys; Allow fail: Passwords, Autofill Profiles, Autofill
+2025-01-21 13:41:00.230: [INFO][Sync] Loading: Bookmarks
+2025-01-21 13:41:00.230: [INFO][Sync] Loading: Preferences
+2025-01-21 13:41:00.230: [INFO][Sync] Loading: Extensions
+2025-01-21 13:41:00.230: [INFO][Sync] Loading: Sessions
+2025-01-21 13:41:00.230: [INFO][Sync] Loading: Extension settings
+2025-01-21 13:41:00.230: [INFO][Sync] Loading: History Delete Directives
+2025-01-21 13:41:00.230: [INFO][Sync] Loading: Device Info
+2025-01-21 13:41:00.230: [INFO][Sync] Loading: User Consents
+2025-01-21 13:41:00.230: [INFO][Sync] Loading: Send Tab To Self
+2025-01-21 13:41:00.230: [INFO][Sync] Loading: Web Apps
+2025-01-21 13:41:00.230: [INFO][Sync] Loading: History
+2025-01-21 13:41:00.230: [INFO][Sync] Loading: Collection
+2025-01-21 13:41:00.230: [INFO][Sync] Loading: Edge E Drop
+2025-01-21 13:41:00.230: [INFO][Sync] Loading: Edge Hub App Usage
+2025-01-21 13:41:00.231: [INFO][Sync] Loading: Edge Tab Group
+2025-01-21 13:41:00.231: [INFO][Sync] Loading: Edge Wallet
+2025-01-21 13:41:00.244: [INFO][Sync] All data types are ready for configure.
+2025-01-21 13:41:01.490: [INFO][SyncEngineBackend::DoStartConfiguration] Start configuration
+2025-01-21 13:41:01.490: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 4
+2025-01-21 13:41:01.490: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 13:41:01.497: [INFO][Sync] Started DataTypeManager configuration, reason: 5
+2025-01-21 13:41:01.497: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 5, current state: 1
+2025-01-21 13:41:01.505: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 4
+2025-01-21 13:41:01.505: [WARN][Sync]     Reconfigure requested while configuration ongoing.
+2025-01-21 13:41:01.505: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 5, current state: 2
+2025-01-21 13:41:01.505: [INFO][Sync] Configure, desired: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys; Allow fail: 
+2025-01-21 13:41:01.505: [INFO][Sync] Loading: Passwords
+2025-01-21 13:41:01.505: [INFO][Sync] Loading: Autofill Profiles
+2025-01-21 13:41:01.505: [INFO][Sync] Loading: Autofill
+2025-01-21 13:41:01.505: [INFO][Sync] All data types are ready for configure.
+2025-01-21 13:41:01.505: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Passwords
+2025-01-21 13:41:01.505: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 13:41:01.505: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 13:41:01.507: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 4
+2025-01-21 13:41:01.507: [INFO][Sync] Prepare to configure types: Passwords, Encryption Keys
+2025-01-21 13:41:01.507: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download: Passwords, Encryption Keys with reason: 5
+2025-01-21 13:41:01.507: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Blocked types:  and types to download: Passwords, Encryption Keys
+2025-01-21 13:41:01.766: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: Passwords, Encryption Keys
+2025-01-21 13:41:01.777: [INFO][Sync] ConfigurationDone, failed: , succeeded: Passwords, Encryption Keys, remaining count: 3
+2025-01-21 13:41:01.777: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 13:41:01.777: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 13:41:01.777: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 2
+2025-01-21 13:41:01.777: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 13:41:01.777: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 13:41:01.779: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 1
+2025-01-21 13:41:01.792: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 13:41:01.792: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 13:41:01.793: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 0
+2025-01-21 13:41:01.802: [INFO][Sync]     Configuration completed, state: 7
+2025-01-21 13:41:01.802: [INFO][Sync] Configured DataTypeManager: Ok
+2025-01-21 13:41:01.810: [INFO][SyncEngineBackend::DoStartSyncing] Start syncing
+2025-01-21 13:47:42.569: [INFO][Sync] Reset engine, reason: 0
+2025-01-21 13:48:11.919: [INFO][Sync] SyncState after authenticated was: FeatureCanStart
+2025-01-21 13:48:12.493: [INFO][Sync] Try to start sync engine
+2025-01-21 13:48:12.494: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Encryption Keys
+2025-01-21 13:48:12.494: [INFO][SyncEngineBackend::LoadAndConnectNigoriController] Load and connect Nigori controller
+2025-01-21 13:48:12.494: [INFO][SyncEngineBackend::DoInitialize] Control Types added: Encryption Keys
+2025-01-21 13:48:12.494: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download: Encryption Keys with reason: 3
+2025-01-21 13:48:12.494: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Configure job was blocked
+2025-01-21 13:48:12.514: [INFO][SyncAuthManager::SetLastAuthError] Current auth error: None
+2025-01-21 13:48:12.514: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: None for account type: MSA
+2025-01-21 13:48:12.514: [INFO][Sync] Credentials changed for: EdgeSyncScopeNew
+2025-01-21 13:48:13.104: [INFO][SyncAuthManager::SetLastAuthError] Current auth error: None
+2025-01-21 13:48:13.104: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: None for account type: MSA
+2025-01-21 13:48:13.104: [INFO][Sync] Credentials changed for: EdgeSyncKeyDataScope
+2025-01-21 13:48:13.104: [INFO][SyncEngineBackend::DoUpdateKeyDataCredentials] Update key data credentials
+2025-01-21 13:48:13.104: [INFO][SyncEngineBackend::DoUpdateCredentials] Update credentials
+2025-01-21 13:48:13.104: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Blocked types:  and types to download: Encryption Keys
+2025-01-21 13:48:13.434: [INFO][Sync] Started DataTypeManager configuration, reason: 4
+2025-01-21 13:48:13.434: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 4, current state: 0
+2025-01-21 13:48:13.445: [INFO][Sync] Configure, desired: Bookmarks, Preferences, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys; Allow fail: Passwords, Autofill Profiles, Autofill
+2025-01-21 13:48:13.445: [INFO][Sync] Loading: Bookmarks
+2025-01-21 13:48:13.445: [INFO][Sync] Loading: Preferences
+2025-01-21 13:48:13.445: [INFO][Sync] Loading: Extensions
+2025-01-21 13:48:13.445: [INFO][Sync] Loading: Sessions
+2025-01-21 13:48:13.445: [INFO][Sync] Loading: Extension settings
+2025-01-21 13:48:13.445: [INFO][Sync] Loading: History Delete Directives
+2025-01-21 13:48:13.445: [INFO][Sync] Loading: Device Info
+2025-01-21 13:48:13.445: [INFO][Sync] Loading: User Consents
+2025-01-21 13:48:13.445: [INFO][Sync] Loading: Send Tab To Self
+2025-01-21 13:48:13.445: [INFO][Sync] Loading: Web Apps
+2025-01-21 13:48:13.445: [INFO][Sync] Loading: History
+2025-01-21 13:48:13.445: [INFO][Sync] Loading: Collection
+2025-01-21 13:48:13.445: [INFO][Sync] Loading: Edge E Drop
+2025-01-21 13:48:13.445: [INFO][Sync] Loading: Edge Hub App Usage
+2025-01-21 13:48:13.445: [INFO][Sync] Loading: Edge Tab Group
+2025-01-21 13:48:13.445: [INFO][Sync] Loading: Edge Wallet
+2025-01-21 13:48:13.462: [INFO][Sync] All data types are ready for configure.
+2025-01-21 13:48:13.977: [INFO][SyncEngineBackend::DoStartConfiguration] Start configuration
+2025-01-21 13:48:13.977: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 4
+2025-01-21 13:48:13.977: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 13:48:13.999: [INFO][Sync] Started DataTypeManager configuration, reason: 5
+2025-01-21 13:48:13.999: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 5, current state: 1
+2025-01-21 13:48:14.010: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 4
+2025-01-21 13:48:14.010: [WARN][Sync]     Reconfigure requested while configuration ongoing.
+2025-01-21 13:48:14.010: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 5, current state: 2
+2025-01-21 13:48:14.010: [INFO][Sync] Configure, desired: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys; Allow fail: 
+2025-01-21 13:48:14.010: [INFO][Sync] Loading: Passwords
+2025-01-21 13:48:14.010: [INFO][Sync] Loading: Autofill Profiles
+2025-01-21 13:48:14.010: [INFO][Sync] Loading: Autofill
+2025-01-21 13:48:14.013: [INFO][Sync] All data types are ready for configure.
+2025-01-21 13:48:14.013: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Passwords
+2025-01-21 13:48:14.014: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 13:48:14.014: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 13:48:14.014: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 4
+2025-01-21 13:48:14.014: [INFO][Sync] Prepare to configure types: Passwords, Encryption Keys
+2025-01-21 13:48:14.014: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download: Passwords, Encryption Keys with reason: 5
+2025-01-21 13:48:14.014: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Blocked types:  and types to download: Passwords, Encryption Keys
+2025-01-21 13:48:14.277: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: Passwords, Encryption Keys
+2025-01-21 13:48:14.289: [INFO][Sync] ConfigurationDone, failed: , succeeded: Passwords, Encryption Keys, remaining count: 3
+2025-01-21 13:48:14.289: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 13:48:14.289: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 13:48:14.289: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 2
+2025-01-21 13:48:14.289: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 13:48:14.289: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 13:48:14.291: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 1
+2025-01-21 13:48:14.302: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 13:48:14.302: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 13:48:14.302: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 0
+2025-01-21 13:48:14.316: [INFO][Sync]     Configuration completed, state: 7
+2025-01-21 13:48:14.317: [INFO][Sync] Configured DataTypeManager: Ok
+2025-01-21 13:48:14.330: [INFO][SyncEngineBackend::DoStartSyncing] Start syncing
+2025-01-21 13:51:39.418: [INFO][Sync] SyncState after authenticated was: FeatureCanStart
+2025-01-21 13:51:40.238: [INFO][Sync] Try to start sync engine
+2025-01-21 13:51:40.239: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Encryption Keys
+2025-01-21 13:51:40.239: [INFO][SyncEngineBackend::LoadAndConnectNigoriController] Load and connect Nigori controller
+2025-01-21 13:51:40.239: [INFO][SyncEngineBackend::DoInitialize] Control Types added: Encryption Keys
+2025-01-21 13:51:40.239: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download: Encryption Keys with reason: 3
+2025-01-21 13:51:40.239: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Configure job was blocked
+2025-01-21 13:51:40.268: [INFO][SyncAuthManager::SetLastAuthError] Current auth error: None
+2025-01-21 13:51:40.268: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: None for account type: MSA
+2025-01-21 13:51:40.268: [INFO][Sync] Credentials changed for: EdgeSyncScopeNew
+2025-01-21 13:51:40.620: [INFO][SyncAuthManager::SetLastAuthError] Current auth error: None
+2025-01-21 13:51:40.620: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: None for account type: MSA
+2025-01-21 13:51:40.620: [INFO][Sync] Credentials changed for: EdgeSyncKeyDataScope
+2025-01-21 13:51:40.620: [INFO][SyncEngineBackend::DoUpdateKeyDataCredentials] Update key data credentials
+2025-01-21 13:51:40.620: [INFO][SyncEngineBackend::DoUpdateCredentials] Update credentials
+2025-01-21 13:51:40.620: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Blocked types:  and types to download: Encryption Keys
+2025-01-21 13:51:41.059: [INFO][Sync] Started DataTypeManager configuration, reason: 4
+2025-01-21 13:51:41.059: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 4, current state: 0
+2025-01-21 13:51:41.073: [INFO][Sync] Configure, desired: Bookmarks, Preferences, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys; Allow fail: Passwords, Autofill Profiles, Autofill
+2025-01-21 13:51:41.073: [INFO][Sync] Loading: Bookmarks
+2025-01-21 13:51:41.073: [INFO][Sync] Loading: Preferences
+2025-01-21 13:51:41.073: [INFO][Sync] Loading: Extensions
+2025-01-21 13:51:41.073: [INFO][Sync] Loading: Sessions
+2025-01-21 13:51:41.073: [INFO][Sync] Loading: Extension settings
+2025-01-21 13:51:41.073: [INFO][Sync] Loading: History Delete Directives
+2025-01-21 13:51:41.073: [INFO][Sync] Loading: Device Info
+2025-01-21 13:51:41.073: [INFO][Sync] Loading: User Consents
+2025-01-21 13:51:41.073: [INFO][Sync] Loading: Send Tab To Self
+2025-01-21 13:51:41.073: [INFO][Sync] Loading: Web Apps
+2025-01-21 13:51:41.073: [INFO][Sync] Loading: History
+2025-01-21 13:51:41.073: [INFO][Sync] Loading: Collection
+2025-01-21 13:51:41.073: [INFO][Sync] Loading: Edge E Drop
+2025-01-21 13:51:41.073: [INFO][Sync] Loading: Edge Hub App Usage
+2025-01-21 13:51:41.073: [INFO][Sync] Loading: Edge Tab Group
+2025-01-21 13:51:41.073: [INFO][Sync] Loading: Edge Wallet
+2025-01-21 13:51:41.088: [INFO][Sync] All data types are ready for configure.
+2025-01-21 13:51:41.660: [INFO][SyncEngineBackend::DoStartConfiguration] Start configuration
+2025-01-21 13:51:41.660: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 4
+2025-01-21 13:51:41.660: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 13:51:41.671: [INFO][Sync] Started DataTypeManager configuration, reason: 5
+2025-01-21 13:51:41.671: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 5, current state: 1
+2025-01-21 13:51:41.683: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 4
+2025-01-21 13:51:41.683: [WARN][Sync]     Reconfigure requested while configuration ongoing.
+2025-01-21 13:51:41.683: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 5, current state: 2
+2025-01-21 13:51:41.683: [INFO][Sync] Configure, desired: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys; Allow fail: 
+2025-01-21 13:51:41.683: [INFO][Sync] Loading: Passwords
+2025-01-21 13:51:41.683: [INFO][Sync] Loading: Autofill Profiles
+2025-01-21 13:51:41.683: [INFO][Sync] Loading: Autofill
+2025-01-21 13:51:41.683: [INFO][Sync] All data types are ready for configure.
+2025-01-21 13:51:41.684: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Passwords
+2025-01-21 13:51:41.684: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 13:51:41.684: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 13:51:41.686: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 4
+2025-01-21 13:51:41.686: [INFO][Sync] Prepare to configure types: Passwords, Encryption Keys
+2025-01-21 13:51:41.686: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download: Passwords, Encryption Keys with reason: 5
+2025-01-21 13:51:41.686: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Blocked types:  and types to download: Passwords, Encryption Keys
+2025-01-21 13:51:41.947: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: Passwords, Encryption Keys
+2025-01-21 13:51:41.957: [INFO][Sync] ConfigurationDone, failed: , succeeded: Passwords, Encryption Keys, remaining count: 3
+2025-01-21 13:51:41.958: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 13:51:41.958: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 13:51:41.958: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 2
+2025-01-21 13:51:41.958: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 13:51:41.958: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 13:51:41.958: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 1
+2025-01-21 13:51:41.970: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 13:51:41.970: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 13:51:41.972: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 0
+2025-01-21 13:51:41.984: [INFO][Sync]     Configuration completed, state: 7
+2025-01-21 13:51:41.984: [INFO][Sync] Configured DataTypeManager: Ok
+2025-01-21 13:51:41.995: [INFO][SyncEngineBackend::DoStartSyncing] Start syncing
+2025-01-21 13:58:38.879: [INFO][Sync] SyncState after authenticated was: FeatureCanStart
+2025-01-21 13:58:39.378: [INFO][Sync] Try to start sync engine
+2025-01-21 13:58:39.378: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Encryption Keys
+2025-01-21 13:58:39.378: [INFO][SyncEngineBackend::LoadAndConnectNigoriController] Load and connect Nigori controller
+2025-01-21 13:58:39.378: [INFO][SyncEngineBackend::DoInitialize] Control Types added: Encryption Keys
+2025-01-21 13:58:39.378: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download: Encryption Keys with reason: 3
+2025-01-21 13:58:39.378: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Configure job was blocked
+2025-01-21 13:58:39.402: [INFO][SyncAuthManager::SetLastAuthError] Current auth error: None
+2025-01-21 13:58:39.402: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: None for account type: MSA
+2025-01-21 13:58:39.402: [INFO][Sync] Credentials changed for: EdgeSyncScopeNew
+2025-01-21 13:58:39.831: [INFO][SyncAuthManager::SetLastAuthError] Current auth error: None
+2025-01-21 13:58:39.831: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: None for account type: MSA
+2025-01-21 13:58:39.831: [INFO][Sync] Credentials changed for: EdgeSyncKeyDataScope
+2025-01-21 13:58:39.831: [INFO][SyncEngineBackend::DoUpdateKeyDataCredentials] Update key data credentials
+2025-01-21 13:58:39.831: [INFO][SyncEngineBackend::DoUpdateCredentials] Update credentials
+2025-01-21 13:58:39.831: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Blocked types:  and types to download: Encryption Keys
+2025-01-21 13:58:40.071: [INFO][Sync] Started DataTypeManager configuration, reason: 4
+2025-01-21 13:58:40.071: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 4, current state: 0
+2025-01-21 13:58:40.080: [INFO][Sync] Configure, desired: Bookmarks, Preferences, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys; Allow fail: Passwords, Autofill Profiles, Autofill
+2025-01-21 13:58:40.081: [INFO][Sync] Loading: Bookmarks
+2025-01-21 13:58:40.081: [INFO][Sync] Loading: Preferences
+2025-01-21 13:58:40.081: [INFO][Sync] Loading: Extensions
+2025-01-21 13:58:40.081: [INFO][Sync] Loading: Sessions
+2025-01-21 13:58:40.081: [INFO][Sync] Loading: Extension settings
+2025-01-21 13:58:40.081: [INFO][Sync] Loading: History Delete Directives
+2025-01-21 13:58:40.081: [INFO][Sync] Loading: Device Info
+2025-01-21 13:58:40.081: [INFO][Sync] Loading: User Consents
+2025-01-21 13:58:40.081: [INFO][Sync] Loading: Send Tab To Self
+2025-01-21 13:58:40.081: [INFO][Sync] Loading: Web Apps
+2025-01-21 13:58:40.081: [INFO][Sync] Loading: History
+2025-01-21 13:58:40.081: [INFO][Sync] Loading: Collection
+2025-01-21 13:58:40.081: [INFO][Sync] Loading: Edge E Drop
+2025-01-21 13:58:40.081: [INFO][Sync] Loading: Edge Hub App Usage
+2025-01-21 13:58:40.081: [INFO][Sync] Loading: Edge Tab Group
+2025-01-21 13:58:40.081: [INFO][Sync] Loading: Edge Wallet
+2025-01-21 13:58:40.096: [INFO][Sync] All data types are ready for configure.
+2025-01-21 13:58:40.403: [INFO][SyncEngineBackend::DoStartConfiguration] Start configuration
+2025-01-21 13:58:40.403: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 4
+2025-01-21 13:58:40.403: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 13:58:40.413: [INFO][Sync] Started DataTypeManager configuration, reason: 5
+2025-01-21 13:58:40.413: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 5, current state: 1
+2025-01-21 13:58:40.426: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 4
+2025-01-21 13:58:40.426: [WARN][Sync]     Reconfigure requested while configuration ongoing.
+2025-01-21 13:58:40.426: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 5, current state: 2
+2025-01-21 13:58:40.426: [INFO][Sync] Configure, desired: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys; Allow fail: 
+2025-01-21 13:58:40.426: [INFO][Sync] Loading: Passwords
+2025-01-21 13:58:40.426: [INFO][Sync] Loading: Autofill Profiles
+2025-01-21 13:58:40.426: [INFO][Sync] Loading: Autofill
+2025-01-21 13:58:40.426: [INFO][Sync] All data types are ready for configure.
+2025-01-21 13:58:40.426: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Passwords
+2025-01-21 13:58:40.426: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 13:58:40.426: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 13:58:40.428: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 4
+2025-01-21 13:58:40.428: [INFO][Sync] Prepare to configure types: Passwords, Encryption Keys
+2025-01-21 13:58:40.428: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download: Passwords, Encryption Keys with reason: 5
+2025-01-21 13:58:40.428: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Blocked types:  and types to download: Passwords, Encryption Keys
+2025-01-21 13:58:40.702: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: Passwords, Encryption Keys
+2025-01-21 13:58:40.714: [INFO][Sync] ConfigurationDone, failed: , succeeded: Passwords, Encryption Keys, remaining count: 3
+2025-01-21 13:58:40.715: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 13:58:40.715: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 13:58:40.715: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 2
+2025-01-21 13:58:40.715: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 13:58:40.715: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 13:58:40.716: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 1
+2025-01-21 13:58:40.729: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 13:58:40.729: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 13:58:40.729: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 0
+2025-01-21 13:58:40.740: [INFO][Sync]     Configuration completed, state: 7
+2025-01-21 13:58:40.740: [INFO][Sync] Configured DataTypeManager: Ok
+2025-01-21 13:58:40.752: [INFO][SyncEngineBackend::DoStartSyncing] Start syncing
+2025-01-21 14:06:13.200: [INFO][Sync] SyncState after authenticated was: FeatureCanStart
+2025-01-21 14:06:13.749: [INFO][Sync] Try to start sync engine
+2025-01-21 14:06:13.750: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Encryption Keys
+2025-01-21 14:06:13.750: [INFO][SyncEngineBackend::LoadAndConnectNigoriController] Load and connect Nigori controller
+2025-01-21 14:06:13.750: [INFO][SyncEngineBackend::DoInitialize] Control Types added: Encryption Keys
+2025-01-21 14:06:13.750: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download: Encryption Keys with reason: 3
+2025-01-21 14:06:13.750: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Configure job was blocked
+2025-01-21 14:06:13.773: [INFO][SyncAuthManager::SetLastAuthError] Current auth error: None
+2025-01-21 14:06:13.774: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: None for account type: MSA
+2025-01-21 14:06:13.774: [INFO][Sync] Credentials changed for: EdgeSyncScopeNew
+2025-01-21 14:06:14.059: [INFO][SyncAuthManager::SetLastAuthError] Current auth error: None
+2025-01-21 14:06:14.059: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: None for account type: MSA
+2025-01-21 14:06:14.059: [INFO][Sync] Credentials changed for: EdgeSyncKeyDataScope
+2025-01-21 14:06:14.059: [INFO][SyncEngineBackend::DoUpdateKeyDataCredentials] Update key data credentials
+2025-01-21 14:06:14.060: [INFO][SyncEngineBackend::DoUpdateCredentials] Update credentials
+2025-01-21 14:06:14.060: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Blocked types:  and types to download: Encryption Keys
+2025-01-21 14:06:14.641: [INFO][Sync] Started DataTypeManager configuration, reason: 4
+2025-01-21 14:06:14.641: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 4, current state: 0
+2025-01-21 14:06:14.650: [INFO][Sync] Configure, desired: Bookmarks, Preferences, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys; Allow fail: Passwords, Autofill Profiles, Autofill
+2025-01-21 14:06:14.650: [INFO][Sync] Loading: Bookmarks
+2025-01-21 14:06:14.650: [INFO][Sync] Loading: Preferences
+2025-01-21 14:06:14.650: [INFO][Sync] Loading: Extensions
+2025-01-21 14:06:14.650: [INFO][Sync] Loading: Sessions
+2025-01-21 14:06:14.650: [INFO][Sync] Loading: Extension settings
+2025-01-21 14:06:14.650: [INFO][Sync] Loading: History Delete Directives
+2025-01-21 14:06:14.650: [INFO][Sync] Loading: Device Info
+2025-01-21 14:06:14.651: [INFO][Sync] Loading: User Consents
+2025-01-21 14:06:14.651: [INFO][Sync] Loading: Send Tab To Self
+2025-01-21 14:06:14.651: [INFO][Sync] Loading: Web Apps
+2025-01-21 14:06:14.651: [INFO][Sync] Loading: History
+2025-01-21 14:06:14.651: [INFO][Sync] Loading: Collection
+2025-01-21 14:06:14.651: [INFO][Sync] Loading: Edge E Drop
+2025-01-21 14:06:14.651: [INFO][Sync] Loading: Edge Hub App Usage
+2025-01-21 14:06:14.651: [INFO][Sync] Loading: Edge Tab Group
+2025-01-21 14:06:14.651: [INFO][Sync] Loading: Edge Wallet
+2025-01-21 14:06:14.664: [INFO][Sync] All data types are ready for configure.
+2025-01-21 14:06:14.938: [INFO][SyncEngineBackend::DoStartConfiguration] Start configuration
+2025-01-21 14:06:14.939: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 4
+2025-01-21 14:06:14.939: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 14:06:14.951: [INFO][Sync] Started DataTypeManager configuration, reason: 5
+2025-01-21 14:06:14.951: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 5, current state: 1
+2025-01-21 14:06:14.965: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 4
+2025-01-21 14:06:14.965: [WARN][Sync]     Reconfigure requested while configuration ongoing.
+2025-01-21 14:06:14.965: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 5, current state: 2
+2025-01-21 14:06:14.965: [INFO][Sync] Configure, desired: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys; Allow fail: 
+2025-01-21 14:06:14.965: [INFO][Sync] Loading: Passwords
+2025-01-21 14:06:14.965: [INFO][Sync] Loading: Autofill Profiles
+2025-01-21 14:06:14.965: [INFO][Sync] Loading: Autofill
+2025-01-21 14:06:14.965: [INFO][Sync] All data types are ready for configure.
+2025-01-21 14:06:14.965: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Passwords
+2025-01-21 14:06:14.965: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 14:06:14.965: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 14:06:14.968: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 4
+2025-01-21 14:06:14.968: [INFO][Sync] Prepare to configure types: Passwords, Encryption Keys
+2025-01-21 14:06:14.968: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download: Passwords, Encryption Keys with reason: 5
+2025-01-21 14:06:14.968: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Blocked types:  and types to download: Passwords, Encryption Keys
+2025-01-21 14:06:15.218: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: Passwords, Encryption Keys
+2025-01-21 14:06:15.232: [INFO][Sync] ConfigurationDone, failed: , succeeded: Passwords, Encryption Keys, remaining count: 3
+2025-01-21 14:06:15.232: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 14:06:15.232: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 14:06:15.232: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 2
+2025-01-21 14:06:15.232: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 14:06:15.232: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 14:06:15.235: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 1
+2025-01-21 14:06:15.246: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 14:06:15.246: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 14:06:15.247: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 0
+2025-01-21 14:06:15.257: [INFO][Sync]     Configuration completed, state: 7
+2025-01-21 14:06:15.258: [INFO][Sync] Configured DataTypeManager: Ok
+2025-01-21 14:06:15.270: [INFO][SyncEngineBackend::DoStartSyncing] Start syncing
+2025-01-21 15:21:36.478: [INFO][Sync] SyncState after authenticated was: FeatureCanStart
+2025-01-21 15:21:37.053: [INFO][Sync] Try to start sync engine
+2025-01-21 15:21:37.054: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Encryption Keys
+2025-01-21 15:21:37.054: [INFO][SyncEngineBackend::LoadAndConnectNigoriController] Load and connect Nigori controller
+2025-01-21 15:21:37.054: [INFO][SyncEngineBackend::DoInitialize] Control Types added: Encryption Keys
+2025-01-21 15:21:37.054: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download: Encryption Keys with reason: 3
+2025-01-21 15:21:37.054: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Configure job was blocked
+2025-01-21 15:21:37.079: [INFO][SyncAuthManager::SetLastAuthError] Current auth error: None
+2025-01-21 15:21:37.079: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: None for account type: MSA
+2025-01-21 15:21:37.079: [INFO][Sync] Credentials changed for: EdgeSyncScopeNew
+2025-01-21 15:21:37.436: [INFO][SyncAuthManager::SetLastAuthError] Current auth error: None
+2025-01-21 15:21:37.436: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: None for account type: MSA
+2025-01-21 15:21:37.436: [INFO][Sync] Credentials changed for: EdgeSyncKeyDataScope
+2025-01-21 15:21:37.436: [INFO][SyncEngineBackend::DoUpdateKeyDataCredentials] Update key data credentials
+2025-01-21 15:21:37.436: [INFO][SyncEngineBackend::DoUpdateCredentials] Update credentials
+2025-01-21 15:21:37.436: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Blocked types:  and types to download: Encryption Keys
+2025-01-21 15:21:37.731: [INFO][Sync] Started DataTypeManager configuration, reason: 4
+2025-01-21 15:21:37.731: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 4, current state: 0
+2025-01-21 15:21:37.740: [INFO][Sync] Configure, desired: Bookmarks, Preferences, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys; Allow fail: Passwords, Autofill Profiles, Autofill
+2025-01-21 15:21:37.740: [INFO][Sync] Loading: Bookmarks
+2025-01-21 15:21:37.740: [INFO][Sync] Loading: Preferences
+2025-01-21 15:21:37.740: [INFO][Sync] Loading: Extensions
+2025-01-21 15:21:37.740: [INFO][Sync] Loading: Sessions
+2025-01-21 15:21:37.740: [INFO][Sync] Loading: Extension settings
+2025-01-21 15:21:37.740: [INFO][Sync] Loading: History Delete Directives
+2025-01-21 15:21:37.740: [INFO][Sync] Loading: Device Info
+2025-01-21 15:21:37.740: [INFO][Sync] Loading: User Consents
+2025-01-21 15:21:37.740: [INFO][Sync] Loading: Send Tab To Self
+2025-01-21 15:21:37.740: [INFO][Sync] Loading: Web Apps
+2025-01-21 15:21:37.740: [INFO][Sync] Loading: History
+2025-01-21 15:21:37.740: [INFO][Sync] Loading: Collection
+2025-01-21 15:21:37.740: [INFO][Sync] Loading: Edge E Drop
+2025-01-21 15:21:37.740: [INFO][Sync] Loading: Edge Hub App Usage
+2025-01-21 15:21:37.740: [INFO][Sync] Loading: Edge Tab Group
+2025-01-21 15:21:37.740: [INFO][Sync] Loading: Edge Wallet
+2025-01-21 15:21:37.754: [INFO][Sync] All data types are ready for configure.
+2025-01-21 15:21:38.032: [INFO][SyncEngineBackend::DoStartConfiguration] Start configuration
+2025-01-21 15:21:38.032: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 4
+2025-01-21 15:21:38.032: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 15:21:38.042: [INFO][Sync] Started DataTypeManager configuration, reason: 5
+2025-01-21 15:21:38.042: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 5, current state: 1
+2025-01-21 15:21:38.053: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 4
+2025-01-21 15:21:38.053: [WARN][Sync]     Reconfigure requested while configuration ongoing.
+2025-01-21 15:21:38.053: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 5, current state: 2
+2025-01-21 15:21:38.053: [INFO][Sync] Configure, desired: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys; Allow fail: 
+2025-01-21 15:21:38.053: [INFO][Sync] Loading: Passwords
+2025-01-21 15:21:38.053: [INFO][Sync] Loading: Autofill Profiles
+2025-01-21 15:21:38.053: [INFO][Sync] Loading: Autofill
+2025-01-21 15:21:38.053: [INFO][Sync] All data types are ready for configure.
+2025-01-21 15:21:38.053: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Passwords
+2025-01-21 15:21:38.053: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 15:21:38.053: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 15:21:38.053: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 4
+2025-01-21 15:21:38.053: [INFO][Sync] Prepare to configure types: Passwords, Encryption Keys
+2025-01-21 15:21:38.053: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download: Passwords, Encryption Keys with reason: 5
+2025-01-21 15:21:38.053: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Blocked types:  and types to download: Passwords, Encryption Keys
+2025-01-21 15:21:38.303: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: Passwords, Encryption Keys
+2025-01-21 15:21:38.315: [INFO][Sync] ConfigurationDone, failed: , succeeded: Passwords, Encryption Keys, remaining count: 3
+2025-01-21 15:21:38.315: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 15:21:38.315: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 15:21:38.315: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 2
+2025-01-21 15:21:38.315: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 15:21:38.315: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 15:21:38.317: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 1
+2025-01-21 15:21:38.328: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 15:21:38.328: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 15:21:38.328: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 0
+2025-01-21 15:21:38.340: [INFO][Sync]     Configuration completed, state: 7
+2025-01-21 15:21:38.340: [INFO][Sync] Configured DataTypeManager: Ok
+2025-01-21 15:21:38.353: [INFO][SyncEngineBackend::DoStartSyncing] Start syncing
+2025-01-21 15:38:57.992: [INFO][Sync] SyncState after authenticated was: FeatureCanStart
+2025-01-21 15:38:58.499: [INFO][Sync] Try to start sync engine
+2025-01-21 15:38:58.500: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Encryption Keys
+2025-01-21 15:38:58.500: [INFO][SyncEngineBackend::LoadAndConnectNigoriController] Load and connect Nigori controller
+2025-01-21 15:38:58.500: [INFO][SyncEngineBackend::DoInitialize] Control Types added: Encryption Keys
+2025-01-21 15:38:58.500: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download: Encryption Keys with reason: 3
+2025-01-21 15:38:58.500: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Configure job was blocked
+2025-01-21 15:38:58.530: [INFO][SyncAuthManager::SetLastAuthError] Current auth error: None
+2025-01-21 15:38:58.530: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: None for account type: MSA
+2025-01-21 15:38:58.530: [INFO][Sync] Credentials changed for: EdgeSyncScopeNew
+2025-01-21 15:38:59.229: [INFO][SyncAuthManager::SetLastAuthError] Current auth error: None
+2025-01-21 15:38:59.229: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: None for account type: MSA
+2025-01-21 15:38:59.229: [INFO][Sync] Credentials changed for: EdgeSyncKeyDataScope
+2025-01-21 15:38:59.229: [INFO][SyncEngineBackend::DoUpdateKeyDataCredentials] Update key data credentials
+2025-01-21 15:38:59.229: [INFO][SyncEngineBackend::DoUpdateCredentials] Update credentials
+2025-01-21 15:38:59.229: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Blocked types:  and types to download: Encryption Keys
+2025-01-21 15:38:59.671: [INFO][Sync] Started DataTypeManager configuration, reason: 4
+2025-01-21 15:38:59.671: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 4, current state: 0
+2025-01-21 15:38:59.682: [INFO][Sync] Configure, desired: Bookmarks, Preferences, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys; Allow fail: Passwords, Autofill Profiles, Autofill
+2025-01-21 15:38:59.682: [INFO][Sync] Loading: Bookmarks
+2025-01-21 15:38:59.682: [INFO][Sync] Loading: Preferences
+2025-01-21 15:38:59.682: [INFO][Sync] Loading: Extensions
+2025-01-21 15:38:59.682: [INFO][Sync] Loading: Sessions
+2025-01-21 15:38:59.682: [INFO][Sync] Loading: Extension settings
+2025-01-21 15:38:59.682: [INFO][Sync] Loading: History Delete Directives
+2025-01-21 15:38:59.682: [INFO][Sync] Loading: Device Info
+2025-01-21 15:38:59.682: [INFO][Sync] Loading: User Consents
+2025-01-21 15:38:59.682: [INFO][Sync] Loading: Send Tab To Self
+2025-01-21 15:38:59.682: [INFO][Sync] Loading: Web Apps
+2025-01-21 15:38:59.682: [INFO][Sync] Loading: History
+2025-01-21 15:38:59.682: [INFO][Sync] Loading: Collection
+2025-01-21 15:38:59.682: [INFO][Sync] Loading: Edge E Drop
+2025-01-21 15:38:59.682: [INFO][Sync] Loading: Edge Hub App Usage
+2025-01-21 15:38:59.682: [INFO][Sync] Loading: Edge Tab Group
+2025-01-21 15:38:59.682: [INFO][Sync] Loading: Edge Wallet
+2025-01-21 15:38:59.696: [INFO][Sync] All data types are ready for configure.
+2025-01-21 15:39:00.217: [INFO][SyncEngineBackend::DoStartConfiguration] Start configuration
+2025-01-21 15:39:00.217: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 4
+2025-01-21 15:39:00.217: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 15:39:00.230: [INFO][Sync] Started DataTypeManager configuration, reason: 5
+2025-01-21 15:39:00.230: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 5, current state: 1
+2025-01-21 15:39:00.242: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 4
+2025-01-21 15:39:00.242: [WARN][Sync]     Reconfigure requested while configuration ongoing.
+2025-01-21 15:39:00.242: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 5, current state: 2
+2025-01-21 15:39:00.242: [INFO][Sync] Configure, desired: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys; Allow fail: 
+2025-01-21 15:39:00.242: [INFO][Sync] Loading: Passwords
+2025-01-21 15:39:00.242: [INFO][Sync] Loading: Autofill Profiles
+2025-01-21 15:39:00.242: [INFO][Sync] Loading: Autofill
+2025-01-21 15:39:00.242: [INFO][Sync] All data types are ready for configure.
+2025-01-21 15:39:00.242: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Passwords
+2025-01-21 15:39:00.242: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 15:39:00.242: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 15:39:00.245: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 4
+2025-01-21 15:39:00.245: [INFO][Sync] Prepare to configure types: Passwords, Encryption Keys
+2025-01-21 15:39:00.245: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download: Passwords, Encryption Keys with reason: 5
+2025-01-21 15:39:00.245: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Blocked types:  and types to download: Passwords, Encryption Keys
+2025-01-21 15:39:00.491: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: Passwords, Encryption Keys
+2025-01-21 15:39:00.502: [INFO][Sync] ConfigurationDone, failed: , succeeded: Passwords, Encryption Keys, remaining count: 3
+2025-01-21 15:39:00.502: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 15:39:00.502: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 15:39:00.502: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 2
+2025-01-21 15:39:00.502: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 15:39:00.502: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 15:39:00.503: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 1
+2025-01-21 15:39:00.511: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 15:39:00.511: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 15:39:00.513: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 0
+2025-01-21 15:39:00.524: [INFO][Sync]     Configuration completed, state: 7
+2025-01-21 15:39:00.524: [INFO][Sync] Configured DataTypeManager: Ok
+2025-01-21 15:39:00.533: [INFO][SyncEngineBackend::DoStartSyncing] Start syncing
+2025-01-21 15:40:43.559: [INFO][Sync] Reset engine, reason: 0
+2025-01-21 15:40:43.559: [INFO][Sync] Reset engine with reason: 0
+2025-01-21 15:43:31.835: [INFO][Sync] SyncState after authenticated was: FeatureCanStart
+2025-01-21 15:43:32.364: [INFO][Sync] Try to start sync engine
+2025-01-21 15:43:32.364: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Encryption Keys
+2025-01-21 15:43:32.364: [INFO][SyncEngineBackend::LoadAndConnectNigoriController] Load and connect Nigori controller
+2025-01-21 15:43:32.364: [INFO][SyncEngineBackend::DoInitialize] Control Types added: Encryption Keys
+2025-01-21 15:43:32.364: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download: Encryption Keys with reason: 3
+2025-01-21 15:43:32.364: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Configure job was blocked
+2025-01-21 15:43:32.390: [INFO][SyncAuthManager::SetLastAuthError] Current auth error: None
+2025-01-21 15:43:32.390: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: None for account type: MSA
+2025-01-21 15:43:32.390: [INFO][Sync] Credentials changed for: EdgeSyncScopeNew
+2025-01-21 15:43:33.059: [INFO][SyncAuthManager::SetLastAuthError] Current auth error: None
+2025-01-21 15:43:33.059: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: None for account type: MSA
+2025-01-21 15:43:33.059: [INFO][Sync] Credentials changed for: EdgeSyncKeyDataScope
+2025-01-21 15:43:33.059: [INFO][SyncEngineBackend::DoUpdateKeyDataCredentials] Update key data credentials
+2025-01-21 15:43:33.060: [INFO][SyncEngineBackend::DoUpdateCredentials] Update credentials
+2025-01-21 15:43:33.060: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Blocked types:  and types to download: Encryption Keys
+2025-01-21 15:43:33.274: [INFO][Sync] Started DataTypeManager configuration, reason: 4
+2025-01-21 15:43:33.274: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 4, current state: 0
+2025-01-21 15:43:33.285: [INFO][Sync] Configure, desired: Bookmarks, Preferences, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys; Allow fail: Passwords, Autofill Profiles, Autofill
+2025-01-21 15:43:33.285: [INFO][Sync] Loading: Bookmarks
+2025-01-21 15:43:33.285: [INFO][Sync] Loading: Preferences
+2025-01-21 15:43:33.285: [INFO][Sync] Loading: Extensions
+2025-01-21 15:43:33.285: [INFO][Sync] Loading: Sessions
+2025-01-21 15:43:33.285: [INFO][Sync] Loading: Extension settings
+2025-01-21 15:43:33.285: [INFO][Sync] Loading: History Delete Directives
+2025-01-21 15:43:33.285: [INFO][Sync] Loading: Device Info
+2025-01-21 15:43:33.285: [INFO][Sync] Loading: User Consents
+2025-01-21 15:43:33.285: [INFO][Sync] Loading: Send Tab To Self
+2025-01-21 15:43:33.285: [INFO][Sync] Loading: Web Apps
+2025-01-21 15:43:33.285: [INFO][Sync] Loading: History
+2025-01-21 15:43:33.285: [INFO][Sync] Loading: Collection
+2025-01-21 15:43:33.285: [INFO][Sync] Loading: Edge E Drop
+2025-01-21 15:43:33.285: [INFO][Sync] Loading: Edge Hub App Usage
+2025-01-21 15:43:33.285: [INFO][Sync] Loading: Edge Tab Group
+2025-01-21 15:43:33.285: [INFO][Sync] Loading: Edge Wallet
+2025-01-21 15:43:33.300: [INFO][Sync] All data types are ready for configure.
+2025-01-21 15:43:33.797: [INFO][SyncEngineBackend::DoStartConfiguration] Start configuration
+2025-01-21 15:43:33.797: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 4
+2025-01-21 15:43:33.797: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 15:43:33.808: [INFO][Sync] Started DataTypeManager configuration, reason: 5
+2025-01-21 15:43:33.808: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 5, current state: 1
+2025-01-21 15:43:33.820: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 4
+2025-01-21 15:43:33.820: [WARN][Sync]     Reconfigure requested while configuration ongoing.
+2025-01-21 15:43:33.820: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 5, current state: 2
+2025-01-21 15:43:33.820: [INFO][Sync] Configure, desired: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys; Allow fail: 
+2025-01-21 15:43:33.820: [INFO][Sync] Loading: Passwords
+2025-01-21 15:43:33.820: [INFO][Sync] Loading: Autofill Profiles
+2025-01-21 15:43:33.820: [INFO][Sync] Loading: Autofill
+2025-01-21 15:43:33.821: [INFO][Sync] All data types are ready for configure.
+2025-01-21 15:43:33.821: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Passwords
+2025-01-21 15:43:33.821: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 15:43:33.821: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 15:43:33.821: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 4
+2025-01-21 15:43:33.821: [INFO][Sync] Prepare to configure types: Passwords, Encryption Keys
+2025-01-21 15:43:33.821: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download: Passwords, Encryption Keys with reason: 5
+2025-01-21 15:43:33.821: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Blocked types:  and types to download: Passwords, Encryption Keys
+2025-01-21 15:43:34.083: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: Passwords, Encryption Keys
+2025-01-21 15:43:34.096: [INFO][Sync] ConfigurationDone, failed: , succeeded: Passwords, Encryption Keys, remaining count: 3
+2025-01-21 15:43:34.096: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 15:43:34.096: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 15:43:34.096: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 2
+2025-01-21 15:43:34.096: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 15:43:34.096: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 15:43:34.098: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 1
+2025-01-21 15:43:34.108: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 15:43:34.108: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 15:43:34.108: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 0
+2025-01-21 15:43:34.120: [INFO][Sync]     Configuration completed, state: 7
+2025-01-21 15:43:34.120: [INFO][Sync] Configured DataTypeManager: Ok
+2025-01-21 15:43:34.130: [INFO][SyncEngineBackend::DoStartSyncing] Start syncing
+2025-01-21 15:48:27.347: [INFO][Sync] SyncState after authenticated was: FeatureCanStart
+2025-01-21 15:48:27.884: [INFO][Sync] Try to start sync engine
+2025-01-21 15:48:27.884: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Encryption Keys
+2025-01-21 15:48:27.884: [INFO][SyncEngineBackend::LoadAndConnectNigoriController] Load and connect Nigori controller
+2025-01-21 15:48:27.884: [INFO][SyncEngineBackend::DoInitialize] Control Types added: Encryption Keys
+2025-01-21 15:48:27.884: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download: Encryption Keys with reason: 3
+2025-01-21 15:48:27.884: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Configure job was blocked
+2025-01-21 15:48:27.908: [INFO][SyncAuthManager::SetLastAuthError] Current auth error: None
+2025-01-21 15:48:27.908: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: None for account type: MSA
+2025-01-21 15:48:27.908: [INFO][Sync] Credentials changed for: EdgeSyncScopeNew
+2025-01-21 15:48:28.514: [INFO][SyncAuthManager::SetLastAuthError] Current auth error: None
+2025-01-21 15:48:28.514: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: None for account type: MSA
+2025-01-21 15:48:28.514: [INFO][Sync] Credentials changed for: EdgeSyncKeyDataScope
+2025-01-21 15:48:28.514: [INFO][SyncEngineBackend::DoUpdateKeyDataCredentials] Update key data credentials
+2025-01-21 15:48:28.514: [INFO][SyncEngineBackend::DoUpdateCredentials] Update credentials
+2025-01-21 15:48:28.514: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Blocked types:  and types to download: Encryption Keys
+2025-01-21 15:48:28.746: [INFO][Sync] Started DataTypeManager configuration, reason: 4
+2025-01-21 15:48:28.746: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 4, current state: 0
+2025-01-21 15:48:28.757: [INFO][Sync] Configure, desired: Bookmarks, Preferences, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys; Allow fail: Passwords, Autofill Profiles, Autofill
+2025-01-21 15:48:28.757: [INFO][Sync] Loading: Bookmarks
+2025-01-21 15:48:28.757: [INFO][Sync] Loading: Preferences
+2025-01-21 15:48:28.757: [INFO][Sync] Loading: Extensions
+2025-01-21 15:48:28.757: [INFO][Sync] Loading: Sessions
+2025-01-21 15:48:28.757: [INFO][Sync] Loading: Extension settings
+2025-01-21 15:48:28.757: [INFO][Sync] Loading: History Delete Directives
+2025-01-21 15:48:28.757: [INFO][Sync] Loading: Device Info
+2025-01-21 15:48:28.757: [INFO][Sync] Loading: User Consents
+2025-01-21 15:48:28.757: [INFO][Sync] Loading: Send Tab To Self
+2025-01-21 15:48:28.757: [INFO][Sync] Loading: Web Apps
+2025-01-21 15:48:28.757: [INFO][Sync] Loading: History
+2025-01-21 15:48:28.757: [INFO][Sync] Loading: Collection
+2025-01-21 15:48:28.757: [INFO][Sync] Loading: Edge E Drop
+2025-01-21 15:48:28.757: [INFO][Sync] Loading: Edge Hub App Usage
+2025-01-21 15:48:28.757: [INFO][Sync] Loading: Edge Tab Group
+2025-01-21 15:48:28.757: [INFO][Sync] Loading: Edge Wallet
+2025-01-21 15:48:28.772: [INFO][Sync] All data types are ready for configure.
+2025-01-21 15:48:29.268: [INFO][SyncEngineBackend::DoStartConfiguration] Start configuration
+2025-01-21 15:48:29.268: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 4
+2025-01-21 15:48:29.268: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 15:48:29.277: [INFO][Sync] Started DataTypeManager configuration, reason: 5
+2025-01-21 15:48:29.277: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 5, current state: 1
+2025-01-21 15:48:29.287: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 4
+2025-01-21 15:48:29.287: [WARN][Sync]     Reconfigure requested while configuration ongoing.
+2025-01-21 15:48:29.287: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 5, current state: 2
+2025-01-21 15:48:29.287: [INFO][Sync] Configure, desired: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys; Allow fail: 
+2025-01-21 15:48:29.287: [INFO][Sync] Loading: Passwords
+2025-01-21 15:48:29.287: [INFO][Sync] Loading: Autofill Profiles
+2025-01-21 15:48:29.287: [INFO][Sync] Loading: Autofill
+2025-01-21 15:48:29.288: [INFO][Sync] All data types are ready for configure.
+2025-01-21 15:48:29.288: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Passwords
+2025-01-21 15:48:29.288: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 15:48:29.288: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 15:48:29.290: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 4
+2025-01-21 15:48:29.290: [INFO][Sync] Prepare to configure types: Passwords, Encryption Keys
+2025-01-21 15:48:29.290: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download: Passwords, Encryption Keys with reason: 5
+2025-01-21 15:48:29.290: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Blocked types:  and types to download: Passwords, Encryption Keys
+2025-01-21 15:48:29.539: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: Passwords, Encryption Keys
+2025-01-21 15:48:29.550: [INFO][Sync] ConfigurationDone, failed: , succeeded: Passwords, Encryption Keys, remaining count: 3
+2025-01-21 15:48:29.550: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 15:48:29.550: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 15:48:29.550: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 2
+2025-01-21 15:48:29.550: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 15:48:29.550: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 15:48:29.550: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 1
+2025-01-21 15:48:29.561: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 15:48:29.561: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 15:48:29.562: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 0
+2025-01-21 15:48:29.573: [INFO][Sync]     Configuration completed, state: 7
+2025-01-21 15:48:29.573: [INFO][Sync] Configured DataTypeManager: Ok
+2025-01-21 15:48:29.583: [INFO][SyncEngineBackend::DoStartSyncing] Start syncing
+2025-01-21 16:03:18.194: [INFO][Sync] SyncState after authenticated was: FeatureCanStart
+2025-01-21 16:03:18.741: [INFO][Sync] Try to start sync engine
+2025-01-21 16:03:18.741: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Encryption Keys
+2025-01-21 16:03:18.741: [INFO][SyncEngineBackend::LoadAndConnectNigoriController] Load and connect Nigori controller
+2025-01-21 16:03:18.741: [INFO][SyncEngineBackend::DoInitialize] Control Types added: Encryption Keys
+2025-01-21 16:03:18.741: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download: Encryption Keys with reason: 3
+2025-01-21 16:03:18.741: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Configure job was blocked
+2025-01-21 16:03:18.765: [INFO][SyncAuthManager::SetLastAuthError] Current auth error: None
+2025-01-21 16:03:18.765: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: None for account type: MSA
+2025-01-21 16:03:18.765: [INFO][Sync] Credentials changed for: EdgeSyncScopeNew
+2025-01-21 16:03:19.287: [INFO][SyncAuthManager::SetLastAuthError] Current auth error: None
+2025-01-21 16:03:19.287: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: None for account type: MSA
+2025-01-21 16:03:19.287: [INFO][Sync] Credentials changed for: EdgeSyncKeyDataScope
+2025-01-21 16:03:19.287: [INFO][SyncEngineBackend::DoUpdateKeyDataCredentials] Update key data credentials
+2025-01-21 16:03:19.288: [INFO][SyncEngineBackend::DoUpdateCredentials] Update credentials
+2025-01-21 16:03:19.288: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Blocked types:  and types to download: Encryption Keys
+2025-01-21 16:03:19.731: [INFO][Sync] Started DataTypeManager configuration, reason: 4
+2025-01-21 16:03:19.731: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 4, current state: 0
+2025-01-21 16:03:19.742: [INFO][Sync] Configure, desired: Bookmarks, Preferences, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys; Allow fail: Passwords, Autofill Profiles, Autofill
+2025-01-21 16:03:19.742: [INFO][Sync] Loading: Bookmarks
+2025-01-21 16:03:19.742: [INFO][Sync] Loading: Preferences
+2025-01-21 16:03:19.742: [INFO][Sync] Loading: Extensions
+2025-01-21 16:03:19.742: [INFO][Sync] Loading: Sessions
+2025-01-21 16:03:19.742: [INFO][Sync] Loading: Extension settings
+2025-01-21 16:03:19.742: [INFO][Sync] Loading: History Delete Directives
+2025-01-21 16:03:19.742: [INFO][Sync] Loading: Device Info
+2025-01-21 16:03:19.742: [INFO][Sync] Loading: User Consents
+2025-01-21 16:03:19.742: [INFO][Sync] Loading: Send Tab To Self
+2025-01-21 16:03:19.742: [INFO][Sync] Loading: Web Apps
+2025-01-21 16:03:19.742: [INFO][Sync] Loading: History
+2025-01-21 16:03:19.742: [INFO][Sync] Loading: Collection
+2025-01-21 16:03:19.742: [INFO][Sync] Loading: Edge E Drop
+2025-01-21 16:03:19.742: [INFO][Sync] Loading: Edge Hub App Usage
+2025-01-21 16:03:19.742: [INFO][Sync] Loading: Edge Tab Group
+2025-01-21 16:03:19.742: [INFO][Sync] Loading: Edge Wallet
+2025-01-21 16:03:19.754: [INFO][Sync] All data types are ready for configure.
+2025-01-21 16:03:20.072: [INFO][SyncEngineBackend::DoStartConfiguration] Start configuration
+2025-01-21 16:03:20.072: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 4
+2025-01-21 16:03:20.072: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 16:03:20.086: [INFO][Sync] Started DataTypeManager configuration, reason: 5
+2025-01-21 16:03:20.086: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 5, current state: 1
+2025-01-21 16:03:20.099: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 4
+2025-01-21 16:03:20.099: [WARN][Sync]     Reconfigure requested while configuration ongoing.
+2025-01-21 16:03:20.099: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 5, current state: 2
+2025-01-21 16:03:20.099: [INFO][Sync] Configure, desired: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys; Allow fail: 
+2025-01-21 16:03:20.099: [INFO][Sync] Loading: Passwords
+2025-01-21 16:03:20.099: [INFO][Sync] Loading: Autofill Profiles
+2025-01-21 16:03:20.099: [INFO][Sync] Loading: Autofill
+2025-01-21 16:03:20.099: [INFO][Sync] All data types are ready for configure.
+2025-01-21 16:03:20.099: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Passwords
+2025-01-21 16:03:20.099: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 16:03:20.099: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 16:03:20.101: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 4
+2025-01-21 16:03:20.101: [INFO][Sync] Prepare to configure types: Passwords, Encryption Keys
+2025-01-21 16:03:20.101: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download: Passwords, Encryption Keys with reason: 5
+2025-01-21 16:03:20.101: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Blocked types:  and types to download: Passwords, Encryption Keys
+2025-01-21 16:03:20.361: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: Passwords, Encryption Keys
+2025-01-21 16:03:20.374: [INFO][Sync] ConfigurationDone, failed: , succeeded: Passwords, Encryption Keys, remaining count: 3
+2025-01-21 16:03:20.374: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 16:03:20.374: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 16:03:20.374: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 2
+2025-01-21 16:03:20.374: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 16:03:20.374: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 16:03:20.376: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 1
+2025-01-21 16:03:20.389: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 16:03:20.389: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 16:03:20.389: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 0
+2025-01-21 16:03:20.401: [INFO][Sync]     Configuration completed, state: 7
+2025-01-21 16:03:20.402: [INFO][Sync] Configured DataTypeManager: Ok
+2025-01-21 16:03:20.414: [INFO][SyncEngineBackend::DoStartSyncing] Start syncing
+2025-01-21 16:13:41.919: [INFO][Sync] SyncState after authenticated was: FeatureCanStart
+2025-01-21 16:13:42.493: [INFO][Sync] Try to start sync engine
+2025-01-21 16:13:42.494: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Encryption Keys
+2025-01-21 16:13:42.494: [INFO][SyncEngineBackend::LoadAndConnectNigoriController] Load and connect Nigori controller
+2025-01-21 16:13:42.494: [INFO][SyncEngineBackend::DoInitialize] Control Types added: Encryption Keys
+2025-01-21 16:13:42.494: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download: Encryption Keys with reason: 3
+2025-01-21 16:13:42.494: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Configure job was blocked
+2025-01-21 16:13:42.517: [INFO][SyncAuthManager::SetLastAuthError] Current auth error: None
+2025-01-21 16:13:42.517: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: None for account type: MSA
+2025-01-21 16:13:42.517: [INFO][Sync] Credentials changed for: EdgeSyncScopeNew
+2025-01-21 16:13:42.807: [INFO][SyncAuthManager::SetLastAuthError] Current auth error: None
+2025-01-21 16:13:42.807: [INFO][SyncAuthManager::EdgeLogTokenErrorState] Token error with: None for account type: MSA
+2025-01-21 16:13:42.807: [INFO][Sync] Credentials changed for: EdgeSyncKeyDataScope
+2025-01-21 16:13:42.807: [INFO][SyncEngineBackend::DoUpdateKeyDataCredentials] Update key data credentials
+2025-01-21 16:13:42.807: [INFO][SyncEngineBackend::DoUpdateCredentials] Update credentials
+2025-01-21 16:13:42.807: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Blocked types:  and types to download: Encryption Keys
+2025-01-21 16:13:43.362: [INFO][Sync] Started DataTypeManager configuration, reason: 4
+2025-01-21 16:13:43.362: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 4, current state: 0
+2025-01-21 16:13:43.373: [INFO][Sync] Configure, desired: Bookmarks, Preferences, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys; Allow fail: Passwords, Autofill Profiles, Autofill
+2025-01-21 16:13:43.373: [INFO][Sync] Loading: Bookmarks
+2025-01-21 16:13:43.373: [INFO][Sync] Loading: Preferences
+2025-01-21 16:13:43.373: [INFO][Sync] Loading: Extensions
+2025-01-21 16:13:43.373: [INFO][Sync] Loading: Sessions
+2025-01-21 16:13:43.373: [INFO][Sync] Loading: Extension settings
+2025-01-21 16:13:43.373: [INFO][Sync] Loading: History Delete Directives
+2025-01-21 16:13:43.373: [INFO][Sync] Loading: Device Info
+2025-01-21 16:13:43.373: [INFO][Sync] Loading: User Consents
+2025-01-21 16:13:43.373: [INFO][Sync] Loading: Send Tab To Self
+2025-01-21 16:13:43.373: [INFO][Sync] Loading: Web Apps
+2025-01-21 16:13:43.373: [INFO][Sync] Loading: History
+2025-01-21 16:13:43.373: [INFO][Sync] Loading: Collection
+2025-01-21 16:13:43.373: [INFO][Sync] Loading: Edge E Drop
+2025-01-21 16:13:43.373: [INFO][Sync] Loading: Edge Hub App Usage
+2025-01-21 16:13:43.373: [INFO][Sync] Loading: Edge Tab Group
+2025-01-21 16:13:43.373: [INFO][Sync] Loading: Edge Wallet
+2025-01-21 16:13:43.386: [INFO][Sync] All data types are ready for configure.
+2025-01-21 16:13:43.680: [INFO][SyncEngineBackend::DoStartConfiguration] Start configuration
+2025-01-21 16:13:43.680: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 4
+2025-01-21 16:13:43.680: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 16:13:43.692: [INFO][Sync] Started DataTypeManager configuration, reason: 5
+2025-01-21 16:13:43.692: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 5, current state: 1
+2025-01-21 16:13:43.702: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 4
+2025-01-21 16:13:43.702: [WARN][Sync]     Reconfigure requested while configuration ongoing.
+2025-01-21 16:13:43.702: [INFO][Sync] Configuring for: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys, reason: 5, current state: 2
+2025-01-21 16:13:43.702: [INFO][Sync] Configure, desired: Bookmarks, Preferences, Passwords, Autofill Profiles, Autofill, Extensions, Sessions, Extension settings, History Delete Directives, Device Info, User Consents, Send Tab To Self, Web Apps, History, Collection, Edge E Drop, Edge Hub App Usage, Edge Tab Group, Edge Wallet, Encryption Keys; Allow fail: 
+2025-01-21 16:13:43.702: [INFO][Sync] Loading: Passwords
+2025-01-21 16:13:43.702: [INFO][Sync] Loading: Autofill Profiles
+2025-01-21 16:13:43.702: [INFO][Sync] Loading: Autofill
+2025-01-21 16:13:43.703: [INFO][Sync] All data types are ready for configure.
+2025-01-21 16:13:43.703: [INFO][SyncManagerImpl::NudgeForInitialDownload] Initial download nudge for Passwords
+2025-01-21 16:13:43.703: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 16:13:43.703: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 16:13:43.704: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 4
+2025-01-21 16:13:43.704: [INFO][Sync] Prepare to configure types: Passwords, Encryption Keys
+2025-01-21 16:13:43.705: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download: Passwords, Encryption Keys with reason: 5
+2025-01-21 16:13:43.705: [INFO][SyncSchedulerImpl::DoConfigurationSyncCycleJob] Blocked types:  and types to download: Passwords, Encryption Keys
+2025-01-21 16:13:43.953: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: Passwords, Encryption Keys
+2025-01-21 16:13:43.964: [INFO][Sync] ConfigurationDone, failed: , succeeded: Passwords, Encryption Keys, remaining count: 3
+2025-01-21 16:13:43.964: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 16:13:43.964: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 16:13:43.965: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 2
+2025-01-21 16:13:43.965: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 16:13:43.965: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 16:13:43.966: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 1
+2025-01-21 16:13:43.978: [INFO][SyncManagerImpl::ConfigureSyncer] Types to download:  with reason: 5
+2025-01-21 16:13:43.978: [INFO][SyncEngineBackend::DoFinishConfigureDataTypes] Failed to download types:  and succeeded types: 
+2025-01-21 16:13:43.979: [INFO][Sync] ConfigurationDone, failed: , succeeded: , remaining count: 0
+2025-01-21 16:13:43.989: [INFO][Sync]     Configuration completed, state: 7
+2025-01-21 16:13:43.989: [INFO][Sync] Configured DataTypeManager: Ok
+2025-01-21 16:13:44.001: [INFO][SyncEngineBackend::DoStartSyncing] Start syncing
+2025-01-21 16:19:36.679: [INFO][Sync] Reset engine, reason: 0
+2025-01-21 16:19:36.679: [INFO][Sync] Reset engine with reason: 0
