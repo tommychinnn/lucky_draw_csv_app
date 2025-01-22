@@ -219,19 +219,15 @@ class _HomeScreenState extends State<HomeScreen> {
                   animationDuration: const Duration(seconds: 5),
                 ),
               const SizedBox(height: 20),
-              Card(
-                elevation: 8,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(15),
-                  side: BorderSide(
-                    color: Theme.of(context).primaryColor,
-                    width: 2,
-                  ),
-                ),
-                child: Container(
-                  constraints: BoxConstraints(
-                    maxHeight: winners.isEmpty ? 100 : winnersListHeight,
-                    minHeight: 100,
+              Expanded(
+                child: Card(
+                  elevation: 8,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(15),
+                    side: BorderSide(
+                      color: Theme.of(context).primaryColor,
+                      width: 2,
+                    ),
                   ),
                   child: winners.isEmpty
                       ? const Center(

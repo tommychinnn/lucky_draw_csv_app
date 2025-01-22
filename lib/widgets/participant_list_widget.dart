@@ -6,98 +6,63 @@ class ParticipantListWidget extends StatelessWidget {
   final List<Winner> winners;
 
   const ParticipantListWidget({
-    super.key,
+    Key? key,
     required this.title,
     required this.winners,
-  });
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    // Create a reversed list of winners
-    final reversedWinners = winners.reversed.toList();
-
-    return Card(
-      elevation: 8,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(15),
-        side: BorderSide(
-          color: Theme.of(context).primaryColor,
-          width: 2,
+    return Column(
+      children: [
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Text(
+            title,
+            style: const TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
         ),
-      ),
-      child: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Center(
-              child: Text(
-                title,
-                style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                  color: const Color(0xFFE31837),
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
-            const Divider(
-              color: Color(0xFFE31837),
-              thickness: 2,
-            ),
-            const SizedBox(height: 8),
-            Expanded(
-              child: SingleChildScrollView(
-                child: Column(
-                  children: [
-                    ...reversedWinners.map((winner) => Container(
-                      margin: const EdgeInsets.symmetric(vertical: 4),
-                      padding: const EdgeInsets.all(12),
-                      decoration: BoxDecoration(
-                        color: const Color(0xFFFDF1DB),
-                        borderRadius: BorderRadius.circular(8),
-                        border: Border.all(
-                          color: const Color(0xFFE31837),
-                          width: 1,
-                        ),
-                      ),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            winner.prize,
+        Expanded(
+          child: SingleChildScrollView(
+            physics: const BouncingScrollPhysics(),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+              child: Column(
+                children: winners.asMap().entries.map((entry) {
+                  final index = entry.key;
+                  final winner = entry.value;
+                  return Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 4.0),
+                    child: Card(
+                      elevation: 2,
+                      child: ListTile(
+                        leading: CircleAvatar(
+                          backgroundColor: Theme.of(context).primaryColor,
+                          child: Text(
+                            '${index + 1}',
                             style: const TextStyle(
-                              fontSize: 14,
-                              color: Color(0xFFE31837),
+                              color: Colors.white,
                               fontWeight: FontWeight.bold,
                             ),
                           ),
-                          const SizedBox(height: 4),
-                          Row(
-                            children: [
-                              const Icon(
-                                Icons.emoji_events,
-                                color: Color(0xFFFFD700),
-                              ),
-                              const SizedBox(width: 8),
-                              Text(
-                                winner.name,
-                                style: const TextStyle(
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.bold,
-                                  color: Color(0xFF333333),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ],
+                        ),
+                        title: Text(
+                          winner.name,
+                          style: const TextStyle(fontWeight: FontWeight.bold),
+                        ),
+                        subtitle: Text(winner.prize),
                       ),
-                    )),
-                  ],
-                ),
+                    ),
+                  );
+                }).toList(),
               ),
             ),
-          ],
+          ),
         ),
-      ),
+      ],
     );
   }
 } 

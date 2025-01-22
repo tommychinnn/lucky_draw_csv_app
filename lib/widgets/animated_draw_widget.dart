@@ -32,6 +32,7 @@ class _AnimatedDrawWidgetState extends State<AnimatedDrawWidget>
   final AudioService _audioService = AudioService();
   bool isMuted = false;
   bool _showFireworks = false;
+  bool _showWinnerName = false;
 
   @override
   void initState() {
