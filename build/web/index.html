@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <base href="/lucky_draw_csv_app/">
+
+  <meta charset="UTF-8">
+
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+
+  <meta name="description" content="A Lucky Draw application.">
+
+
+
+  <!-- iOS meta tags & icons -->
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta name="apple-mobile-web-app-title" content="lucky_draw_csv_app">
+
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+
+
+  <!-- Favicon -->
+
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <link rel="icon" type="image/png" href="assets/images/logo.png"/>
+
+
+  <title>Lucky Draw App</title>
+
+  <link rel="manifest" href="manifest.json">
+
+
+
+  <script>
+
+    // The value below is injected by flutter build, do not touch.
+
+    const serviceWorkerVersion = "226211305";
+
+  </script>
+
+  <!-- This script adds the flutter initialization JS code -->
+
+  <script src="flutter.js" defer></script>
+
+  <style>
+
+    .loading {
+
+      display: flex;
+
+      justify-content: center;
+
+      align-items: center;
+
+      margin: 0;
+
+      position: absolute;
+
+      top: 50%;
+
+      left: 50%;
+
+      -ms-transform: translate(-50%, -50%);
+
+      transform: translate(-50%, -50%);
+
+    }
+
+  </style>
+
+  <meta name="audio-type" content="audio/mp4">
+
+  <!-- Add support for audio autoplay -->
+
+  <script>
+
+    window.addEventListener('load', function() {
+
+      let context = new (window.AudioContext || window.webkitAudioContext)();
+
+      if (context.state === 'suspended') {
+
+        let resume = function() {
+
+          context.resume();
+
+          setTimeout(function() {
+
+            if (context.state === 'running') {
+
+              document.body.removeEventListener('click', resume);
+
+              document.body.removeEventListener('touchend', resume);
+
+            }
+
+          }, 0);
+
+        };
+
+        document.body.addEventListener('click', resume);
+
+        document.body.addEventListener('touchend', resume);
+
+      }
+
+    });
+
+  </script>
+
+  <!-- Add this meta tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  
+  <!-- Add video preload hints -->
+  <link rel="preload" as="video" href="assets/audio/winner.mp4" type="video/mp4">
+  <link rel="preload" as="video" href="assets/audio/slot_machine.mp4" type="video/mp4">
+  
+  <!-- Add video MIME type -->
+  <meta name="video-type" content="video/mp4">
+
+</head>
+
+<body>
+
+  <div class="loading">
+
+    <div id="loading">Loading...</div>
+
+  </div>
+
+  <script>
+
+    window.addEventListener('load', function(ev) {
+
+      var loading = document.querySelector('#loading');
+
+      // Download main.dart.js
+
+      _flutter.loader.loadEntrypoint({
+
+        serviceWorker: {
+
+          serviceWorkerVersion: serviceWorkerVersion,
+
+        }
+
+      }).then(function(engineInitializer) {
+
+        loading.textContent = 'Initializing engine...';
+
+        return engineInitializer.initializeEngine();
+
+      }).then(function(appRunner) {
+
+        loading.textContent = 'Running app...';
+
+        return appRunner.runApp();
+
+      }).then(function(app) {
+
+        // Wait a few milliseconds so users can see the "Running app" message
+
+        window.setTimeout(function() {
+
+          loading.remove();
+
+        }, 200);
+
+      });
+
+    });
+
+  </script>
+
+</body>
+
+</html> 
