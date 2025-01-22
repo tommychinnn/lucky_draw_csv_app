@@ -70,16 +70,43 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
       ),
-      body: SingleChildScrollView(
+      body: SafeArea(
+        bottom: true,
         child: Padding(
-          padding: const EdgeInsets.all(16.0),
+          padding: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 32.0),
           child: Column(
             children: [
-              FileUploadWidget(onFileUploaded: onFileUploaded),
+              Container(
+                constraints: const BoxConstraints(minHeight: 60),
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Container(
+                        height: 48,
+                        margin: const EdgeInsets.only(right: 8),
+                        child: ElevatedButton(
+                          onPressed: () => handleUploadCSV(),
+                          child: const Text('上传表格 Upload CSV'),
+                        ),
+                      ),
+                    ),
+                    Expanded(
+                      child: Container(
+                        height: 48,
+                        margin: const EdgeInsets.only(left: 8),
+                        child: ElevatedButton(
+                          onPressed: () => handlePasteNames(),
+                          child: const Text('粘贴名单 Paste Names'),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
               const SizedBox(height: 20),
               Text(
                 participants.isEmpty 
-                    ? '请上传名单 Please Upload Namelist'
+                    ? '请上传表格 Please Upload Namelist'
                     : '参与者 Participants: ${participants.length}',  // Added English
                 style: const TextStyle(
                   fontSize: 20,
