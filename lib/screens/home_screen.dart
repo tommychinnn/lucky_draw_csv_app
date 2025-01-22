@@ -3,6 +3,7 @@ import '../services/file_service.dart';
 import '../widgets/file_upload_widget.dart';
 import '../widgets/participant_list_widget.dart';
 import '../widgets/animated_draw_widget.dart';
+import 'package:file_picker/file_picker.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -39,6 +40,57 @@ class _HomeScreenState extends State<HomeScreen> {
       winners.add(Winner(name: winner, prize: prizeDescription));
       participants.remove(winner);
     });
+  }
+
+  void handleUploadCSV() async {
+    final result = await FilePicker.platform.pickFiles(
+      type: FileType.custom,
+      allowedExtensions: ['csv'],
+    );
+
+    if (result != null) {
+      try {
+        final names = await FileService.readCSV(result.files.first);
+        onFileUploaded(names);
+      } catch (e) {
+        if (mounted) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text('Error: ${e.toString()}')),
+          );
+        }
+      }
+    }
+  }
+
+  void handlePasteNames() {
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('粘贴名单 Paste Names'),
+        content: TextField(
+          maxLines: 8,
+          decoration: const InputDecoration(
+            hintText: '例如 Example:\nJohn\nMary\nPeter\nSarah',
+            border: OutlineInputBorder(),
+          ),
+          onChanged: (value) {
+            // Split the pasted text into lines and remove empty lines
+            final names = value
+                .split('\n')
+                .map((e) => e.trim())
+                .where((e) => e.isNotEmpty)
+                .toList();
+            onFileUploaded(names);
+          },
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: const Text('确定 OK'),
+          ),
+        ],
+      ),
+    );
   }
 
   @override
