@@ -122,105 +122,105 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
       ),
-      body: SafeArea(
-        bottom: true,
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 32.0),
-          child: Column(
-            children: [
-              Container(
-                constraints: const BoxConstraints(minHeight: 60),
-                child: Row(
-                  children: [
-                    Expanded(
-                      child: Container(
-                        height: 48,
-                        margin: const EdgeInsets.only(right: 8),
-                        child: ElevatedButton(
-                          onPressed: () => handleUploadCSV(),
-                          child: const Text('上传表格 Upload CSV'),
-                        ),
-                      ),
-                    ),
-                    Expanded(
-                      child: Container(
-                        height: 48,
-                        margin: const EdgeInsets.only(left: 8),
-                        child: ElevatedButton(
-                          onPressed: () => handlePasteNames(),
-                          child: const Text('粘贴名单 Paste Names'),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              const SizedBox(height: 20),
-              Text(
-                participants.isEmpty 
-                    ? '请上传表格 Please Upload Namelist'
-                    : '参与者 Participants: ${participants.length}',  // Added English
-                style: const TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                  color: Color(0xFFE31837),
-                ),
-              ),
-              const SizedBox(height: 20),
-              TextField(
-                controller: _prizeController,
-                enabled: participants.isNotEmpty,
-                decoration: InputDecoration(
-                  labelText: '奖品描述 Prize Description',
-                  border: const OutlineInputBorder(),
-                  hintText: '例如: 一等奖 - iPhone 15 Pro Max',
-                  filled: participants.isEmpty,
-                  fillColor: Colors.grey[200],
-                ),
-              ),
-              const SizedBox(height: 20),
-              if (participants.isEmpty)
+      body: SingleChildScrollView(
+        child: SafeArea(
+          bottom: true,
+          child: Padding(
+            padding: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 32.0),
+            child: Column(
+              children: [
                 Container(
-                  height: 120,
-                  width: double.infinity,
-                  decoration: BoxDecoration(
-                    border: Border.all(
-                      color: Colors.grey[300]!,
-                      width: 2,
-                    ),
-                    borderRadius: BorderRadius.circular(15),
-                    gradient: LinearGradient(
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
-                      colors: [
-                        Colors.grey[100]!,
-                        Colors.white,
-                        Colors.grey[100]!,
-                      ],
-                    ),
+                  constraints: const BoxConstraints(minHeight: 60),
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: Container(
+                          height: 48,
+                          margin: const EdgeInsets.only(right: 8),
+                          child: ElevatedButton(
+                            onPressed: () => handleUploadCSV(),
+                            child: const Text('上传表格 Upload CSV'),
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        child: Container(
+                          height: 48,
+                          margin: const EdgeInsets.only(left: 8),
+                          child: ElevatedButton(
+                            onPressed: () => handlePasteNames(),
+                            child: const Text('粘贴名单 Paste Names'),
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
-                  child: const Center(
-                    child: Text(
-                      '等待抽奖 Waiting for Draw',
-                      style: TextStyle(
-                        fontSize: 24,
-                        color: Colors.grey,
+                ),
+                const SizedBox(height: 20),
+                Text(
+                  participants.isEmpty 
+                      ? '请上传表格 Please Upload Namelist'
+                      : '参与者 Participants: ${participants.length}',  // Added English
+                  style: const TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xFFE31837),
+                  ),
+                ),
+                const SizedBox(height: 20),
+                TextField(
+                  controller: _prizeController,
+                  enabled: participants.isNotEmpty,
+                  decoration: InputDecoration(
+                    labelText: '奖品描述 Prize Description',
+                    border: const OutlineInputBorder(),
+                    hintText: '例如: 一等奖 - iPhone 15 Pro Max',
+                    filled: participants.isEmpty,
+                    fillColor: Colors.grey[200],
+                  ),
+                ),
+                const SizedBox(height: 20),
+                if (participants.isEmpty)
+                  Container(
+                    height: 120,
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.grey[300]!,
+                        width: 2,
+                      ),
+                      borderRadius: BorderRadius.circular(15),
+                      gradient: LinearGradient(
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                        colors: [
+                          Colors.grey[100]!,
+                          Colors.white,
+                          Colors.grey[100]!,
+                        ],
                       ),
                     ),
+                    child: const Center(
+                      child: Text(
+                        '等待抽奖 Waiting for Draw',
+                        style: TextStyle(
+                          fontSize: 24,
+                          color: Colors.grey,
+                        ),
+                      ),
+                    ),
+                  )
+                else
+                  AnimatedDrawWidget(
+                    participants: participants,
+                    onWinnerSelected: onWinnerSelected,
+                    prizeDescription: _prizeController.text.isEmpty 
+                        ? '幸运抽奖 Lucky Draw' 
+                        : _prizeController.text,
+                    animationDuration: const Duration(seconds: 5),
                   ),
-                )
-              else
-                AnimatedDrawWidget(
-                  participants: participants,
-                  onWinnerSelected: onWinnerSelected,
-                  prizeDescription: _prizeController.text.isEmpty 
-                      ? '幸运抽奖 Lucky Draw' 
-                      : _prizeController.text,
-                  animationDuration: const Duration(seconds: 5),
-                ),
-              const SizedBox(height: 20),
-              Expanded(
-                child: Card(
+                const SizedBox(height: 20),
+                Card(
                   elevation: 8,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(15),
@@ -245,9 +245,9 @@ class _HomeScreenState extends State<HomeScreen> {
                           winners: winners,
                         ),
                 ),
-              ),
-              const SizedBox(height: 20),
-            ],
+                const SizedBox(height: 20),
+              ],
+            ),
           ),
         ),
       ),
