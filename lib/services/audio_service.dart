@@ -15,14 +15,13 @@ class AudioService {
     _slotMachinePlayer = AudioPlayer();
     _winnerPlayer = AudioPlayer();
     
-    // Preload both audio files
-    await Future.wait([
-      _slotMachinePlayer.setAsset('assets/audio/slot_machine.mp4'),
-      _winnerPlayer.setAsset('assets/audio/winner.mp4'),
-    ]);
-
-    // Set up winner player with lower volume
-    await _winnerPlayer.setVolume(0.8);
+    // Initialize one at a time for better reliability
+    await _slotMachinePlayer.setAsset('assets/audio/slot_machine.mp4');
+    await _slotMachinePlayer.setVolume(0.5);
+    await _slotMachinePlayer.setLoopMode(LoopMode.one);  // Add loop mode back
+    
+    await _winnerPlayer.setAsset('assets/audio/winner.mp4');
+    await _winnerPlayer.setVolume(1.0);  // Increase volume for winner sound
     
     _isInitialized = true;
   }
@@ -39,8 +38,8 @@ class AudioService {
   Future<void> stopSpinningSound() async {
     try {
       await _slotMachinePlayer.stop();
-      // Add a small delay before playing winner sound
-      await Future.delayed(const Duration(milliseconds: 300));
+      // Increase delay before winner sound
+      await Future.delayed(const Duration(milliseconds: 500));
     } catch (e) {
       print('Error stopping spinning sound: $e');
     }
@@ -48,6 +47,11 @@ class AudioService {
 
   Future<void> playWinnerSound() async {
     try {
+      // Make sure previous sound is completely stopped
+      await _slotMachinePlayer.stop();
+      await Future.delayed(const Duration(milliseconds: 200));
+      
+      // Reset and play winner sound
       await _winnerPlayer.seek(Duration.zero);
       await _winnerPlayer.play();
     } catch (e) {
@@ -58,6 +62,7 @@ class AudioService {
   Future<void> stopWinnerSound() async {
     try {
       await _winnerPlayer.stop();
+      await _winnerPlayer.seek(Duration.zero);
     } catch (e) {
       print('Error stopping winner sound: $e');
     }
