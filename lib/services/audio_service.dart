@@ -72,4 +72,4 @@ class AudioService {
     _slotMachinePlayer.dispose();
     _winnerPlayer.dispose();
   }
-} 
+}
