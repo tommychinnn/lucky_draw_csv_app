@@ -15,7 +15,7 @@ class AnimatedDrawWidget extends StatefulWidget {
     required this.participants,
     required this.onWinnerSelected,
     required this.prizeDescription,
-    this.animationDuration = const Duration(seconds: 5),
+    this.animationDuration = const Duration(seconds: 11),
   });
 
   @override
@@ -49,12 +49,6 @@ class _AnimatedDrawWidgetState extends State<AnimatedDrawWidget>
   void _handleAnimationStatus(AnimationStatus status) {
     if (status == AnimationStatus.completed) {
       _timer?.cancel();
-      if (!isMuted) {
-        _audioService.stopSpinningSound().then((_) async {
-          await Future.delayed(const Duration(milliseconds: 100));
-          await _audioService.playWinnerSound();
-        });
-      }
       setState(() {
         isAnimating = false;
         displayName = selectedWinner!;
@@ -75,8 +69,6 @@ class _AnimatedDrawWidgetState extends State<AnimatedDrawWidget>
   void startDraw() {
     if (isAnimating) return;
 
-    _audioService.stopWinnerSound();
-
     final random = math.Random();
     selectedWinner = widget.participants[random.nextInt(widget.participants.length)];
 
@@ -85,6 +77,7 @@ class _AnimatedDrawWidgetState extends State<AnimatedDrawWidget>
       displayName = widget.participants[random.nextInt(widget.participants.length)];
     });
 
+    // Play combined sound immediately when clicking draw
     if (!isMuted) {
       _audioService.startSpinningSound();
     }

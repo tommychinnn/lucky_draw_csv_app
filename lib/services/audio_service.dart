@@ -5,71 +5,47 @@ class AudioService {
   factory AudioService() => _instance;
   AudioService._internal();
 
-  late AudioPlayer _slotMachinePlayer;
-  late AudioPlayer _winnerPlayer;
+  late AudioPlayer _combinedPlayer;
   bool _isInitialized = false;
 
   Future<void> initialize() async {
     if (_isInitialized) return;
     
-    _slotMachinePlayer = AudioPlayer();
-    _winnerPlayer = AudioPlayer();
-    
-    // Initialize one at a time for better reliability
-    await _slotMachinePlayer.setAsset('assets/audio/slot_machine.mp4');
-    await _slotMachinePlayer.setVolume(0.5);
-    await _slotMachinePlayer.setLoopMode(LoopMode.one);  // Add loop mode back
-    
-    await _winnerPlayer.setAsset('assets/audio/winner.mp4');
-    await _winnerPlayer.setVolume(1.0);  // Increase volume for winner sound
+    _combinedPlayer = AudioPlayer();
+    await _combinedPlayer.setAsset('assets/audio/combine_slotmachine_winner.mp4');
+    await _combinedPlayer.setVolume(1.0);
+    await _combinedPlayer.load();
     
     _isInitialized = true;
   }
 
   Future<void> startSpinningSound() async {
     try {
-      await _slotMachinePlayer.seek(Duration.zero);
-      await _slotMachinePlayer.play();
+      await _combinedPlayer.seek(Duration.zero);
+      await _combinedPlayer.play();
     } catch (e) {
-      print('Error playing spinning sound: $e');
+      print('Error playing combined sound: $e');
     }
   }
 
   Future<void> stopSpinningSound() async {
-    try {
-      await _slotMachinePlayer.stop();
-      // Increase delay before winner sound
-      await Future.delayed(const Duration(milliseconds: 500));
-    } catch (e) {
-      print('Error stopping spinning sound: $e');
-    }
+    // No need to stop, let it continue to winner sound
   }
 
   Future<void> playWinnerSound() async {
-    try {
-      // Make sure previous sound is completely stopped
-      await _slotMachinePlayer.stop();
-      await Future.delayed(const Duration(milliseconds: 200));
-      
-      // Reset and play winner sound
-      await _winnerPlayer.seek(Duration.zero);
-      await _winnerPlayer.play();
-    } catch (e) {
-      print('Error playing winner sound: $e');
-    }
+    // Winner sound is part of combined audio now
   }
 
   Future<void> stopWinnerSound() async {
     try {
-      await _winnerPlayer.stop();
-      await _winnerPlayer.seek(Duration.zero);
+      await _combinedPlayer.stop();
+      await _combinedPlayer.seek(Duration.zero);
     } catch (e) {
-      print('Error stopping winner sound: $e');
+      print('Error stopping sound: $e');
     }
   }
 
   void dispose() {
-    _slotMachinePlayer.dispose();
-    _winnerPlayer.dispose();
+    _combinedPlayer.dispose();
   }
 }
