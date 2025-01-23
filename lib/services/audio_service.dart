@@ -5,31 +5,32 @@ class AudioService {
   factory AudioService() => _instance;
   AudioService._internal();
 
-  final AudioPlayer _spinningPlayer = AudioPlayer();
-  final AudioPlayer _winnerPlayer = AudioPlayer();
-  bool _initialized = false;
+  late AudioPlayer _slotMachinePlayer;
+  late AudioPlayer _winnerPlayer;
+  bool _isInitialized = false;
 
   Future<void> initialize() async {
-    if (_initialized) return;
+    if (_isInitialized) return;
+    
+    _slotMachinePlayer = AudioPlayer();
+    _winnerPlayer = AudioPlayer();
+    
+    // Preload both audio files
+    await Future.wait([
+      _slotMachinePlayer.setAsset('assets/audio/slot_machine.mp4'),
+      _winnerPlayer.setAsset('assets/audio/winner.mp4'),
+    ]);
 
-    try {
-      await _spinningPlayer.setAsset('assets/audio/slot_machine.mp4');
-      await _spinningPlayer.setLoopMode(LoopMode.one);
-      await _spinningPlayer.setVolume(0.5);
-      
-      await _winnerPlayer.setAsset('assets/audio/winner.mp4');
-      await _winnerPlayer.setVolume(0.7);
-      
-      _initialized = true;
-    } catch (e) {
-      print('Error initializing audio: $e');
-    }
+    // Set up winner player with lower volume
+    await _winnerPlayer.setVolume(0.8);
+    
+    _isInitialized = true;
   }
 
   Future<void> startSpinningSound() async {
     try {
-      await _spinningPlayer.seek(Duration.zero);
-      await _spinningPlayer.play();
+      await _slotMachinePlayer.seek(Duration.zero);
+      await _slotMachinePlayer.play();
     } catch (e) {
       print('Error playing spinning sound: $e');
     }
@@ -37,8 +38,9 @@ class AudioService {
 
   Future<void> stopSpinningSound() async {
     try {
-      await _spinningPlayer.stop();
-      await _spinningPlayer.seek(Duration.zero);  // Reset position
+      await _slotMachinePlayer.stop();
+      // Add a small delay before playing winner sound
+      await Future.delayed(const Duration(milliseconds: 300));
     } catch (e) {
       print('Error stopping spinning sound: $e');
     }
@@ -46,11 +48,7 @@ class AudioService {
 
   Future<void> playWinnerSound() async {
     try {
-      // Stop any previous playback
-      await _winnerPlayer.stop();
-      // Reset to beginning
       await _winnerPlayer.seek(Duration.zero);
-      // Play the sound
       await _winnerPlayer.play();
     } catch (e) {
       print('Error playing winner sound: $e');
@@ -60,14 +58,13 @@ class AudioService {
   Future<void> stopWinnerSound() async {
     try {
       await _winnerPlayer.stop();
-      await _winnerPlayer.seek(Duration.zero);
     } catch (e) {
       print('Error stopping winner sound: $e');
     }
   }
 
   void dispose() {
-    _spinningPlayer.dispose();
+    _slotMachinePlayer.dispose();
     _winnerPlayer.dispose();
   }
 } 
