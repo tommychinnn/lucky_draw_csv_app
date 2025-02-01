@@ -4,7 +4,7 @@ import '../widgets/file_upload_widget.dart';
 import '../widgets/participant_list_widget.dart';
 import '../widgets/animated_draw_widget.dart';
 import 'package:file_picker/file_picker.dart';
-import 'package:flutter/html.dart';
+import 'package:flutter/foundation.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
