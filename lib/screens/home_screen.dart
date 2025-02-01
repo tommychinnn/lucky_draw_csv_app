@@ -4,6 +4,7 @@ import '../widgets/file_upload_widget.dart';
 import '../widgets/participant_list_widget.dart';
 import '../widgets/animated_draw_widget.dart';
 import 'package:file_picker/file_picker.dart';
+import 'package:flutter/html.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -248,41 +249,52 @@ class _HomeScreenState extends State<HomeScreen> {
                             ),
                     ),
                     const SizedBox(height: 20),
-                  ],
-                ),
-              ),
-              // Add copyright footer
-              Container(
-                width: double.infinity,
-                padding: const EdgeInsets.symmetric(vertical: 16.0),
-                decoration: BoxDecoration(
-                  color: Theme.of(context).primaryColor.withOpacity(0.1),
-                  border: Border(
-                    top: BorderSide(
-                      color: Theme.of(context).primaryColor,
-                      width: 1,
-                    ),
-                  ),
-                ),
-                child: const Column(
-                  children: [
-                    Text(
-                      '© 2024 Wulala Lucky Draw. All Rights Reserved.',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 12,
-                        color: Color(0xFFE31837),
-                        fontWeight: FontWeight.w500,
+
+                    // Add Google Ads
+                    Container(
+                      width: double.infinity,
+                      padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                      child: const HtmlElementView(
+                        viewType: 'google-ads',
                       ),
                     ),
-                    SizedBox(height: 4),  // Small spacing between lines
-                    Text(
-                      'Developed by Tommy Chin',
-                      textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 11,
-                        color: Color(0xFFE31837),
-                        fontWeight: FontWeight.w400,
+                    const SizedBox(height: 20),
+
+                    // Copyright footer
+                    Container(
+                      width: double.infinity,
+                      padding: const EdgeInsets.symmetric(vertical: 16.0),
+                      decoration: BoxDecoration(
+                        color: Theme.of(context).primaryColor.withOpacity(0.1),
+                        border: Border(
+                          top: BorderSide(
+                            color: Theme.of(context).primaryColor,
+                            width: 1,
+                          ),
+                        ),
+                      ),
+                      child: const Column(
+                        children: [
+                          Text(
+                            '© 2024 Wulala Lucky Draw. All Rights Reserved.',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              fontSize: 12,
+                              color: Color(0xFFE31837),
+                              fontWeight: FontWeight.w500,
+                            ),
+                          ),
+                          SizedBox(height: 4),  // Small spacing between lines
+                          Text(
+                            'Developed by Tommy Chin',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              fontSize: 11,
+                              color: Color(0xFFE31837),
+                              fontWeight: FontWeight.w400,
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ],

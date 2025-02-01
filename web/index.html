@@ -4,7 +4,7 @@
 
 <head>
 
-  <base href="$FLUTTER_BASE_HREF">
+  <base href="/">
 
   <meta charset="UTF-8">
 
@@ -12,7 +12,9 @@
 
   <meta name="description" content="A Lucky Draw application.">
 
-
+  <!-- Add Google AdSense verification script -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1689408749608578"
+     crossorigin="anonymous"></script>
 
   <!-- iOS meta tags & icons -->
 
@@ -179,6 +181,43 @@
 
     });
 
+  </script>
+
+  <!-- Add this before </body> -->
+  <script>
+    // Register Google Ads view factory
+    window.addEventListener('load', function(ev) {
+      // Create the ads container
+      var adsElement = document.createElement('div');
+      
+      // Add the Google Ads scripts
+      var adsScript = document.createElement('script');
+      adsScript.async = true;
+      adsScript.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1689408749608578";
+      adsScript.crossOrigin = "anonymous";
+      adsElement.appendChild(adsScript);
+      
+      // Add the ad unit
+      var adUnit = document.createElement('ins');
+      adUnit.className = 'adsbygoogle';
+      adUnit.style.display = 'block';
+      adUnit.setAttribute('data-ad-client', 'ca-pub-1689408749608578');
+      adUnit.setAttribute('data-ad-slot', '2322780156');
+      adUnit.setAttribute('data-ad-format', 'auto');
+      adUnit.setAttribute('data-full-width-responsive', 'true');
+      adsElement.appendChild(adUnit);
+      
+      // Add the push script
+      var pushScript = document.createElement('script');
+      pushScript.text = '(adsbygoogle = window.adsbygoogle || []).push({});';
+      adsElement.appendChild(pushScript);
+      
+      // Register the view factory
+      var viewRegistry = window.flutter_web_plugins.viewRegistry;
+      viewRegistry.registerViewFactory('google-ads', function(viewId) {
+        return adsElement;
+      });
+    });
   </script>
 
 </body>
