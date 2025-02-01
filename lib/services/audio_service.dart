@@ -5,24 +5,23 @@ class AudioService {
   factory AudioService() => _instance;
   AudioService._internal();
 
-  late AudioPlayer _combinedPlayer;
+  AudioPlayer? _combinedPlayer;
   bool _isInitialized = false;
 
   Future<void> initialize() async {
     if (_isInitialized) return;
-    
-    _combinedPlayer = AudioPlayer();
-    await _combinedPlayer.setAsset('assets/audio/combine_slotmachine_winner.mp4');
-    await _combinedPlayer.setVolume(1.0);
-    await _combinedPlayer.load();
-    
     _isInitialized = true;
   }
 
   Future<void> startSpinningSound() async {
     try {
-      await _combinedPlayer.seek(Duration.zero);
-      await _combinedPlayer.play();
+      // Dispose old player if exists
+      _combinedPlayer?.dispose();
+      
+      // Create new player instance for each play
+      _combinedPlayer = AudioPlayer();
+      await _combinedPlayer!.setAsset('assets/audio/combine_slotmachine_winner.mp4');
+      await _combinedPlayer!.play();
     } catch (e) {
       print('Error playing combined sound: $e');
     }
@@ -38,14 +37,15 @@ class AudioService {
 
   Future<void> stopWinnerSound() async {
     try {
-      await _combinedPlayer.stop();
-      await _combinedPlayer.seek(Duration.zero);
+      await _combinedPlayer?.stop();
+      await _combinedPlayer?.seek(Duration.zero);
     } catch (e) {
       print('Error stopping sound: $e');
     }
   }
 
   void dispose() {
-    _combinedPlayer.dispose();
+    _combinedPlayer?.dispose();
+    _combinedPlayer = null;
   }
 }

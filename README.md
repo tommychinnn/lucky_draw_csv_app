@@ -1,4 +1,36 @@
-# Ulala Lucky Draw
+# Wulala Lucky Draw
+
+Copyright © 2024 Wulala Lucky Draw. All Rights Reserved.
+Developed by Tommy Chin.
+
+This software is protected by copyright law and international treaties. 
+Unauthorized reproduction or distribution of this software, or any portion of it, 
+may result in severe civil and criminal penalties.
+
+## Latest Updates (2024)
+
+- 🎯 Improved animation timing:
+  - 3-2-1 countdown before draw
+  - 8-second slot machine animation
+  - Synchronized audio with animations
+- 🔊 Enhanced audio implementation:
+  - Combined slot machine and winner sounds
+  - Better Safari browser support
+  - Mutable sound effects
+- 🎨 Updated branding:
+  - Renamed to "Wulala Lucky Draw"
+  - Added professional copyright notices
+  - Improved UI consistency
+
+## License
+
+This is a private project. No license is granted for:
+- Commercial use
+- Modification
+- Distribution
+- Private use without permission
+
+For permissions, please contact the developer.
 
 A web-based lucky draw application built with Flutter. Perfect for events, giveaways, and random selections from a list of participants.
 
@@ -118,6 +150,16 @@ just_audio: ^0.9.36
 
 Feel free to submit issues and enhancement requests!
 
-## License
+## Audio Implementation
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+The app uses a combined audio file for the draw animation:
+- `combine_slotmachine_winner.mp4`: Combined audio file
+  - First 8s: Slot machine sound during animation
+  - Remaining: Winner celebration sound
+
+## Browser Compatibility
+
+- Chrome/Edge: Full support
+- Safari: Full support with combined audio implementation
+- Firefox: Full support
+- Mobile browsers: Full support

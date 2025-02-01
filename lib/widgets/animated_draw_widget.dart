@@ -15,7 +15,7 @@ class AnimatedDrawWidget extends StatefulWidget {
     required this.participants,
     required this.onWinnerSelected,
     required this.prizeDescription,
-    this.animationDuration = const Duration(seconds: 11),
+    this.animationDuration = const Duration(seconds: 30),
   });
 
   @override
@@ -38,7 +38,7 @@ class _AnimatedDrawWidgetState extends State<AnimatedDrawWidget>
   void initState() {
     super.initState();
     _controller = AnimationController(
-      duration: widget.animationDuration,
+      duration: const Duration(seconds: 8),  // Match the slotting duration
       vsync: this,
     );
 
@@ -66,22 +66,47 @@ class _AnimatedDrawWidgetState extends State<AnimatedDrawWidget>
     }
   }
 
-  void startDraw() {
+  void startDraw() async {
     if (isAnimating) return;
 
-    final random = math.Random();
-    selectedWinner = widget.participants[random.nextInt(widget.participants.length)];
-
+    // Start preparation animation
     setState(() {
       isAnimating = true;
-      displayName = widget.participants[random.nextInt(widget.participants.length)];
+      displayName = '准备抽奖\nReady...';
     });
 
-    // Play combined sound immediately when clicking draw
+    // Wait to show "Ready"
+    await Future.delayed(const Duration(seconds: 1));
+
+    // Start countdown
+    setState(() {
+      displayName = '3';
+    });
+
+    // Countdown animation with proper timing
+    await Future.delayed(const Duration(seconds: 1));
+    if (!mounted) return;
+    setState(() {
+      displayName = '2';
+    });
+
+    await Future.delayed(const Duration(seconds: 1));
+    if (!mounted) return;
+    setState(() {
+      displayName = '1';
+    });
+
+    await Future.delayed(const Duration(seconds: 1));
+
+    // Start music and animation together
     if (!isMuted) {
       _audioService.startSpinningSound();
     }
 
+    final random = math.Random();
+    selectedWinner = widget.participants[random.nextInt(widget.participants.length)];
+
+    // Start slotting animation
     _timer = Timer.periodic(const Duration(milliseconds: 50), (timer) {
       if (!isAnimating) return;
       setState(() {
@@ -89,6 +114,7 @@ class _AnimatedDrawWidgetState extends State<AnimatedDrawWidget>
       });
     });
 
+    // Start animation controller
     _controller.forward(from: 0.0);
   }
 

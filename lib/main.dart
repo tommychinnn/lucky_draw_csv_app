@@ -1,3 +1,7 @@
+// Copyright (c) 2024 Tommy Chin. All rights reserved.
+// This code is protected by copyright law. Unauthorized copying, modification,
+// or distribution of this software is strictly prohibited.
+
 import 'package:flutter/material.dart';
 import 'screens/home_screen.dart';
 
@@ -12,7 +16,7 @@ class LuckyDrawApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Lucky Draw App',
+      title: 'Wulala Lucky Draw',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: const Color(0xFFE31837), // Traditional Chinese Red

@@ -112,7 +112,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             const SizedBox(width: 10),
             const Text(
-              'Ulala Lucky Draw',
+              'Wulala Lucky Draw',
               style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.bold,
@@ -125,129 +125,170 @@ class _HomeScreenState extends State<HomeScreen> {
       body: SingleChildScrollView(
         child: SafeArea(
           bottom: true,
-          child: Padding(
-            padding: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 32.0),
-            child: Column(
-              children: [
-                Container(
-                  constraints: const BoxConstraints(minHeight: 60),
-                  child: Row(
-                    children: [
-                      Expanded(
-                        child: Container(
-                          height: 48,
-                          margin: const EdgeInsets.only(right: 8),
-                          child: ElevatedButton(
-                            onPressed: () => handleUploadCSV(),
-                            child: const Text('上传表格 Upload CSV'),
+          child: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 32.0),
+                child: Column(
+                  children: [
+                    Container(
+                      constraints: const BoxConstraints(minHeight: 60),
+                      child: Row(
+                        children: [
+                          Expanded(
+                            child: Container(
+                              height: 48,
+                              margin: const EdgeInsets.only(right: 8),
+                              child: ElevatedButton(
+                                onPressed: () => handleUploadCSV(),
+                                child: const Text('上传表格 Upload CSV'),
+                              ),
+                            ),
                           ),
-                        ),
-                      ),
-                      Expanded(
-                        child: Container(
-                          height: 48,
-                          margin: const EdgeInsets.only(left: 8),
-                          child: ElevatedButton(
-                            onPressed: () => handlePasteNames(),
-                            child: const Text('粘贴名单 Paste Names'),
+                          Expanded(
+                            child: Container(
+                              height: 48,
+                              margin: const EdgeInsets.only(left: 8),
+                              child: ElevatedButton(
+                                onPressed: () => handlePasteNames(),
+                                child: const Text('粘贴名单 Paste Names'),
+                              ),
+                            ),
                           ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                const SizedBox(height: 20),
-                Text(
-                  participants.isEmpty 
-                      ? '请上传表格 Please Upload Namelist'
-                      : '参与者 Participants: ${participants.length}',  // Added English
-                  style: const TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                    color: Color(0xFFE31837),
-                  ),
-                ),
-                const SizedBox(height: 20),
-                TextField(
-                  controller: _prizeController,
-                  enabled: participants.isNotEmpty,
-                  decoration: InputDecoration(
-                    labelText: '奖品描述 Prize Description',
-                    border: const OutlineInputBorder(),
-                    hintText: '例如: 一等奖 - iPhone 15 Pro Max',
-                    filled: participants.isEmpty,
-                    fillColor: Colors.grey[200],
-                  ),
-                ),
-                const SizedBox(height: 20),
-                if (participants.isEmpty)
-                  Container(
-                    height: 120,
-                    width: double.infinity,
-                    decoration: BoxDecoration(
-                      border: Border.all(
-                        color: Colors.grey[300]!,
-                        width: 2,
-                      ),
-                      borderRadius: BorderRadius.circular(15),
-                      gradient: LinearGradient(
-                        begin: Alignment.topCenter,
-                        end: Alignment.bottomCenter,
-                        colors: [
-                          Colors.grey[100]!,
-                          Colors.white,
-                          Colors.grey[100]!,
                         ],
                       ),
                     ),
-                    child: const Center(
-                      child: Text(
-                        '等待抽奖 Waiting for Draw',
-                        style: TextStyle(
-                          fontSize: 24,
-                          color: Colors.grey,
-                        ),
+                    const SizedBox(height: 20),
+                    Text(
+                      participants.isEmpty 
+                          ? '请上传表格 Please Upload Namelist'
+                          : '参与者 Participants: ${participants.length}',
+                      style: const TextStyle(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        color: Color(0xFFE31837),
                       ),
                     ),
-                  )
-                else
-                  AnimatedDrawWidget(
-                    participants: participants,
-                    onWinnerSelected: onWinnerSelected,
-                    prizeDescription: _prizeController.text.isEmpty 
-                        ? '幸运抽奖 Lucky Draw' 
-                        : _prizeController.text,
-                    animationDuration: const Duration(seconds: 5),
-                  ),
-                const SizedBox(height: 20),
-                Card(
-                  elevation: 8,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(15),
-                    side: BorderSide(
-                      color: Theme.of(context).primaryColor,
-                      width: 2,
+                    const SizedBox(height: 20),
+                    TextField(
+                      controller: _prizeController,
+                      enabled: participants.isNotEmpty,
+                      decoration: InputDecoration(
+                        labelText: '奖品描述 Prize Description',
+                        border: const OutlineInputBorder(),
+                        hintText: '例如: 一等奖 - iPhone 15 Pro Max',
+                        filled: participants.isEmpty,
+                        fillColor: Colors.grey[200],
+                      ),
                     ),
-                  ),
-                  child: winners.isEmpty
-                      ? const Center(
+                    const SizedBox(height: 20),
+                    if (participants.isEmpty)
+                      Container(
+                        height: 120,
+                        width: double.infinity,
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                            color: Colors.grey[300]!,
+                            width: 2,
+                          ),
+                          borderRadius: BorderRadius.circular(15),
+                          gradient: LinearGradient(
+                            begin: Alignment.topCenter,
+                            end: Alignment.bottomCenter,
+                            colors: [
+                              Colors.grey[100]!,
+                              Colors.white,
+                              Colors.grey[100]!,
+                            ],
+                          ),
+                        ),
+                        child: const Center(
                           child: Text(
-                            '🎊 获奖者 Winners 🎊\n\n等待抽奖结果 Waiting for Winners',
-                            textAlign: TextAlign.center,
+                            '等待抽奖 Waiting for Draw',
                             style: TextStyle(
-                              fontSize: 16,
+                              fontSize: 24,
                               color: Colors.grey,
                             ),
                           ),
-                        )
-                      : ParticipantListWidget(
-                          title: '🎊 获奖者 Winners 🎊',
-                          winners: winners,
                         ),
+                      )
+                    else
+                      AnimatedDrawWidget(
+                        participants: participants,
+                        onWinnerSelected: onWinnerSelected,
+                        prizeDescription: _prizeController.text.isEmpty 
+                            ? '幸运抽奖 Lucky Draw' 
+                            : _prizeController.text,
+                        animationDuration: const Duration(seconds: 5),
+                      ),
+                    const SizedBox(height: 20),
+                    Card(
+                      elevation: 8,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15),
+                        side: BorderSide(
+                          color: Theme.of(context).primaryColor,
+                          width: 2,
+                        ),
+                      ),
+                      child: winners.isEmpty
+                          ? const Center(
+                              child: Text(
+                                '🎊 获奖者 Winners 🎊\n\n等待抽奖结果 Waiting for Winners',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  color: Colors.grey,
+                                ),
+                              ),
+                            )
+                          : ParticipantListWidget(
+                              title: '🎊 获奖者 Winners 🎊',
+                              winners: winners,
+                            ),
+                    ),
+                    const SizedBox(height: 20),
+                  ],
                 ),
-                const SizedBox(height: 20),
-              ],
-            ),
+              ),
+              // Add copyright footer
+              Container(
+                width: double.infinity,
+                padding: const EdgeInsets.symmetric(vertical: 16.0),
+                decoration: BoxDecoration(
+                  color: Theme.of(context).primaryColor.withOpacity(0.1),
+                  border: Border(
+                    top: BorderSide(
+                      color: Theme.of(context).primaryColor,
+                      width: 1,
+                    ),
+                  ),
+                ),
+                child: const Column(
+                  children: [
+                    Text(
+                      '© 2024 Wulala Lucky Draw. All Rights Reserved.',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 12,
+                        color: Color(0xFFE31837),
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                    SizedBox(height: 4),  // Small spacing between lines
+                    Text(
+                      'Developed by Tommy Chin',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 11,
+                        color: Color(0xFFE31837),
+                        fontWeight: FontWeight.w400,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
           ),
         ),
       ),

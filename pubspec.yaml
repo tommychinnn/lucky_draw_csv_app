@@ -1,7 +1,7 @@
 name: lucky_draw_csv_app
-description: "A new Flutter project"
+description: "A Lucky Draw application"
 publish_to: 'none'
-version: 0.1.0+1
+version: 1.0.0+1
 
 environment:
   sdk: '>=3.2.3 <4.0.0'
