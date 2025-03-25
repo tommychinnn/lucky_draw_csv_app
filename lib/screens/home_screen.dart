@@ -7,10 +7,7 @@ import '../widgets/participant_list_widget.dart';
 import '../widgets/animated_draw_widget.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/foundation.dart';
-import 'package:js/js.dart';
-
-@JS('switchLanguage')
-external void switchLanguageJS(String lang);
+import 'dart:js' as js;
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -31,10 +28,12 @@ class _HomeScreenState extends State<HomeScreen> {
     // Listen for language changes from JavaScript
     if (kIsWeb) {
       // Add JavaScript event listener for language changes
-      js.context['flutter_inappwebview']?.callHandler = allowInterop((String name, dynamic args) {
-        if (name == 'switchLanguage') {
-          final lang = args[0] as String;
-          Provider.of<LanguageService>(context, listen: false).setLanguage(lang);
+      js.context['flutter_inappwebview'] = js.JsObject.jsify({
+        'callHandler': (String name, dynamic args) {
+          if (name == 'switchLanguage') {
+            final lang = args[0] as String;
+            Provider.of<LanguageService>(context, listen: false).setLanguage(lang);
+          }
         }
       });
     }
