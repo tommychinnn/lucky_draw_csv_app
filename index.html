@@ -1,16 +1,26 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-
   <base href="/">
-
   <meta charset="UTF-8">
-
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Wulala Lucky Draw - A professional lucky draw application for events, parties, and gatherings. Features include CSV upload, name list management, animated draw effects, and more.">
+  <meta name="keywords" content="lucky draw, random picker, name picker, raffle, event tool, party game">
+  <meta name="author" content="Tommy Chin">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://wulalaluckydraw.org/">
+  <meta property="og:title" content="Wulala Lucky Draw - Professional Lucky Draw Tool">
+  <meta property="og:description" content="A professional lucky draw application for events, parties, and gatherings. Features include CSV upload, name list management, animated draw effects, and more.">
+  <meta property="og:image" content="https://wulalaluckydraw.org/assets/images/logo.png">
 
-  <meta name="description" content="A professional lucky draw application.">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://wulalaluckydraw.org/">
+  <meta property="twitter:title" content="Wulala Lucky Draw - Professional Lucky Draw Tool">
+  <meta property="twitter:description" content="A professional lucky draw application for events, parties, and gatherings. Features include CSV upload, name list management, animated draw effects, and more.">
+  <meta property="twitter:image" content="https://wulalaluckydraw.org/assets/images/logo.png">
 
   <!-- Add Google AdSense verification script -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1689408749608578"
@@ -38,106 +48,131 @@
   </script>
 
   <!-- iOS meta tags & icons -->
-
   <meta name="apple-mobile-web-app-capable" content="yes">
-
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
   <meta name="apple-mobile-web-app-title" content="Wulala Lucky Draw">
-
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
-
-
   <!-- Favicon -->
-
   <link rel="icon" type="image/png" href="favicon.png"/>
-
   <link rel="icon" type="image/png" href="assets/images/logo.png"/>
 
-
-  <title>Wulala Lucky Draw</title>
-
+  <title>Wulala Lucky Draw - Professional Lucky Draw Tool</title>
   <link rel="manifest" href="manifest.json">
 
-
-
   <script>
-
     // The value below is injected by flutter build, do not touch.
-
     const serviceWorkerVersion = "3913243173";
-
   </script>
 
   <!-- This script adds the flutter initialization JS code -->
-
   <script src="flutter.js" defer></script>
 
   <style>
-
     .loading {
-
       display: flex;
-
       justify-content: center;
-
       align-items: center;
-
       margin: 0;
-
       position: absolute;
-
       top: 50%;
-
       left: 50%;
-
       -ms-transform: translate(-50%, -50%);
-
       transform: translate(-50%, -50%);
-
     }
 
+    .content-section {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .content-section h1 {
+      color: #E31837;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .content-section h2 {
+      color: #E31837;
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+
+    .content-section p {
+      margin-bottom: 15px;
+    }
+
+    .content-section ul {
+      margin-bottom: 15px;
+      padding-left: 20px;
+    }
+
+    .content-section li {
+      margin-bottom: 10px;
+    }
+
+    .feature-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .feature-item {
+      background: #FDF1DB;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .feature-item h3 {
+      color: #E31837;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .content-section {
+        padding: 15px;
+      }
+    }
+
+    #app-container {
+      display: none;
+    }
+
+    body.app-loaded #app-container {
+      display: block;
+    }
+
+    body.app-loaded .content-section {
+      display: none;
+    }
   </style>
 
   <meta name="audio-type" content="audio/mp4">
 
   <!-- Add support for audio autoplay -->
-
   <script>
-
     window.addEventListener('load', function() {
-
       let context = new (window.AudioContext || window.webkitAudioContext)();
-
       if (context.state === 'suspended') {
-
         let resume = function() {
-
           context.resume();
-
           setTimeout(function() {
-
             if (context.state === 'running') {
-
               document.body.removeEventListener('click', resume);
-
               document.body.removeEventListener('touchend', resume);
-
             }
-
           }, 0);
-
         };
-
         document.body.addEventListener('click', resume);
-
         document.body.addEventListener('touchend', resume);
-
       }
-
     });
-
   </script>
 
   <!-- Add this meta tag -->
@@ -149,59 +184,98 @@
   
   <!-- Add video MIME type -->
   <meta name="video-type" content="video/mp4">
-
 </head>
-
 <body>
+  <!-- Static content for SEO and AdSense -->
+  <div class="content-section">
+    <h1>Welcome to Wulala Lucky Draw</h1>
+    <p>
+      Wulala Lucky Draw is a professional web-based lucky draw application designed for events, parties, and gatherings. 
+      Whether you're organizing a company event, a school activity, or a family gathering, our tool makes the lucky draw 
+      process exciting and fair.
+    </p>
 
-  <div class="loading">
+    <h2>Key Features</h2>
+    <div class="feature-list">
+      <div class="feature-item">
+        <h3>Easy Name Input</h3>
+        <ul>
+          <li>Upload CSV files</li>
+          <li>Paste name lists directly</li>
+          <li>Support for large participant groups</li>
+        </ul>
+      </div>
 
-    <div id="loading">Loading...</div>
+      <div class="feature-item">
+        <h3>Professional Animation</h3>
+        <ul>
+          <li>Exciting draw animations</li>
+          <li>Sound effects</li>
+          <li>Smooth transitions</li>
+        </ul>
+      </div>
 
+      <div class="feature-item">
+        <h3>User-Friendly Interface</h3>
+        <ul>
+          <li>Clean and intuitive design</li>
+          <li>Mobile-responsive layout</li>
+          <li>Multi-language support</li>
+        </ul>
+      </div>
+
+      <div class="feature-item">
+        <h3>Fair & Random</h3>
+        <ul>
+          <li>True random selection</li>
+          <li>No duplicates</li>
+          <li>Winner history tracking</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2>How to Use</h2>
+    <ol>
+      <li>Upload your participant list using CSV file or paste names directly</li>
+      <li>Enter prize description (optional)</li>
+      <li>Click the draw button and enjoy the animation</li>
+      <li>View and track winners</li>
+    </ol>
+
+    <p>
+      Loading the application... If it doesn't load automatically, please make sure JavaScript is enabled in your browser.
+    </p>
+  </div>
+
+  <!-- Flutter app container -->
+  <div id="app-container">
+    <div class="loading">
+      <div id="loading">Loading...</div>
+    </div>
   </div>
 
   <script>
-
     window.addEventListener('load', function(ev) {
-
       var loading = document.querySelector('#loading');
-
       // Download main.dart.js
-
       _flutter.loader.loadEntrypoint({
-
         serviceWorker: {
-
           serviceWorkerVersion: serviceWorkerVersion,
-
         }
-
       }).then(function(engineInitializer) {
-
         loading.textContent = 'Initializing engine...';
-
         return engineInitializer.initializeEngine();
-
       }).then(function(appRunner) {
-
         loading.textContent = 'Running app...';
-
         return appRunner.runApp();
-
       }).then(function(app) {
-
         // Wait a few milliseconds so users can see the "Running app" message
-
         window.setTimeout(function() {
-
           loading.remove();
-
+          document.body.classList.add('app-loaded');
         }, 200);
-
       });
-
     });
-
   </script>
 
   <!-- Add this before </body> -->
@@ -240,7 +314,5 @@
       });
     });
   </script>
-
 </body>
-
 </html> 
