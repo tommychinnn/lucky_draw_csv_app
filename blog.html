@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog - Wulala Lucky Draw</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read our latest blog posts about lucky draws, event planning, and more.">
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            line-height: 1.6; 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px;
+            background-color: #FDF1DB;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1 { 
+            color: #E31837;
+            text-align: center;
+        }
+        .blog-post {
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .blog-post:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .post-date {
+            color: #666;
+            font-style: italic;
+        }
+        .read-more {
+            display: inline-block;
+            padding: 5px 15px;
+            background-color: #E31837;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .read-more:hover {
+            background-color: #c41430;
+        }
+    </style>
+</head>
+<body>
+    <!-- Include Navigation -->
+    <div id="nav-placeholder"></div>
+    <script>
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+            });
+    </script>
+
+    <div class="container">
+        <h1>Latest Blog Posts</h1>
+
+        <div class="blog-post">
+            <h2>How to Organize a Successful Lucky Draw Event</h2>
+            <p class="post-date">March 25, 2024</p>
+            <p>Planning a lucky draw event? Here are the essential steps to make it successful and engaging for all participants...</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+
+        <div class="blog-post">
+            <h2>5 Creative Ways to Use Lucky Draws in Corporate Events</h2>
+            <p class="post-date">March 24, 2024</p>
+            <p>Discover innovative ways to incorporate lucky draws into your corporate events to boost engagement and excitement...</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+
+        <div class="blog-post">
+            <h2>The History of Lucky Draws: From Ancient Times to Digital Age</h2>
+            <p class="post-date">March 23, 2024</p>
+            <p>Explore the fascinating history of lucky draws and how they've evolved from ancient customs to modern digital solutions...</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+    </div>
+
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1689408749608578"
+     crossorigin="anonymous"></script>
+</body>
+</html> 
