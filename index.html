@@ -114,6 +114,47 @@
       pointer-events: auto;
     }
 
+    .language-switch {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      z-index: 999999;
+      pointer-events: auto;
+    }
+
+    .language-btn {
+      padding: 5px 10px;
+      border: 1px solid #E31837;
+      border-radius: 5px;
+      background: rgba(255, 255, 255, 0.95);
+      color: #E31837;
+      cursor: pointer;
+      transition: all 0.3s;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+
+    .language-btn.active {
+      background: #E31837;
+      color: white;
+    }
+
+    .language-btn:hover {
+      background: #E31837;
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px) {
+      .language-btn {
+        font-size: 12px;
+        padding: 4px 8px;
+      }
+    }
+
     #flutter_target {
       position: relative;
       z-index: 1;
@@ -154,6 +195,29 @@
   </style>
 
   <meta name="audio-type" content="audio/mp4">
+
+  <!-- Add language switch -->
+  <script>
+    function switchLanguage(lang) {
+      // Save preference
+      localStorage.setItem('preferredLanguage', lang);
+      // Update button states
+      document.querySelectorAll('.language-btn').forEach(btn => {
+          btn.classList.remove('active');
+      });
+      document.querySelector(`.language-btn[onclick*="${lang}"]`).classList.add('active');
+      // Send message to Flutter app
+      if (window.flutter_inappwebview) {
+        window.flutter_inappwebview.callHandler('switchLanguage', lang);
+      }
+    }
+
+    // Load preferred language on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      const preferredLanguage = localStorage.getItem('preferredLanguage') || 'en';
+      switchLanguage(preferredLanguage);
+    });
+  </script>
 
   <!-- Add support for audio autoplay -->
 
@@ -213,6 +277,12 @@
     <a href="/blog.html" target="_blank">Blog</a>
     <a href="/support.html" target="_blank">Support Us</a>
     <a href="/privacy_policy.html" target="_blank">Privacy</a>
+  </div>
+
+  <!-- Add language switch buttons -->
+  <div class="language-switch">
+    <button class="language-btn active" onclick="switchLanguage('en')">EN</button>
+    <button class="language-btn" onclick="switchLanguage('zh')">中文</button>
   </div>
 
   <div class="loading">
