@@ -98,6 +98,45 @@
 
     }
 
+    /* Add floating menu styles */
+    .floating-menu {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .floating-menu a {
+      color: #333;
+      text-decoration: none;
+      padding: 5px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      white-space: nowrap;
+    }
+
+    .floating-menu a:hover {
+      background-color: #FDF1DB;
+      color: #E31837;
+    }
+
+    @media (max-width: 768px) {
+      .floating-menu {
+        bottom: 10px;
+        right: 10px;
+        font-size: 12px;
+      }
+    }
+
   </style>
 
   <meta name="audio-type" content="audio/mp4">
@@ -153,6 +192,14 @@
 </head>
 
 <body>
+
+  <!-- Add floating menu -->
+  <div class="floating-menu">
+    <a href="/guide.html">User Guide</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/support.html">Support Us</a>
+    <a href="/privacy_policy.html">Privacy</a>
+  </div>
 
   <div class="loading">
 
