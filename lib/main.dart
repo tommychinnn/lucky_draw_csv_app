@@ -3,11 +3,18 @@
 // or distribution of this software is strictly prohibited.
 
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'screens/home_screen.dart';
+import 'services/language_service.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(const LuckyDrawApp());
+  runApp(
+    ChangeNotifierProvider(
+      create: (_) => LanguageService(),
+      child: const LuckyDrawApp(),
+    ),
+  );
 }
 
 class LuckyDrawApp extends StatelessWidget {

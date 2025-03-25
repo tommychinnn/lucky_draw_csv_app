@@ -16,6 +16,8 @@ dependencies:
   path_provider: ^2.1.2
   cupertino_icons: ^1.0.2
   just_audio: ^0.9.36
+  provider: ^6.1.1
+  js: ^0.6.7
 
 dev_dependencies:
   flutter_test:

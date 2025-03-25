@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import '../services/file_service.dart';
+import '../services/language_service.dart';
 import '../widgets/file_upload_widget.dart';
 import '../widgets/participant_list_widget.dart';
 import '../widgets/animated_draw_widget.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/foundation.dart';
+import 'package:js/js.dart';
+
+@JS('switchLanguage')
+external void switchLanguageJS(String lang);
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -18,6 +24,21 @@ class _HomeScreenState extends State<HomeScreen> {
   List<Winner> winners = [];
   bool isLoading = false;
   final TextEditingController _prizeController = TextEditingController();
+
+  @override
+  void initState() {
+    super.initState();
+    // Listen for language changes from JavaScript
+    if (kIsWeb) {
+      // Add JavaScript event listener for language changes
+      js.context['flutter_inappwebview']?.callHandler = allowInterop((String name, dynamic args) {
+        if (name == 'switchLanguage') {
+          final lang = args[0] as String;
+          Provider.of<LanguageService>(context, listen: false).setLanguage(lang);
+        }
+      });
+    }
+  }
 
   @override
   void dispose() {
@@ -36,7 +57,7 @@ class _HomeScreenState extends State<HomeScreen> {
   void onWinnerSelected(String winner, String prize) {
     setState(() {
       final prizeDescription = _prizeController.text.isEmpty 
-          ? '幸运抽奖 Lucky Draw' 
+          ? context.read<LanguageService>().translate('luckyDraw')
           : _prizeController.text;
       winners.add(Winner(name: winner, prize: prizeDescription));
       participants.remove(winner);
@@ -64,15 +85,16 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   void handlePasteNames() {
+    final languageService = context.read<LanguageService>();
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        title: const Text('粘贴名单 Paste Names'),
+        title: Text(languageService.translate('pasteNamesTitle')),
         content: TextField(
           maxLines: 8,
-          decoration: const InputDecoration(
-            hintText: '例如 Example:\nJohn\nMary\nPeter\nSarah',
-            border: OutlineInputBorder(),
+          decoration: InputDecoration(
+            hintText: languageService.translate('pasteNamesHint'),
+            border: const OutlineInputBorder(),
           ),
           onChanged: (value) {
             // Split the pasted text into lines and remove empty lines
@@ -87,7 +109,7 @@ class _HomeScreenState extends State<HomeScreen> {
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: const Text('确定 OK'),
+            child: Text(languageService.translate('ok')),
           ),
         ],
       ),
@@ -98,6 +120,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height;
     final winnersListHeight = screenHeight * 0.6;
+    final languageService = context.watch<LanguageService>();
 
     return Scaffold(
       appBar: AppBar(
@@ -142,7 +165,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               margin: const EdgeInsets.only(right: 8),
                               child: ElevatedButton(
                                 onPressed: () => handleUploadCSV(),
-                                child: const Text('上传表格 Upload CSV'),
+                                child: Text(languageService.translate('uploadCSV')),
                               ),
                             ),
                           ),
@@ -152,7 +175,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               margin: const EdgeInsets.only(left: 8),
                               child: ElevatedButton(
                                 onPressed: () => handlePasteNames(),
-                                child: const Text('粘贴名单 Paste Names'),
+                                child: Text(languageService.translate('pasteNames')),
                               ),
                             ),
                           ),
@@ -162,8 +185,8 @@ class _HomeScreenState extends State<HomeScreen> {
                     const SizedBox(height: 20),
                     Text(
                       participants.isEmpty 
-                          ? '请上传表格 Please Upload Namelist'
-                          : '参与者 Participants: ${participants.length}',
+                          ? languageService.translate('pleaseUpload')
+                          : '${languageService.translate('participants')}: ${participants.length}',
                       style: const TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
@@ -175,9 +198,9 @@ class _HomeScreenState extends State<HomeScreen> {
                       controller: _prizeController,
                       enabled: participants.isNotEmpty,
                       decoration: InputDecoration(
-                        labelText: '奖品描述 Prize Description',
+                        labelText: languageService.translate('prizeDescription'),
                         border: const OutlineInputBorder(),
-                        hintText: '例如: 一等奖 - iPhone 15 Pro Max',
+                        hintText: languageService.translate('prizeHint'),
                         filled: participants.isEmpty,
                         fillColor: Colors.grey[200],
                       ),
@@ -218,7 +241,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         participants: participants,
                         onWinnerSelected: onWinnerSelected,
                         prizeDescription: _prizeController.text.isEmpty 
-                            ? '幸运抽奖 Lucky Draw' 
+                            ? context.read<LanguageService>().translate('luckyDraw')
                             : _prizeController.text,
                         animationDuration: const Duration(seconds: 5),
                       ),
