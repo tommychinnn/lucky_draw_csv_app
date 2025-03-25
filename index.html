@@ -107,33 +107,47 @@
       padding: 10px;
       border-radius: 10px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      z-index: 1000;
+      z-index: 999999;
       display: flex;
       flex-direction: column;
       gap: 5px;
+      pointer-events: auto;
+    }
+
+    #flutter_target {
+      position: relative;
+      z-index: 1;
     }
 
     .floating-menu a {
       color: #333;
       text-decoration: none;
-      padding: 5px 15px;
+      padding: 8px 15px;
       border-radius: 5px;
-      transition: background-color 0.3s;
+      transition: all 0.3s;
       font-family: Arial, sans-serif;
       font-size: 14px;
       white-space: nowrap;
+      background: white;
+      margin: 2px 0;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
     }
 
     .floating-menu a:hover {
       background-color: #FDF1DB;
       color: #E31837;
+      transform: translateX(-3px);
     }
 
     @media (max-width: 768px) {
       .floating-menu {
         bottom: 10px;
         right: 10px;
+        padding: 8px;
+      }
+      .floating-menu a {
         font-size: 12px;
+        padding: 6px 12px;
       }
     }
 
@@ -194,11 +208,11 @@
 <body>
 
   <!-- Add floating menu -->
-  <div class="floating-menu">
-    <a href="/guide.html">User Guide</a>
-    <a href="/blog.html">Blog</a>
-    <a href="/support.html">Support Us</a>
-    <a href="/privacy_policy.html">Privacy</a>
+  <div class="floating-menu" id="floating-nav">
+    <a href="/guide.html" target="_blank">User Guide</a>
+    <a href="/blog.html" target="_blank">Blog</a>
+    <a href="/support.html" target="_blank">Support Us</a>
+    <a href="/privacy_policy.html" target="_blank">Privacy</a>
   </div>
 
   <div class="loading">
@@ -210,6 +224,37 @@
   <script>
 
     window.addEventListener('load', function(ev) {
+
+      // Ensure floating menu is above Flutter
+      const floatingNav = document.getElementById('floating-nav');
+      if (floatingNav) {
+        // Move floating nav to body end to ensure it's above Flutter canvas
+        document.body.appendChild(floatingNav);
+        
+        // Add visibility toggle
+        let isVisible = true;
+        let lastScrollY = window.scrollY;
+        
+        window.addEventListener('scroll', () => {
+          const currentScrollY = window.scrollY;
+          
+          if (currentScrollY > lastScrollY) {
+            // Scrolling down
+            if (isVisible) {
+              floatingNav.style.transform = 'translateY(150%)';
+              isVisible = false;
+            }
+          } else {
+            // Scrolling up
+            if (!isVisible) {
+              floatingNav.style.transform = 'translateY(0)';
+              isVisible = true;
+            }
+          }
+          
+          lastScrollY = currentScrollY;
+        });
+      }
 
       var loading = document.querySelector('#loading');
 
