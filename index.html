@@ -1,340 +1,1154 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
-  <base href="/">
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="Wulala Lucky Draw - A professional lucky draw application for events, parties, and gatherings. Features include CSV upload, name list management, animated draw effects, and more.">
-  <meta name="keywords" content="lucky draw, random picker, name picker, raffle, event tool, party game">
-  <meta name="author" content="Tommy Chin">
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://wulalaluckydraw.org/">
-  <meta property="og:title" content="Wulala Lucky Draw - Professional Lucky Draw Tool">
-  <meta property="og:description" content="A professional lucky draw application for events, parties, and gatherings. Features include CSV upload, name list management, animated draw effects, and more.">
-  <meta property="og:image" content="https://wulalaluckydraw.org/assets/images/logo.png">
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://wulalaluckydraw.org/">
-  <meta property="twitter:title" content="Wulala Lucky Draw - Professional Lucky Draw Tool">
-  <meta property="twitter:description" content="A professional lucky draw application for events, parties, and gatherings. Features include CSV upload, name list management, animated draw effects, and more.">
-  <meta property="twitter:image" content="https://wulalaluckydraw.org/assets/images/logo.png">
-
-  <!-- Add Google AdSense verification script -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1689408749608578"
-     crossorigin="anonymous"></script>
-
-  <!-- Add Google Consent Mode -->
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('consent', 'default', {
-      'ad_storage': 'denied',
-      'analytics_storage': 'denied'
-    });
-  </script>
-
-  <!-- Add Google Funding Choices (Consent Management) -->
-  <script>
-    (function () {
-      var script = document.createElement('script');
-      script.src = 'https://fundingchoicesmessages.google.com/i/pub-1689408749608578?ers=1';
-      script.async = true;
-      var node = document.currentScript.parentElement;
-      node.parentElement.insertBefore(script, node);
-    })();
-  </script>
-
-  <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Wulala Lucky Draw">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
-  <link rel="icon" type="image/png" href="assets/images/logo.png"/>
-
-  <title>Wulala Lucky Draw - Professional Lucky Draw Tool</title>
-  <link rel="manifest" href="manifest.json">
-
-  <script>
-    // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = "3913243173";
-  </script>
-
-  <!-- This script adds the flutter initialization JS code -->
-  <script src="flutter.js" defer></script>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>mssssscz × Treat Yourself 疯狂排队 lazada 生日抽奖企划</title>
   <style>
-    .loading {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
+
+    :root {
+      --pink: #FF6B9D;
+      --pink-light: #FFB3CC;
+      --pink-dark: #E84A80;
+      --yellow: #FFE066;
+      --yellow-dark: #F0C000;
+      --purple: #C77DFF;
+      --purple-dark: #9B59B6;
+      --bg: #FFF0F5;
+      --white: #FFFFFF;
+      --text: #3D2057;
+      --shadow: 0 4px 20px rgba(255,107,157,0.25);
     }
 
-    .content-section {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 20px;
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      color: #333;
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Nunito', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      overflow-x: hidden;
     }
 
-    .content-section h1 {
-      color: #E31837;
+    /* ── Floating confetti bg ── */
+    body::before {
+      content: '';
+      position: fixed; inset: 0;
+      background:
+        radial-gradient(circle at 20% 20%, #FFB3CC33 0%, transparent 40%),
+        radial-gradient(circle at 80% 80%, #C77DFF33 0%, transparent 40%),
+        radial-gradient(circle at 50% 50%, #FFE06622 0%, transparent 60%);
+      pointer-events: none; z-index: 0;
+    }
+
+    .container { max-width: 960px; margin: 0 auto; padding: 0 16px; position: relative; z-index: 1; }
+
+    /* ── Header ── */
+    header {
+      background: linear-gradient(135deg, var(--pink) 0%, var(--purple) 100%);
+      padding: 28px 16px 22px;
       text-align: center;
+      box-shadow: 0 4px 30px rgba(199,125,255,0.4);
+      position: relative;
+      overflow: hidden;
+    }
+    header::after {
+      content: '🎀🎁🎉🎊✨🌟💖🎈';
+      position: absolute; bottom: -4px; left: 0; right: 0;
+      font-size: 22px; letter-spacing: 6px; opacity: 0.35;
+    }
+    .header-store { font-size: 13px; color: #fff; opacity: 0.85; letter-spacing: 2px; margin-bottom: 4px; }
+    header h1 {
+      font-size: clamp(18px, 4vw, 30px);
+      font-weight: 900;
+      color: #fff;
+      text-shadow: 2px 3px 0 rgba(0,0,0,0.15);
+      line-height: 1.3;
+    }
+    header h1 span { color: var(--yellow); }
+    .header-sub { font-size: 13px; color: #fff; opacity: 0.8; margin-top: 6px; }
+
+    /* ── Tabs ── */
+    .tabs {
+      display: flex; gap: 8px;
+      background: #fff;
+      border-radius: 0 0 20px 20px;
+      padding: 10px 16px 14px;
+      box-shadow: 0 4px 16px rgba(255,107,157,0.12);
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .tab-btn {
+      padding: 9px 20px;
+      border: 2.5px solid var(--pink-light);
+      border-radius: 50px;
+      background: #fff;
+      color: var(--pink);
+      font-family: inherit; font-weight: 800; font-size: 14px;
+      cursor: pointer; transition: all .2s;
+    }
+    .tab-btn.active, .tab-btn:hover {
+      background: var(--pink); color: #fff; border-color: var(--pink);
+      box-shadow: 0 4px 12px rgba(255,107,157,0.35);
+      transform: translateY(-1px);
+    }
+
+    /* ── Sections ── */
+    .section { display: none; padding: 24px 0 40px; }
+    .section.active { display: block; }
+
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: var(--shadow);
+      margin-bottom: 20px;
+    }
+    .card h2 {
+      font-size: 18px; font-weight: 900; color: var(--pink-dark);
+      margin-bottom: 16px; display: flex; align-items: center; gap: 8px;
+    }
+
+    /* ── Prizes Setup ── */
+    .prize-list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 16px; }
+    .prize-row {
+      display: flex;
+      gap: 8px; align-items: flex-start;
+      background: #fff9fb; border: 2px solid #f0d0e0;
+      border-radius: 14px; padding: 12px;
+    }
+    .prize-row .prize-name { flex: 2; min-width: 0; }
+    .prize-row .prize-qty { width: 72px; flex-shrink: 0; text-align: center; }
+    .prize-row .prize-secret-col { flex: 1.5; min-width: 0; display: flex; flex-direction: column; gap: 6px; }
+    .prize-row label { font-size: 12px; font-weight: 700; color: #999; }
+
+    input[type="text"], input[type="number"] {
+      width: 100%; padding: 10px 14px;
+      border: 2px solid #f0d0e0;
+      border-radius: 12px;
+      font-family: inherit; font-size: 14px; color: var(--text);
+      outline: none; transition: border-color .2s;
+      background: #fff9fb;
+    }
+    input:focus { border-color: var(--pink); background: #fff; }
+
+    .secret-toggle {
+      display: flex; align-items: center; gap: 6px;
+      font-size: 13px; font-weight: 700; color: var(--purple);
+      cursor: pointer; white-space: nowrap;
+    }
+    .secret-toggle input[type="checkbox"] { width: 16px; height: 16px; accent-color: var(--purple); }
+
+    .secret-name-wrap { overflow: hidden; transition: max-height .3s, opacity .3s; max-height: 0; opacity: 0; }
+    .secret-name-wrap.open { max-height: 60px; opacity: 1; }
+
+    .btn {
+      padding: 11px 22px;
+      border: none; border-radius: 50px;
+      font-family: inherit; font-weight: 800; font-size: 14px;
+      cursor: pointer; transition: all .2s;
+      display: inline-flex; align-items: center; gap: 6px;
+    }
+    .btn-pink { background: var(--pink); color: #fff; box-shadow: 0 4px 14px rgba(255,107,157,0.4); }
+    .btn-pink:hover { background: var(--pink-dark); transform: translateY(-2px); }
+    .btn-yellow { background: var(--yellow); color: var(--text); box-shadow: 0 4px 14px rgba(255,224,102,0.5); }
+    .btn-yellow:hover { background: var(--yellow-dark); transform: translateY(-2px); }
+    .btn-purple { background: var(--purple); color: #fff; box-shadow: 0 4px 14px rgba(199,125,255,0.4); }
+    .btn-purple:hover { background: var(--purple-dark); transform: translateY(-2px); }
+    .btn-sm { padding: 7px 14px; font-size: 12px; }
+    .btn-danger { background: #ff7eb3; color: #fff; }
+    .btn-danger:hover { background: #e84a80; }
+
+    .prize-count-bar {
+      display: flex; align-items: center; gap: 12px;
+      background: #fff5fa; border-radius: 14px; padding: 12px 16px;
+      margin-bottom: 16px;
+    }
+    .prize-count-bar span { font-size: 14px; font-weight: 700; color: var(--purple); }
+
+    /* ── Import Sheet ── */
+    .upload-area {
+      border: 3px dashed var(--pink-light);
+      border-radius: 20px;
+      padding: 36px 20px;
+      text-align: center;
+      cursor: pointer;
+      transition: all .2s;
+      background: #fff9fb;
+    }
+    .upload-area:hover, .upload-area.drag { border-color: var(--pink); background: #fff0f5; }
+    .upload-area .icon { font-size: 48px; margin-bottom: 10px; }
+    .upload-area p { font-size: 14px; color: #aaa; margin-top: 6px; }
+    .upload-area strong { font-size: 16px; font-weight: 800; color: var(--pink); }
+    #fileInput { display: none; }
+
+    .participants-preview {
+      max-height: 220px; overflow-y: auto;
+      border: 2px solid #f0d0e0; border-radius: 14px;
+      margin-top: 14px;
+    }
+    .participants-preview table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    .participants-preview th {
+      background: var(--pink); color: #fff; padding: 8px 12px;
+      font-weight: 800; position: sticky; top: 0;
+    }
+    .participants-preview td { padding: 7px 12px; border-bottom: 1px solid #f5dde8; }
+    .participants-preview tr:last-child td { border-bottom: none; }
+    .participants-preview tr:nth-child(even) td { background: #fff5fa; }
+
+    .badge {
+      display: inline-block; padding: 3px 10px;
+      border-radius: 50px; font-size: 12px; font-weight: 800;
+    }
+    .badge-green { background: #d4f7e8; color: #1a7a4a; }
+    .badge-pink { background: #ffd6e7; color: #c0185a; }
+
+    /* ── Draw Section ── */
+    .draw-meta {
+      display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 20px;
+    }
+    .meta-chip {
+      background: linear-gradient(135deg, #FFB3CC, #C77DFF);
+      color: #fff; border-radius: 50px;
+      padding: 7px 16px; font-weight: 800; font-size: 13px;
+    }
+
+    /* Slot machine */
+    .slot-container {
+      background: linear-gradient(135deg, #2D1B4E, #1a0a2e);
+      border-radius: 24px;
+      padding: 28px 20px 24px;
+      text-align: center;
+      box-shadow: 0 8px 40px rgba(45,27,78,0.5), inset 0 0 60px rgba(199,125,255,0.1);
+      margin-bottom: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+    .slot-container::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(255,255,255,0.02) 40px, rgba(255,255,255,0.02) 41px);
+      pointer-events: none;
+    }
+
+    .slot-label {
+      color: var(--yellow); font-size: 13px; font-weight: 800;
+      letter-spacing: 2px; margin-bottom: 14px; opacity: 0.9;
+    }
+
+    .slot-window {
+      background: #0d0820;
+      border-radius: 16px;
+      border: 3px solid var(--purple);
+      box-shadow: 0 0 20px rgba(199,125,255,0.5), inset 0 0 30px rgba(0,0,0,0.5);
+      height: 80px;
+      overflow: hidden;
+      position: relative;
+      margin: 0 auto 16px;
+      max-width: 500px;
+    }
+    .slot-window::before, .slot-window::after {
+      content: '';
+      position: absolute; left: 0; right: 0; height: 22px; z-index: 2; pointer-events: none;
+    }
+    .slot-window::before { top: 0; background: linear-gradient(to bottom, #0d0820, transparent); }
+    .slot-window::after { bottom: 0; background: linear-gradient(to top, #0d0820, transparent); }
+
+    .slot-reel {
+      display: flex; flex-direction: column; align-items: center;
+      transition: transform 0.1s linear;
+    }
+    .slot-item {
+      height: 80px; line-height: 80px;
+      font-size: 22px; font-weight: 900; color: #fff;
+      white-space: nowrap; padding: 0 20px;
+      letter-spacing: 1px;
+      width: 100%; text-align: center;
+    }
+    .slot-item.highlight { color: var(--yellow); text-shadow: 0 0 20px var(--yellow); }
+
+    .slot-prize-label {
+      color: #fff; font-size: 13px; font-weight: 700;
+      opacity: 0.7; margin-bottom: 6px;
+    }
+    .slot-current-prize {
+      font-size: 18px; font-weight: 900;
+      color: var(--yellow);
+      text-shadow: 0 0 15px rgba(255,224,102,0.6);
       margin-bottom: 20px;
     }
 
-    .content-section h2 {
-      color: #E31837;
-      margin-top: 30px;
-      margin-bottom: 15px;
+    .slot-btn-row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
+    /* Winner reveal */
+    .winner-reveal {
+      display: none;
+      background: linear-gradient(135deg, var(--yellow) 0%, var(--pink-light) 100%);
+      border-radius: 20px; padding: 24px 20px;
+      text-align: center; margin-bottom: 20px;
+      animation: popIn .5s cubic-bezier(.34,1.56,.64,1);
+    }
+    .winner-reveal.show { display: block; }
+    @keyframes popIn {
+      from { transform: scale(0.6); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+    .winner-reveal .winner-name {
+      font-size: clamp(24px, 5vw, 42px);
+      font-weight: 900; color: var(--text);
+      text-shadow: 2px 2px 0 rgba(255,255,255,0.5);
+      word-break: break-all;
+    }
+    .winner-reveal .winner-prize {
+      font-size: 16px; font-weight: 800; color: var(--pink-dark); margin-top: 6px;
+    }
+    .winner-reveal .trophy { font-size: 48px; margin-bottom: 8px; }
+
+    /* Results table */
+    .results-section { margin-top: 8px; }
+    .results-section h3 { font-size: 16px; font-weight: 900; color: var(--purple-dark); margin-bottom: 10px; }
+    .results-table-wrap { max-height: 320px; overflow-y: auto; border-radius: 14px; border: 2px solid #e8d0f0; }
+    .results-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    .results-table th { background: var(--purple); color: #fff; padding: 9px 14px; font-weight: 800; position: sticky; top: 0; }
+    .results-table td { padding: 8px 14px; border-bottom: 1px solid #f0e0f8; }
+    .results-table tr:last-child td { border-bottom: none; }
+    .results-table tr:nth-child(even) td { background: #faf0ff; }
+    .secret-badge { background: #ffd6fb; color: #8b008b; padding: 2px 8px; border-radius: 20px; font-size: 11px; font-weight: 800; }
+
+    /* Progress bar */
+    .progress-wrap { margin-bottom: 16px; }
+    .progress-label { font-size: 13px; font-weight: 800; color: var(--purple); margin-bottom: 6px; }
+    .progress-bar {
+      height: 14px; background: #f0d0e8; border-radius: 50px; overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%; background: linear-gradient(90deg, var(--pink), var(--purple));
+      border-radius: 50px; transition: width .5s ease;
+      box-shadow: 0 0 8px rgba(199,125,255,0.4);
     }
 
-    .content-section p {
-      margin-bottom: 15px;
+    /* Stars confetti */
+    .confetti-overlay {
+      position: fixed; inset: 0; pointer-events: none; z-index: 999;
+      display: none;
+    }
+    .confetti-overlay.active { display: block; }
+    .confetti-piece {
+      position: absolute;
+      width: 10px; height: 10px;
+      border-radius: 2px;
+      animation: fall linear forwards;
+    }
+    @keyframes fall {
+      0% { transform: translateY(-20px) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(110vh) rotate(720deg); opacity: 0; }
     }
 
-    .content-section ul {
-      margin-bottom: 15px;
-      padding-left: 20px;
+    /* Status messages */
+    .status-msg {
+      padding: 12px 16px; border-radius: 14px;
+      font-weight: 700; font-size: 14px; margin-bottom: 14px;
+      display: none;
+    }
+    .status-msg.show { display: block; }
+    .status-success { background: #d4f7e8; color: #1a7a4a; border: 2px solid #a0e0c0; }
+    .status-error { background: #ffe0e8; color: #c0185a; border: 2px solid #ffb3c8; }
+    .status-info { background: #e8f0ff; color: #2040a0; border: 2px solid #b0c8ff; }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      .prize-row { grid-template-columns: 1fr 70px; }
+      .prize-row > *:nth-child(3), .prize-row > *:nth-child(4) { grid-column: span 1; }
     }
 
-    .content-section li {
-      margin-bottom: 10px;
+    /* Scrollbar */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #f5eaf5; border-radius: 3px; }
+    ::-webkit-scrollbar-thumb { background: var(--pink-light); border-radius: 3px; }
+
+    /* Animation utilities */
+    .spin { animation: spinOnce .3s ease; }
+    @keyframes spinOnce { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+    .pulse { animation: pulse 1s ease-in-out infinite; }
+    @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.5; } }
+
+    .shake { animation: shake .5s ease; }
+    @keyframes shake {
+      0%,100% { transform: translateX(0); }
+      20% { transform: translateX(-8px); }
+      40% { transform: translateX(8px); }
+      60% { transform: translateX(-5px); }
+      80% { transform: translateX(5px); }
     }
 
-    .feature-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      margin-top: 20px;
-    }
-
-    .feature-item {
-      background: #FDF1DB;
+    /* ── Login Screen ── */
+    #loginScreen {
+      position: fixed; inset: 0; z-index: 9999;
+      background: linear-gradient(135deg, #FF6B9D 0%, #C77DFF 100%);
+      display: flex; align-items: center; justify-content: center;
       padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-
-    .feature-item h3 {
-      color: #E31837;
-      margin-bottom: 10px;
+    #loginScreen::before {
+      content: '🎀🎁🎉🎊✨🌟💖🎈🎀🎁🎉🎊✨🌟💖🎈';
+      position: absolute; top: 10px; left: 0; right: 0;
+      font-size: 20px; letter-spacing: 4px; opacity: 0.2;
+      text-align: center;
     }
-
-    @media (max-width: 768px) {
-      .content-section {
-        padding: 15px;
-      }
+    #loginScreen::after {
+      content: '🎀🎁🎉🎊✨🌟💖🎈🎀🎁🎉🎊✨🌟💖🎈';
+      position: absolute; bottom: 10px; left: 0; right: 0;
+      font-size: 20px; letter-spacing: 4px; opacity: 0.2;
+      text-align: center;
     }
-
-    #app-container {
+    .login-box {
+      background: #fff;
+      border-radius: 28px;
+      padding: 40px 36px;
+      width: 100%; max-width: 380px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+      text-align: center;
+      position: relative;
+    }
+    .login-logo { font-size: 52px; margin-bottom: 6px; }
+    .login-store { font-size: 13px; font-weight: 800; color: var(--pink); letter-spacing: 2px; margin-bottom: 4px; }
+    .login-title { font-size: 18px; font-weight: 900; color: var(--text); margin-bottom: 6px; }
+    .login-sub { font-size: 12px; color: #bbb; margin-bottom: 28px; }
+    .login-field { margin-bottom: 14px; text-align: left; }
+    .login-field label { display: block; font-size: 12px; font-weight: 800; color: #999; margin-bottom: 6px; }
+    .login-field input {
+      width: 100%; padding: 13px 16px;
+      border: 2.5px solid #f0d0e0; border-radius: 14px;
+      font-family: inherit; font-size: 15px; color: var(--text);
+      outline: none; transition: border-color .2s; background: #fff9fb;
+    }
+    .login-field input:focus { border-color: var(--pink); background: #fff; }
+    .login-btn {
+      width: 100%; padding: 14px;
+      background: linear-gradient(135deg, var(--pink), var(--purple));
+      color: #fff; border: none; border-radius: 50px;
+      font-family: inherit; font-weight: 900; font-size: 16px;
+      cursor: pointer; transition: all .2s; margin-top: 6px;
+      box-shadow: 0 6px 20px rgba(255,107,157,0.4);
+    }
+    .login-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(255,107,157,0.5); }
+    .login-error {
+      margin-top: 12px; padding: 10px 14px;
+      background: #ffe0e8; color: #c0185a;
+      border-radius: 12px; font-size: 13px; font-weight: 700;
       display: none;
     }
-
-    body.app-loaded #app-container {
-      display: block;
-    }
-
-    body.app-loaded .content-section {
-      display: none;
-    }
+    .login-error.show { display: block; animation: shake .4s ease; }
+    #mainApp { display: none; }
   </style>
-
-  <meta name="audio-type" content="audio/mp4">
-
-  <!-- Add support for audio autoplay -->
-  <script>
-    window.addEventListener('load', function() {
-      let context = new (window.AudioContext || window.webkitAudioContext)();
-      if (context.state === 'suspended') {
-        let resume = function() {
-          context.resume();
-          setTimeout(function() {
-            if (context.state === 'running') {
-              document.body.removeEventListener('click', resume);
-              document.body.removeEventListener('touchend', resume);
-            }
-          }, 0);
-        };
-        document.body.addEventListener('click', resume);
-        document.body.addEventListener('touchend', resume);
-      }
-    });
-  </script>
-
-  <!-- Add this meta tag -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  
-  <!-- Add video preload hints -->
-  <link rel="preload" as="video" href="assets/audio/winner.mp4" type="video/mp4">
-  <link rel="preload" as="video" href="assets/audio/slot_machine.mp4" type="video/mp4">
-  
-  <!-- Add video MIME type -->
-  <meta name="video-type" content="video/mp4">
 </head>
 <body>
-  <!-- Static content for SEO and AdSense -->
-  <div class="content-section">
-    <h1>Welcome to Wulala Lucky Draw</h1>
-    <p>
-      Wulala Lucky Draw is a professional web-based lucky draw application designed for events, parties, and gatherings. 
-      Whether you're organizing a company event, a school activity, or a family gathering, our tool makes the lucky draw 
-      process exciting and fair.
-    </p>
 
-    <!-- Add AdSense ad unit after introduction -->
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-1689408749608578"
-         data-ad-slot="2322780156"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
+<!-- ── Login Screen ── -->
+<div id="loginScreen">
+  <div class="login-box">
+    <div class="login-logo">🎰</div>
+    <div class="login-store">@mssssscz</div>
+    <div class="login-title">抽奖系统登入</div>
+    <div class="login-sub">请输入账号密码以继续</div>
+    <div class="login-field">
+      <label>账号</label>
+      <input type="text" id="loginUser" placeholder="请输入账号" autocomplete="username" />
+    </div>
+    <div class="login-field">
+      <label>密码</label>
+      <input type="password" id="loginPass" placeholder="请输入密码" autocomplete="current-password"
+        onkeydown="if(event.key==='Enter')doLogin()" />
+    </div>
+    <button class="login-btn" onclick="doLogin()">🎉 登入</button>
+    <div class="login-error" id="loginError">❌ 账号或密码错误，请重试</div>
+  </div>
+</div>
 
-    <h2>Key Features</h2>
-    <div class="feature-list">
-      <div class="feature-item">
-        <h3>Easy Name Input</h3>
-        <ul>
-          <li>Upload CSV files</li>
-          <li>Paste name lists directly</li>
-          <li>Support for large participant groups</li>
-        </ul>
+<!-- ── Main App ── -->
+<div id="mainApp">
+
+<!-- Confetti overlay -->
+<div class="confetti-overlay" id="confettiOverlay"></div>
+
+<!-- Header -->
+<header>
+  <div class="header-store">🛍️ @mssssscz</div>
+  <h1>🎂 <span>Treat Yourself</span> 疯狂派对<br>Lazada 生日抽奖企划 🎉</h1>
+  <div class="header-sub">✨ 感谢每一位参与的小伙伴 ✨</div>
+</header>
+
+<!-- Tabs -->
+<div class="tabs">
+  <button class="tab-btn active" onclick="switchTab('prizes')">🎁 设置奖品</button>
+  <button class="tab-btn" onclick="switchTab('import')">📋 导入名单</button>
+  <button class="tab-btn" onclick="switchTab('draw')">🎰 开始抽奖</button>
+</div>
+
+<div class="container">
+
+  <!-- ══════════ TAB 1: Prizes ══════════ -->
+  <div class="section active" id="tab-prizes">
+    <div class="card">
+      <h2>🎁 奖品设置</h2>
+      <div class="prize-count-bar">
+        <span>共设置奖品：</span>
+        <span id="prizeCountDisplay" style="color:var(--pink);font-size:22px;">0</span>
+        <span>个</span>
+        <div style="flex:1"></div>
+        <button class="btn btn-pink btn-sm" onclick="addPrizeRow()">➕ 添加奖品</button>
       </div>
-
-      <div class="feature-item">
-        <h3>Professional Animation</h3>
-        <ul>
-          <li>Exciting draw animations</li>
-          <li>Sound effects</li>
-          <li>Smooth transitions</li>
-        </ul>
+      <div style="display:flex;gap:8px;margin-bottom:6px;padding:0 4px;">
+        <span style="flex:2;font-size:12px;font-weight:800;color:#bbb;">奖品名称</span>
+        <span style="width:72px;flex-shrink:0;font-size:12px;font-weight:800;color:#bbb;text-align:center;">数量</span>
+        <span style="flex:1.5;font-size:12px;font-weight:800;color:#bbb;">进阶设置 ⚙️</span>
+        <span style="width:32px;flex-shrink:0;"></span>
       </div>
-
-      <div class="feature-item">
-        <h3>User-Friendly Interface</h3>
-        <ul>
-          <li>Clean and intuitive design</li>
-          <li>Mobile-responsive layout</li>
-          <li>Multi-language support</li>
-        </ul>
-      </div>
-
-      <div class="feature-item">
-        <h3>Fair & Random</h3>
-        <ul>
-          <li>True random selection</li>
-          <li>No duplicates</li>
-          <li>Winner history tracking</li>
-        </ul>
+      <div class="prize-list" id="prizeList"></div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:8px;">
+        <button class="btn btn-pink" onclick="addPrizeRow()">➕ 再加一个奖品</button>
+        <button class="btn btn-yellow" onclick="savePrizes()">💾 保存奖品设置</button>
       </div>
     </div>
 
-    <!-- Add another AdSense ad unit after features -->
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-1689408749608578"
-         data-ad-slot="2322780156"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-
-    <h2>How to Use</h2>
-    <ol>
-      <li>Upload your participant list using CSV file or paste names directly</li>
-      <li>Enter prize description (optional)</li>
-      <li>Click the draw button and enjoy the animation</li>
-      <li>View and track winners</li>
-    </ol>
-
-    <p>
-      Loading the application... If it doesn't load automatically, please make sure JavaScript is enabled in your browser.
-    </p>
-  </div>
-
-  <!-- Flutter app container -->
-  <div id="app-container">
-    <div class="loading">
-      <div id="loading">Loading...</div>
+    <div class="card">
+      <h2>📝 奖品预览</h2>
+      <div id="prizesPreview" style="font-size:14px;color:#bbb;">尚未设置奖品</div>
     </div>
   </div>
 
-  <script>
-    window.addEventListener('load', function(ev) {
-      var loading = document.querySelector('#loading');
-      // Download main.dart.js
-      _flutter.loader.loadEntrypoint({
-        serviceWorker: {
-          serviceWorkerVersion: serviceWorkerVersion,
-        }
-      }).then(function(engineInitializer) {
-        loading.textContent = 'Initializing engine...';
-        return engineInitializer.initializeEngine();
-      }).then(function(appRunner) {
-        loading.textContent = 'Running app...';
-        return appRunner.runApp();
-      }).then(function(app) {
-        // Wait a few milliseconds so users can see the "Running app" message
-        window.setTimeout(function() {
-          loading.remove();
-          document.body.classList.add('app-loaded');
-        }, 200);
-      });
-    });
-  </script>
+  <!-- ══════════ TAB 2: Import ══════════ -->
+  <div class="section" id="tab-import">
+    <div class="card">
+      <h2>📋 导入抽奖名单</h2>
+      <div class="status-msg" id="importStatus"></div>
 
-  <!-- Add this before </body> -->
-  <script>
-    // Register Google Ads view factory
-    window.addEventListener('load', function(ev) {
-      // Create the ads container
-      var adsElement = document.createElement('div');
-      
-      // Add the Google Ads scripts
-      var adsScript = document.createElement('script');
-      adsScript.async = true;
-      adsScript.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1689408749608578";
-      adsScript.crossOrigin = "anonymous";
-      adsElement.appendChild(adsScript);
-      
-      // Add the ad unit
-      var adUnit = document.createElement('ins');
-      adUnit.className = 'adsbygoogle';
-      adUnit.style.display = 'block';
-      adUnit.setAttribute('data-ad-client', 'ca-pub-1689408749608578');
-      adUnit.setAttribute('data-ad-slot', '2322780156');
-      adUnit.setAttribute('data-ad-format', 'auto');
-      adUnit.setAttribute('data-full-width-responsive', 'true');
-      adsElement.appendChild(adUnit);
-      
-      // Add the push script
-      var pushScript = document.createElement('script');
-      pushScript.text = '(adsbygoogle = window.adsbygoogle || []).push({});';
-      adsElement.appendChild(pushScript);
-      
-      // Register the view factory
-      var viewRegistry = window.flutter_web_plugins.viewRegistry;
-      viewRegistry.registerViewFactory('google-ads', function(viewId) {
-        return adsElement;
-      });
-    });
-  </script>
+      <div class="upload-area" id="uploadArea" onclick="document.getElementById('fileInput').click()"
+        ondragover="event.preventDefault();this.classList.add('drag')"
+        ondragleave="this.classList.remove('drag')"
+        ondrop="handleDrop(event)">
+        <div class="icon">📊</div>
+        <strong>点击或拖拽上传 Excel / CSV 文件</strong>
+        <p>支持 .xlsx · .xls · .csv 格式</p>
+        <p style="margin-top:8px;">系统将自动读取 <strong style="color:var(--pink)">IG Account Name</strong> 栏位</p>
+      </div>
+      <input type="file" id="fileInput" accept=".xlsx,.xls,.csv" onchange="handleFileUpload(this)" />
+
+      <div style="margin-top:16px;">
+        <button class="btn btn-purple btn-sm" onclick="loadSampleData()">🧪 载入测试数据（演示用）</button>
+      </div>
+
+      <div id="participantsPreviewWrap" style="display:none;">
+        <div style="display:flex;align-items:center;gap:12px;margin:16px 0 8px;">
+          <span class="badge badge-green" id="participantCount">0 人</span>
+          <span style="font-size:13px;font-weight:700;color:#888;">已成功读取参与者</span>
+          <div style="flex:1"></div>
+          <button class="btn btn-danger btn-sm" onclick="clearParticipants()">🗑️ 清除</button>
+        </div>
+        <div class="participants-preview">
+          <table>
+            <thead><tr><th>#</th><th>IG Account Name</th></tr></thead>
+            <tbody id="participantsTable"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════ TAB 3: Draw ══════════ -->
+  <div class="section" id="tab-draw">
+    <div class="card">
+      <h2>🎰 抽奖台</h2>
+      <div class="status-msg" id="drawStatus"></div>
+
+      <div class="draw-meta" id="drawMeta">
+        <div class="meta-chip">🎁 奖品：<span id="metaPrizeCount">0</span> 个</div>
+        <div class="meta-chip">👥 参与人数：<span id="metaParticipants">0</span> 人</div>
+        <div class="meta-chip">🏆 已抽出：<span id="metaDrawn">0</span> 人</div>
+      </div>
+
+      <div class="progress-wrap">
+        <div class="progress-label">抽奖进度 <span id="progressText">0 / 0</span></div>
+        <div class="progress-bar"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
+      </div>
+
+      <!-- Slot Machine -->
+      <div class="slot-container">
+        <div class="slot-label">🎰 S L O T  M A C H I N E 🎰</div>
+        <div class="slot-prize-label">当前奖品</div>
+        <div class="slot-current-prize" id="slotCurrentPrize">─── 等待开始 ───</div>
+        <div class="slot-window">
+          <div class="slot-reel" id="slotReel">
+            <div class="slot-item">✨ 等待开始 ✨</div>
+          </div>
+        </div>
+        <div class="slot-btn-row">
+          <button class="btn btn-yellow" id="btnStart" onclick="startDraw()">🎉 开始抽奖！</button>
+          <button class="btn btn-pink" id="btnNext" onclick="drawNext()" style="display:none;">⏭️ 抽下一个</button>
+          <button class="btn btn-purple" id="btnAuto" onclick="toggleAuto()" style="display:none;">▶️ 自动抽奖</button>
+          <button class="btn btn-purple btn-sm" id="btnReset" onclick="resetDraw()" style="display:none;">🔄 重置抽奖</button>
+        </div>
+      </div>
+
+      <!-- Winner Reveal -->
+      <div class="winner-reveal" id="winnerReveal">
+        <div class="trophy" id="winnerTrophy">🏆</div>
+        <div class="winner-name" id="winnerName">—</div>
+        <div class="winner-prize" id="winnerPrize">—</div>
+      </div>
+
+      <!-- Results -->
+      <div class="results-section">
+        <h3>🏅 已抽出名单</h3>
+        <div class="results-table-wrap">
+          <table class="results-table">
+            <thead><tr><th>#</th><th>🏆 中奖者</th><th>🎁 奖品</th></tr></thead>
+            <tbody id="resultsTable"></tbody>
+          </table>
+        </div>
+        <div style="margin-top:12px;">
+          <button class="btn btn-yellow btn-sm" onclick="exportResults()">📥 导出中奖名单</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /container -->
+
+<!-- SheetJS CDN -->
+<script src="https://cdn.sheetjs.com/xlsx-0.20.1/package/dist/xlsx.full.min.js"></script>
+
+<script>
+// ══════════════════════════════════════
+//  STATE
+// ══════════════════════════════════════
+let prizes = [];          // [{name, qty, secret, secretName}, ...]
+let drawQueue = [];       // flattened: [{prizeName, secret, secretName}, ...]
+let participants = [];    // ['@user1', ...]
+let results = [];         // [{rank, winner, prizeName, isSecret}]
+let currentDrawIdx = 0;   // next draw index
+let isDrawing = false;
+let isAutoMode = false;
+let autoTimer = null;
+let drawInterval = null;
+let slotTimer = null;
+const AUTO_PAUSE = 3000; // ms between auto draws
+
+// ══════════════════════════════════════
+//  TAB SWITCHING
+// ══════════════════════════════════════
+function switchTab(name) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + name).classList.add('active');
+  event.target.classList.add('active');
+  if (name === 'draw') refreshDrawMeta();
+}
+
+// ══════════════════════════════════════
+//  PRIZES
+// ══════════════════════════════════════
+function addPrizeRow(data = {}) {
+  const list = document.getElementById('prizeList');
+  const row = document.createElement('div');
+  row.className = 'prize-row';
+  const id = Date.now() + Math.random();
+  row.innerHTML = `
+    <input type="text" placeholder="奖品名称，例：$50 Lazada 礼券" value="${data.name||''}" class="prize-name" />
+    <input type="number" min="1" max="99" value="${data.qty||1}" class="prize-qty" />
+    <div class="prize-secret-col">
+      <label class="secret-toggle">
+        <input type="checkbox" ${data.secret?'checked':''} onchange="toggleSecret(this,'${id}')" />
+        ⚙️ 进阶设置
+      </label>
+      <div class="secret-name-wrap ${data.secret?'open':''}" id="sn_${id}">
+        <input type="text" placeholder="指定得奖者 IG 名字（选填）" value="${data.secretName||''}" class="prize-secret-name" />
+      </div>
+    </div>
+    <button class="btn btn-danger btn-sm" style="flex-shrink:0;align-self:center;" onclick="this.closest('.prize-row').remove();updatePrizeCount()">✕</button>
+  `;
+  list.appendChild(row);
+  updatePrizeCount();
+  row.querySelector('.prize-name').addEventListener('input', updatePrizeCount);
+  row.querySelector('.prize-qty').addEventListener('input', updatePrizeCount);
+}
+
+function toggleSecret(cb, id) {
+  const wrap = document.getElementById('sn_' + id);
+  wrap.classList.toggle('open', cb.checked);
+}
+
+function updatePrizeCount() {
+  const rows = document.querySelectorAll('.prize-row');
+  let total = 0;
+  rows.forEach(r => {
+    const qty = parseInt(r.querySelector('.prize-qty')?.value) || 1;
+    total += qty;
+  });
+  document.getElementById('prizeCountDisplay').textContent = rows.length;
+  return rows.length;
+}
+
+function savePrizes() {
+  prizes = [];
+  const rows = document.querySelectorAll('.prize-row');
+  let valid = true;
+  rows.forEach((row, i) => {
+    const name = row.querySelector('.prize-name').value.trim();
+    const qty = parseInt(row.querySelector('.prize-qty').value) || 1;
+    const secretCb = row.querySelector('input[type="checkbox"]');
+    const secret = secretCb.checked;
+    const secretName = row.querySelector('.prize-secret-name')?.value.trim() || '';
+    if (!name) { valid = false; return; }
+    prizes.push({ name, qty, secret, secretName });
+  });
+  if (!valid) { alert('⚠️ 请填写所有奖品名称！'); return; }
+  if (prizes.length === 0) { alert('⚠️ 请至少添加一个奖品！'); return; }
+
+  // Build preview
+  let html = '<div style="display:flex;flex-direction:column;gap:8px;">';
+  prizes.forEach((p, i) => {
+    html += `<div style="display:flex;align-items:center;gap:10px;padding:10px 14px;background:#fff5fa;border-radius:12px;border:2px solid #f0d0e0;">
+      <span style="font-size:20px;">🎁</span>
+      <div style="flex:1"><strong>${p.name}</strong> × ${p.qty}</div>
+      ${p.secret ? `<span class="secret-badge">⚙️ 进阶: ${p.secretName||'?'}</span>` : ''}
+    </div>`;
+  });
+  html += '</div>';
+  document.getElementById('prizesPreview').innerHTML = html;
+
+  showStatus('saveStatus', `✅ 已保存 ${prizes.length} 个奖品！`, 'success', false);
+
+  // Flash feedback
+  const btn = event.target;
+  btn.textContent = '✅ 已保存！';
+  setTimeout(() => btn.textContent = '💾 保存奖品设置', 1800);
+}
+
+// Temp status helper (not on DOM yet — inline alert for save)
+function showAlert(msg) { alert(msg); }
+
+// ══════════════════════════════════════
+//  IMPORT
+// ══════════════════════════════════════
+function handleFileUpload(input) {
+  const file = input.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = e => parseFile(e.target.result, file.name);
+  reader.readAsArrayBuffer(file);
+}
+
+function handleDrop(e) {
+  e.preventDefault();
+  document.getElementById('uploadArea').classList.remove('drag');
+  const file = e.dataTransfer.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = ev => parseFile(ev.target.result, file.name);
+  reader.readAsArrayBuffer(file);
+}
+
+function parseFile(buffer, filename) {
+  try {
+    const wb = XLSX.read(buffer, { type: 'array' });
+    const ws = wb.Sheets[wb.SheetNames[0]];
+    const data = XLSX.utils.sheet_to_json(ws, { defval: '' });
+    extractParticipants(data, filename);
+  } catch(err) {
+    showStatus('importStatus', '❌ 文件读取失败：' + err.message, 'error');
+  }
+}
+
+function extractParticipants(data, filename) {
+  // Find the IG Account Name column (case-insensitive, fuzzy)
+  if (!data.length) { showStatus('importStatus', '❌ 文件为空', 'error'); return; }
+
+  const keys = Object.keys(data[0]);
+  let col = keys.find(k => /ig\s*account\s*name/i.test(k));
+  if (!col) col = keys.find(k => /ig/i.test(k));
+  if (!col) col = keys.find(k => /account/i.test(k));
+  if (!col) col = keys[0]; // fallback to first column
+
+  const raw = data.map(r => (r[col] + '').trim()).filter(v => v && v !== '0' && v.length > 1);
+  participants = [...new Set(raw)]; // deduplicate
+
+  if (!participants.length) {
+    showStatus('importStatus', '❌ 找不到有效的 IG Account Name 数据，请检查文件格式', 'error');
+    return;
+  }
+
+  showStatus('importStatus', `✅ 成功从「${filename}」读取 ${participants.length} 位参与者（栏位：${col}）`, 'success');
+  renderParticipantsPreview();
+}
+
+function renderParticipantsPreview() {
+  document.getElementById('participantsPreviewWrap').style.display = 'block';
+  document.getElementById('participantCount').textContent = participants.length + ' 人';
+  const tbody = document.getElementById('participantsTable');
+  tbody.innerHTML = participants.slice(0, 200).map((p, i) =>
+    `<tr><td>${i+1}</td><td>${escHtml(p)}</td></tr>`
+  ).join('') + (participants.length > 200 ? `<tr><td colspan="2" style="text-align:center;color:#aaa;">... 及其他 ${participants.length-200} 人</td></tr>` : '');
+}
+
+function clearParticipants() {
+  participants = [];
+  document.getElementById('participantsPreviewWrap').style.display = 'none';
+  document.getElementById('importStatus').className = 'status-msg';
+  document.getElementById('fileInput').value = '';
+}
+
+function loadSampleData() {
+  const names = ['@charmaine_sg','@bellayeo','@tingting88','@xuanlim','@yuki_star','@peachyvibes',
+    '@snowflake99','@lilytan_kl','@mochi_days','@sugarrush_id','@jadelow','@serenadream',
+    '@pinkpetal88','@cloverlu','@mintchoco','@starlightxo','@honeybb','@lavenderlu',
+    '@cateyez88','@butterscotch_g','@pinknotes_','@daydreammm','@jellyfish99','@lunabear88',
+    '@pastelvibes','@crystalh_sg','@angelica_low','@sunsetpinkk','@rainbowlens','@floralwings'];
+  participants = names;
+  renderParticipantsPreview();
+  showStatus('importStatus', `✅ 已载入 ${participants.length} 位演示参与者`, 'success');
+}
+
+// ══════════════════════════════════════
+//  DRAW
+// ══════════════════════════════════════
+function refreshDrawMeta() {
+  // Build draw queue from prizes
+  drawQueue = [];
+  prizes.forEach(p => {
+    for (let i = 0; i < p.qty; i++) {
+      drawQueue.push({ prizeName: p.name, secret: p.secret, secretName: p.secretName });
+    }
+  });
+  document.getElementById('metaPrizeCount').textContent = drawQueue.length;
+  document.getElementById('metaParticipants').textContent = participants.length;
+  document.getElementById('metaDrawn').textContent = results.length;
+  updateProgress();
+}
+
+function updateProgress() {
+  const total = drawQueue.length;
+  const done = results.length;
+  document.getElementById('progressText').textContent = `${done} / ${total}`;
+  document.getElementById('progressFill').style.width = total ? (done/total*100)+'%' : '0%';
+}
+
+function startDraw() {
+  if (prizes.length === 0) {
+    showStatus('drawStatus', '⚠️ 请先到「设置奖品」标签设置奖品！', 'error');
+    return;
+  }
+  if (participants.length === 0) {
+    showStatus('drawStatus', '⚠️ 请先到「导入名单」标签上传参与者！', 'error');
+    return;
+  }
+
+  refreshDrawMeta();
+
+  if (currentDrawIdx >= drawQueue.length) {
+    showStatus('drawStatus', '🎊 所有奖品已经抽完啦！', 'info');
+    return;
+  }
+
+  document.getElementById('btnStart').style.display = 'none';
+  document.getElementById('btnNext').style.display = 'inline-flex';
+  document.getElementById('btnAuto').style.display = 'inline-flex';
+  document.getElementById('btnReset').style.display = 'inline-flex';
+  showStatus('drawStatus', '', 'info', false);
+
+  drawNext();
+}
+
+function toggleAuto() {
+  if (isAutoMode) {
+    // Stop auto
+    isAutoMode = false;
+    clearTimeout(autoTimer);
+    document.getElementById('btnAuto').textContent = '▶️ 自动抽奖';
+    document.getElementById('btnAuto').style.background = 'var(--purple)';
+    document.getElementById('btnNext').disabled = false;
+  } else {
+    // Start auto
+    isAutoMode = true;
+    document.getElementById('btnAuto').textContent = '⏸️ 暂停自动';
+    document.getElementById('btnAuto').style.background = '#e84a80';
+    document.getElementById('btnNext').disabled = true;
+    // If not currently drawing, kick off next draw
+    if (!isDrawing) scheduleNextAuto();
+  }
+}
+
+function scheduleNextAuto() {
+  if (!isAutoMode) return;
+  if (currentDrawIdx >= drawQueue.length) return;
+  autoTimer = setTimeout(() => {
+    if (isAutoMode) drawNext();
+  }, AUTO_PAUSE);
+}
+
+function drawNext() {
+  if (isDrawing) return;
+  if (currentDrawIdx >= drawQueue.length) {
+    finishAll();
+    return;
+  }
+
+  isDrawing = true;
+  document.getElementById('btnNext').disabled = true;
+  document.getElementById('winnerReveal').classList.remove('show');
+
+  const current = drawQueue[currentDrawIdx];
+  document.getElementById('slotCurrentPrize').textContent = `🎁 ${current.prizeName}`;
+
+  // Build pool of candidates (exclude already won)
+  const winners = results.map(r => r.winner);
+  let pool = participants.filter(p => !winners.includes(p));
+
+  if (pool.length === 0) {
+    showStatus('drawStatus', '⚠️ 参与者不足，无法继续抽奖！', 'error');
+    isDrawing = false;
+    document.getElementById('btnNext').disabled = false;
+    return;
+  }
+
+  // Determine winner
+  let winner;
+  if (current.secret && current.secretName) {
+    // Check if secret name exists in participants
+    const matched = pool.find(p => p.toLowerCase().replace('@','') === current.secretName.toLowerCase().replace('@',''));
+    winner = matched || pool[Math.floor(Math.random() * pool.length)];
+  } else {
+    winner = pool[Math.floor(Math.random() * pool.length)];
+  }
+
+  // Run slot animation
+  runSlotAnimation(pool, winner, () => {
+    // Show winner
+    const result = {
+      rank: currentDrawIdx + 1,
+      winner,
+      prizeName: current.prizeName,
+      isSecret: current.secret && !!current.secretName
+    };
+    results.push(result);
+    currentDrawIdx++;
+
+    document.getElementById('winnerName').textContent = winner;
+    document.getElementById('winnerPrize').textContent = `🎁 获得：${current.prizeName}`;
+    document.getElementById('winnerTrophy').textContent = getRandomTrophy();
+    document.getElementById('winnerReveal').classList.add('show');
+
+    renderResultsTable();
+    refreshDrawMeta();
+    triggerConfetti();
+
+    isDrawing = false;
+    if (!isAutoMode) document.getElementById('btnNext').disabled = false;
+
+    if (currentDrawIdx >= drawQueue.length) {
+      setTimeout(finishAll, 1500);
+    } else if (isAutoMode) {
+      scheduleNextAuto();
+    }
+  });
+}
+
+function runSlotAnimation(pool, winner, callback) {
+  const reel = document.getElementById('slotReel');
+  const ITEM_H = 80;
+  const DURATION = 4000; // ms
+  const FAST_INTERVAL = 60;
+  const SLOW_INTERVALS = [80, 110, 150, 200, 300, 450, 650];
+
+  // Build reel items: random names + winner at end
+  const display = [...pool].sort(() => Math.random() - .5).slice(0, 30);
+  // Ensure winner is in there
+  if (!display.includes(winner)) display.push(winner);
+  // Duplicate for seamless scroll
+  const items = [...display, ...display, winner];
+
+  reel.innerHTML = items.map(n =>
+    `<div class="slot-item">${escHtml(n)}</div>`
+  ).join('');
+
+  let pos = 0;
+  let phase = 'fast'; // fast -> slow -> stop
+  let slowIdx = 0;
+  let elapsed = 0;
+
+  function tick(interval) {
+    if (phase === 'fast') {
+      elapsed += interval;
+      pos++;
+      if (pos >= items.length - 1) pos = 0;
+      reel.style.transform = `translateY(-${pos * ITEM_H}px)`;
+
+      if (elapsed >= DURATION - SLOW_INTERVALS.reduce((a,b)=>a+b,0)) {
+        phase = 'slow';
+      }
+      slotTimer = setTimeout(() => tick(FAST_INTERVAL), FAST_INTERVAL);
+    } else if (phase === 'slow') {
+      pos++;
+      if (pos >= items.length - 1) pos = 0;
+      reel.style.transform = `translateY(-${pos * ITEM_H}px)`;
+      const nextInterval = SLOW_INTERVALS[slowIdx] || 700;
+      slowIdx++;
+      if (slowIdx >= SLOW_INTERVALS.length) {
+        phase = 'stop';
+        // Snap to winner
+        const winnerIdx = items.lastIndexOf(winner);
+        setTimeout(() => {
+          reel.style.transition = 'transform 0.4s cubic-bezier(.34,1.56,.64,1)';
+          reel.style.transform = `translateY(-${winnerIdx * ITEM_H}px)`;
+          // Highlight
+          reel.querySelectorAll('.slot-item').forEach((el, i) => {
+            el.classList.toggle('highlight', i === winnerIdx);
+          });
+          setTimeout(() => {
+            reel.style.transition = '';
+            callback();
+          }, 600);
+        }, 100);
+        return;
+      }
+      slotTimer = setTimeout(() => tick(nextInterval), nextInterval);
+    }
+  }
+
+  tick(FAST_INTERVAL);
+}
+
+function finishAll() {
+  isAutoMode = false;
+  clearTimeout(autoTimer);
+  showStatus('drawStatus', '🎊 全部奖品已抽完！恭喜所有中奖者！', 'success');
+  document.getElementById('btnNext').style.display = 'none';
+  document.getElementById('btnAuto').style.display = 'none';
+  document.getElementById('btnStart').style.display = 'none';
+  triggerConfetti(true);
+}
+
+function resetDraw() {
+  if (!confirm('确定要重置抽奖吗？已抽出的名单将清除。')) return;
+  clearTimeout(slotTimer);
+  clearTimeout(autoTimer);
+  isDrawing = false;
+  isAutoMode = false;
+  currentDrawIdx = 0;
+  results = [];
+  document.getElementById('resultsTable').innerHTML = '';
+  document.getElementById('winnerReveal').classList.remove('show');
+  document.getElementById('btnStart').style.display = 'inline-flex';
+  document.getElementById('btnNext').style.display = 'none';
+  document.getElementById('btnAuto').style.display = 'none';
+  document.getElementById('btnAuto').textContent = '▶️ 自动抽奖';
+  document.getElementById('btnAuto').style.background = 'var(--purple)';
+  document.getElementById('btnReset').style.display = 'none';
+  document.getElementById('slotReel').innerHTML = '<div class="slot-item">✨ 等待开始 ✨</div>';
+  document.getElementById('slotCurrentPrize').textContent = '─── 等待开始 ───';
+  showStatus('drawStatus', '', '', false);
+  refreshDrawMeta();
+}
+
+function renderResultsTable() {
+  const tbody = document.getElementById('resultsTable');
+  tbody.innerHTML = results.map(r =>
+    `<tr>
+      <td><strong>#${r.rank}</strong></td>
+      <td style="font-weight:800;">${escHtml(r.winner)}</td>
+      <td>${escHtml(r.prizeName)}</td>
+      <td></td>
+    </tr>`
+  ).join('');
+}
+
+function exportResults() {
+  if (!results.length) { alert('还没有抽奖结果！'); return; }
+  const ws = XLSX.utils.json_to_sheet(results.map(r => ({
+    '名次': r.rank,
+    '中奖者 IG': r.winner,
+    '奖品': r.prizeName
+  })));
+  const wb = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb, ws, '中奖名单');
+  XLSX.writeFile(wb, `mssssscz_抽奖结果_${new Date().toLocaleDateString('zh')}.xlsx`);
+}
+
+// ══════════════════════════════════════
+//  CONFETTI
+// ══════════════════════════════════════
+function triggerConfetti(big = false) {
+  const overlay = document.getElementById('confettiOverlay');
+  overlay.innerHTML = '';
+  overlay.classList.add('active');
+  const colors = ['#FF6B9D','#FFE066','#C77DFF','#6BFFE8','#FF9F66','#fff'];
+  const count = big ? 120 : 50;
+  for (let i = 0; i < count; i++) {
+    const el = document.createElement('div');
+    el.className = 'confetti-piece';
+    el.style.cssText = `
+      left:${Math.random()*100}vw;
+      top:-20px;
+      background:${colors[Math.floor(Math.random()*colors.length)]};
+      width:${6+Math.random()*10}px;
+      height:${6+Math.random()*10}px;
+      border-radius:${Math.random()>0.5?'50%':'2px'};
+      animation-duration:${1.5+Math.random()*2.5}s;
+      animation-delay:${Math.random()*0.8}s;
+    `;
+    overlay.appendChild(el);
+  }
+  setTimeout(() => { overlay.classList.remove('active'); overlay.innerHTML = ''; }, big ? 4000 : 2500);
+}
+
+// ══════════════════════════════════════
+//  UTILS
+// ══════════════════════════════════════
+function showStatus(id, msg, type, show = true) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  el.textContent = msg;
+  el.className = 'status-msg' + (show ? ` show status-${type}` : '');
+}
+
+function escHtml(s) {
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function getRandomTrophy() {
+  return ['🏆','🥇','🎖️','👑','💎','🌟','🎊','🎀'][Math.floor(Math.random()*8)];
+}
+
+// ══════════════════════════════════════
+//  LOGIN
+// ══════════════════════════════════════
+function doLogin() {
+  const user = document.getElementById('loginUser').value.trim();
+  const pass = document.getElementById('loginPass').value;
+  const err  = document.getElementById('loginError');
+
+  if (user === 'mscz' && pass === 'mscz8888') {
+    document.getElementById('loginScreen').style.display = 'none';
+    document.getElementById('mainApp').style.display = 'block';
+    init();
+  } else {
+    err.classList.add('show');
+    document.getElementById('loginPass').value = '';
+    document.getElementById('loginPass').focus();
+    setTimeout(() => err.classList.remove('show'), 3000);
+  }
+}
+
+// ══════════════════════════════════════
+//  INIT
+// ══════════════════════════════════════
+function init() {
+  addPrizeRow({ name: '🎂 生日蛋糕礼券 $50', qty: 1 });
+  addPrizeRow({ name: '🛍️ Lazada 购物金 $30', qty: 2 });
+  addPrizeRow({ name: '💄 美妆礼包', qty: 1 });
+}
+</script>
+</div><!-- /mainApp -->
 </body>
-</html> 
+</html>
