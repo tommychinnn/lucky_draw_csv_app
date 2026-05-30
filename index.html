@@ -772,7 +772,7 @@ function extractParticipants(data, filename) {
   if (!col) col = keys[0]; // fallback to first column
 
   const raw = data.map(r => (r[col] + '').trim()).filter(v => v && v !== '0' && v.length > 1);
-  participants = [...new Set(raw)]; // deduplicate
+  participants = raw; // keep duplicates — more orders = higher chance
 
   if (!participants.length) {
     showStatus('importStatus', '❌ 找不到有效的 IG Account Name 数据，请检查文件格式', 'error');
