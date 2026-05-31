@@ -671,6 +671,7 @@
 let prizes = [];          // [{name, qty, secret, secretName}, ...]
 let drawQueue = [];       // flattened: [{prizeName, secret, secretName}, ...]
 let participants = [];    // ['@user1', ...]
+let usedIndices = new Set(); // index-based tracking for 400-1 logic
 let results = [];         // [{rank, winner, prizeName, isSecret}]
 let currentDrawIdx = 0;   // next draw index
 let isDrawing = false;
@@ -975,23 +976,25 @@ function drawNext() {
   const current = drawQueue[currentDrawIdx];
   document.getElementById('slotCurrentPrize').textContent = `🎁 ${current.prizeName}`;
 
-  // Build pool of candidates (exclude already won + exclude people reserved for future designated prizes)
-  const winners = results.map(r => r.winner);
+  // Build pool — index-based (400-1): only remove the one slot that was drawn
   const normalise = s => s.toLowerCase().replace(/^@/, '').trim();
   const reservedNames = new Set(
     drawQueue
-      .slice(currentDrawIdx) // only future prizes (including current)
+      .slice(currentDrawIdx) // protect ALL remaining designated people (including current slot)
       .filter(q => q.secret && q.secretName)
       .map(q => normalise(q.secretName))
   );
-  let pool = participants.filter(p => {
-    if (winners.includes(p)) return false; // already won
-    // If this is NOT a designated prize, protect reserved people
-    if (!(current.secret && current.secretName)) {
-      if (reservedNames.has(normalise(p))) return false;
-    }
-    return true;
-  });
+  // Build pool as [{name, originalIndex}], skip used indices and reserved names
+  let pool = participants
+    .map((name, idx) => ({ name, idx }))
+    .filter(({ name, idx }) => {
+      if (usedIndices.has(idx)) return false; // this slot already won
+      // If this is NOT a designated prize, protect reserved people from being randomly drawn
+      if (!(current.secret && current.secretName)) {
+        if (reservedNames.has(normalise(name))) return false;
+      }
+      return true;
+    });
 
   if (pool.length === 0) {
     showStatus('drawStatus', '⚠️ 参与者不足，无法继续抽奖！', 'error');
@@ -1000,15 +1003,17 @@ function drawNext() {
     return;
   }
 
-  // Determine winner
-  let winner;
+  // Determine winner (pick from pool objects {name, idx})
+  let winnerObj;
   if (current.secret && current.secretName) {
-    // 进阶指定：从 pool 里找指定人（因为他们已被保护不会在之前被抽走）
-    const matched = pool.find(p => normalise(p) === normalise(current.secretName));
-    winner = matched || pool[Math.floor(Math.random() * pool.length)]; // fallback random if somehow not found
+    // 进阶指定：找指定人的其中一个 slot（他一定还在 pool 里，因为被保护着）
+    winnerObj = pool.find(p => normalise(p.name) === normalise(current.secretName));
+    if (!winnerObj) winnerObj = pool[Math.floor(Math.random() * pool.length)]; // fallback
   } else {
-    winner = pool[Math.floor(Math.random() * pool.length)];
+    winnerObj = pool[Math.floor(Math.random() * pool.length)];
   }
+  const winner = winnerObj.name;
+  usedIndices.add(winnerObj.idx); // mark this ONE slot as used (400-1)
 
   // ── Burst mode ──
   if (current.burst && current.burstQty > 1) {
@@ -1017,7 +1022,7 @@ function drawNext() {
   }
 
   // ── Single mode ──
-  runSlotAnimation(pool, winner, () => {
+  runSlotAnimation(pool.map(p => p.name), winner, () => {
     const result = {
       rank: currentDrawIdx + 1,
       winner,
@@ -1116,31 +1121,31 @@ function runSlotAnimation(pool, winner, callback) {
 //  BURST DRAW
 // ══════════════════════════════════════
 function drawBurst(current, pool) {
+  // pool is already [{name, idx}] from drawNext
   const count = Math.min(current.burstQty, pool.length);
   const winners = [];
 
-  // Pick `count` winners — each pick removes one slot (400-1 logic)
-  // Use separate names set to avoid same person winning twice in this batch
+  // Pick `count` winners — index-based 400-1, no same name twice in one batch
   const tempPool = [...pool];
   const chosenNames = new Set();
   for (let i = 0; i < count && tempPool.length > 0; i++) {
-    // Try up to 10 times to get a unique name in this batch
-    let attempts = 0, idx, candidate;
+    let attempts = 0, slotIdx, candidate;
     do {
-      idx = Math.floor(Math.random() * tempPool.length);
-      candidate = tempPool[idx];
+      slotIdx = Math.floor(Math.random() * tempPool.length);
+      candidate = tempPool[slotIdx];
       attempts++;
-    } while (chosenNames.has(candidate) && attempts < 10);
+    } while (chosenNames.has(candidate.name) && attempts < 10);
     winners.push(candidate);
-    chosenNames.add(candidate);
-    tempPool.splice(idx, 1);
+    chosenNames.add(candidate.name);
+    usedIndices.add(candidate.idx); // mark slot as used (400-1)
+    tempPool.splice(slotIdx, 1);
   }
 
   // Add to results — currentDrawIdx advances by 1 per queue slot (not per winner)
-  winners.forEach((w, i) => {
+  winners.forEach(w => {
     results.push({
       rank: results.length + 1,
-      winner: w,
+      winner: w.name,
       prizeName: current.prizeName,
       isSecret: false
     });
@@ -1153,7 +1158,7 @@ function drawBurst(current, pool) {
   isDrawing = false;
 
   // Show burst grid overlay
-  showBurstGrid(winners, current.prizeName, () => {
+  showBurstGrid(winners.map(w => w.name), current.prizeName, () => {
     if (!isAutoMode) document.getElementById('btnNext').disabled = false;
     if (currentDrawIdx >= drawQueue.length) {
       setTimeout(finishAll, 800);
@@ -1209,6 +1214,7 @@ function resetDraw() {
   isAutoMode = false;
   currentDrawIdx = 0;
   results = [];
+  usedIndices = new Set();
   document.getElementById('resultsTable').innerHTML = '';
   document.getElementById('winnerReveal').classList.remove('show');
   document.getElementById('btnStart').style.display = 'inline-flex';
